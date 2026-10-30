@@ -23,6 +23,7 @@ ORYVA supersedes the earlier name HALO. Technical naming remains `Sun.Security`;
 | Document | Purpose |
 |---|---|
 | [Brand Guidelines](branding/BRAND-GUIDELINES.md) | SUN vision, positioning and architecture |
+| [Git Workflow & Merge Policy v1.0](docs/governance/GIT-WORKFLOW.md) | Authoritative cross-repository PR, squash merge, CI, review and release governance |
 | [Naming Guidelines v1.0](branding/NAMING-GUIDELINES.md) | Naming rules, scoring, workflow and clearance |
 | [Visual Identity](branding/VISUAL-IDENTITY.md) | Provisional palette, typography and logo direction |
 | [ORYVA product documentation](https://github.com/sunstriker2009/sun-oryva) | Architecture, design system, engineering roadmap and implementation (maintained outside SUN ecosystem) |
@@ -42,6 +43,6 @@ ORYVA supersedes the earlier name HALO. Technical naming remains `Sun.Security`;
 
 ## Governance
 
-Names become confirmed only after explicit owner approval. Internal naming approval does not imply trademark, domain, NuGet, npm, or GitHub availability. Visual colors and marks are provisional unless expressly approved. Use feature branches and pull requests with **squash merges** to propose changes and record substantive decisions under `decisions/`.
+Names become confirmed only after explicit owner approval. Internal naming approval does not imply trademark, domain, NuGet, npm, or GitHub availability. Visual colors and marks are provisional unless expressly approved. All changes follow the [SUN Git Workflow & Merge Policy v1.0](docs/governance/GIT-WORKFLOW.md): protected `main`, pull requests, passing required CI, applicable review, **squash-only merges**, and automatic branch cleanup. Record substantive brand decisions under `decisions/`.
 
 **Guidelines version:** 1.0 — 2026-10-30.
