@@ -25,6 +25,7 @@ ORYVA supersedes the earlier name HALO. Technical naming remains `Sun.Security`;
 | [Brand Guidelines](branding/BRAND-GUIDELINES.md) | SUN vision, positioning and architecture |
 | [Naming Guidelines v1.0](branding/NAMING-GUIDELINES.md) | Naming rules, scoring, workflow and clearance |
 | [Visual Identity](branding/VISUAL-IDENTITY.md) | Provisional palette, typography and logo direction |
+| [ORYVA Design System v1.0](design-system/oryva/README.md) | Proposed UI foundations, tokens, components, security and accessibility |
 | [Visual Identity Concept 01](branding/VISUAL-CONCEPT-01.md) | Artwork and design exploration |
 | [Product Registry](registry/PRODUCTS.md) | Confirmed and proposed product names |
 | [Machine-readable Registry](registry/products.json) | Structured product metadata |
