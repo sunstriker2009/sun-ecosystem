@@ -6,9 +6,9 @@
 ## Concept board
 An initial visual exploration was generated for the SUN parent brand and ORYVA by Sun. The concept board includes full logos, icon and wordmark variants, dark celestial compositions, color palette proposals, and visual ideas for seven **unapproved** future names.
 
-**Asset filename for upload:** `branding/assets/sun-oryva-visual-identity-concept-01.png`.
+**Asset:** [View original concept PNG](assets/a_sleek_high_end_branding_identity_presentation_m.png).
 
-> The generated PNG is not yet checked into this repository. The document intentionally does not link to a nonexistent image. Upload the PNG to the path above before adding an embedded preview.
+![SUN × ORYVA visual identity concept board](assets/a_sleek_high_end_branding_identity_presentation_m.png)
 
 ## SUN direction
 - Eclipse / sunrise arc above a clean spaced **SUN** wordmark.
@@ -28,7 +28,6 @@ An initial visual exploration was generated for the SUN parent brand and ORYVA b
 - Trademark and logo similarity review, small-size legibility, monochrome variants, and accessibility checks are outstanding.
 
 ## Next steps
-1. Add the original concept PNG under `branding/assets/`.
-2. Review SUN and ORYVA marks independently.
-3. Create precise vector SVG masters and icon variants after selection.
-4. Record explicit visual approval and update `branding/VISUAL-IDENTITY.md`.
+1. Review SUN and ORYVA marks independently.
+2. Create precise vector SVG masters and icon variants after selection.
+3. Record explicit visual approval and update `branding/VISUAL-IDENTITY.md`.
