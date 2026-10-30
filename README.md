@@ -16,7 +16,7 @@ Explore the [concept notes](branding/VISUAL-CONCEPT-01.md). This is an **explora
 Reusable authentication, authorization, identity and security platform.  
 Registry: **SUN-001 — CONFIRMED**. Commercial naming clearance is **pending**.
 
-ORYVA supersedes the earlier name HALO. Technical naming remains `Sun.Security`; proposed repository: `sun-oryva`. MarketPilot AI is an independent application and initial integration target.
+ORYVA supersedes the earlier name HALO. Technical naming remains `Sun.Security`; product repository: [sun-oryva](https://github.com/sunstriker2009/sun-oryva). MarketPilot AI is an independent application and initial integration target.
 
 ## Documentation
 
@@ -25,6 +25,7 @@ ORYVA supersedes the earlier name HALO. Technical naming remains `Sun.Security`;
 | [Brand Guidelines](branding/BRAND-GUIDELINES.md) | SUN vision, positioning and architecture |
 | [Naming Guidelines v1.0](branding/NAMING-GUIDELINES.md) | Naming rules, scoring, workflow and clearance |
 | [Visual Identity](branding/VISUAL-IDENTITY.md) | Provisional palette, typography and logo direction |
+| [ORYVA product documentation](https://github.com/sunstriker2009/sun-oryva) | Architecture, design system, engineering roadmap and implementation (maintained outside SUN ecosystem) |
 | [Visual Identity Concept 01](branding/VISUAL-CONCEPT-01.md) | Artwork and design exploration |
 | [Product Registry](registry/PRODUCTS.md) | Confirmed and proposed product names |
 | [Machine-readable Registry](registry/products.json) | Structured product metadata |
@@ -41,6 +42,6 @@ ORYVA supersedes the earlier name HALO. Technical naming remains `Sun.Security`;
 
 ## Governance
 
-Names become confirmed only after explicit owner approval. Internal naming approval does not imply trademark, domain, NuGet, npm, or GitHub availability. Visual colors and marks are provisional unless expressly approved. Use pull requests to propose changes and record substantive decisions under `decisions/`.
+Names become confirmed only after explicit owner approval. Internal naming approval does not imply trademark, domain, NuGet, npm, or GitHub availability. Visual colors and marks are provisional unless expressly approved. Use feature branches and pull requests with **squash merges** to propose changes and record substantive decisions under `decisions/`.
 
 **Guidelines version:** 1.0 — 2026-10-30.
