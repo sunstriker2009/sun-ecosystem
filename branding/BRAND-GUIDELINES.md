@@ -30,3 +30,4 @@ MarketPilot AI remains an independent application and may be described as **Powe
 - Commercial clearance is separate from internal naming approval.
 - Product architecture, coding, and release tracking belong in product-specific repositories.
 - Record substantive brand changes in decisions/ and CHANGELOG.md.
+- Follow the [SUN Git Workflow & Merge Policy v1.0](../docs/governance/GIT-WORKFLOW.md) for changes across ecosystem and product repositories; keep repository-specific implementations outside this branding repository.
