@@ -1,0 +1,67 @@
+{
+  "version": "1.0",
+  "updated": "2026-10-30",
+  "parentBrand": "SUN",
+  "products": [
+    {
+      "id": "SUN-001",
+      "name": "ORYVA",
+      "status": "CONFIRMED",
+      "purpose": "Identity, authentication, authorization and security",
+      "publicName": "ORYVA by Sun",
+      "tagline": "Identity. Trust. Protection.",
+      "namespace": "Sun.Security",
+      "repositoryProposal": "sun-oryva",
+      "backendPackages": "Sun.Security.*",
+      "frontendPackages": "@sun-security/*",
+      "commercialClearance": "PENDING",
+      "supersedes": "HALO",
+      "initialIntegration": "MarketPilot AI"
+    },
+    {
+      "id": "SUN-002",
+      "name": "ORBIT",
+      "status": "PROPOSED",
+      "purpose": "Workflow orchestration and coordination",
+      "suggestedNamespace": "Sun.Orchestration"
+    },
+    {
+      "id": "SUN-003",
+      "name": "NOVA",
+      "status": "PROPOSED",
+      "purpose": "AI agents and intelligent automation",
+      "suggestedNamespace": "Sun.Agents"
+    },
+    {
+      "id": "SUN-004",
+      "name": "PRISM",
+      "status": "PROPOSED",
+      "purpose": "AI intelligence, research and insights"
+    },
+    {
+      "id": "SUN-005",
+      "name": "PULSAR",
+      "status": "PROPOSED",
+      "purpose": "Event processing and messaging"
+    },
+    {
+      "id": "SUN-006",
+      "name": "LUMEN",
+      "status": "PROPOSED",
+      "purpose": "Analytics and visualization",
+      "suggestedNamespace": "Sun.Analytics"
+    },
+    {
+      "id": "SUN-007",
+      "name": "BEACON",
+      "status": "PROPOSED",
+      "purpose": "Monitoring and observability"
+    },
+    {
+      "id": "SUN-008",
+      "name": "FORGE",
+      "status": "PROPOSED",
+      "purpose": "Developer tools and utilities"
+    }
+  ]
+}
