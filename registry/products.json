@@ -67,15 +67,24 @@
       "id": "SUN-009",
       "name": "ASTELVO",
       "status": "CONFIRMED",
-      "purpose": "Interactive workspace for database scripts and connections, extensible to other execution providers",
+      "purpose": "Local code organizer and interactive scripting workspace with flexible categorization, language-aware editing and embedded JavaScript, Python and C# runners",
       "publicName": "ASTELVO by Sun",
-      "tagline": "Connect. Script. Explore.",
+      "tagline": "Organize. Script. Explore.",
       "namespace": "Sun.Workspace",
       "repositoryProposal": "sun-astelvo",
       "backendPackages": "Sun.Workspace.*",
       "frontendPackages": "@sun-workspace/*",
       "commercialClearance": "PENDING",
-      "confirmedOn": "2026-11-12"
+      "confirmedOn": "2026-11-12",
+      "initialLanguages": [
+        "JavaScript",
+        "Python",
+        "C#"
+      ],
+      "futureExtensions": [
+        "Database execution targets",
+        "Additional language runners"
+      ]
     }
   ]
 }

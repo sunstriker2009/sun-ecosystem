@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-11-12
+- Revise ASTELVO to an organizer-first scripting workspace for JavaScript, Python and C#; adopt "Organize. Script. Explore." and defer database execution.
 - Confirm ASTELVO by Sun as SUN-009 for an extensible scripting workspace, initially SQL Server and PostgreSQL.
 - Record the naming decision and capability identifiers; commercial clearance remains pending.
 
