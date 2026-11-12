@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated": "2026-10-30",
+  "updated": "2026-11-12",
   "parentBrand": "SUN",
   "products": [
     {
@@ -62,6 +62,20 @@
       "name": "FORGE",
       "status": "PROPOSED",
       "purpose": "Developer tools and utilities"
+    },
+    {
+      "id": "SUN-009",
+      "name": "ASTELVO",
+      "status": "CONFIRMED",
+      "purpose": "Interactive workspace for database scripts and connections, extensible to other execution providers",
+      "publicName": "ASTELVO by Sun",
+      "tagline": "Connect. Script. Explore.",
+      "namespace": "Sun.Workspace",
+      "repositoryProposal": "sun-astelvo",
+      "backendPackages": "Sun.Workspace.*",
+      "frontendPackages": "@sun-workspace/*",
+      "commercialClearance": "PENDING",
+      "confirmedOn": "2026-11-12"
     }
   ]
 }
