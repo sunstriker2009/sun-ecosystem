@@ -12,7 +12,6 @@
 | SUN-006 | LUMEN | Analytics and visualization | PROPOSED | Sun.Analytics (suggested) |
 | SUN-007 | BEACON | Monitoring and observability | PROPOSED | TBD |
 | SUN-008 | FORGE | Developer tools and utilities | PROPOSED | TBD |
-
 | SUN-009 | **ASTELVO** | Interactive scripting workspace and saved connections | **CONFIRMED** | Sun.Workspace |
 
 ## SUN-001 — ORYVA
