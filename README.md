@@ -10,13 +10,17 @@ This repository is the canonical reference for SUN product naming, brand archite
 
 Explore the [concept notes](branding/VISUAL-CONCEPT-01.md). This is an **exploratory concept**, not a finalized production logo. The other product names pictured remain proposals only.
 
-## Current confirmed product
+## Confirmed products
 
 **ORYVA by Sun** — Identity. Trust. Protection.  
 Reusable authentication, authorization, identity and security platform.  
 Registry: **SUN-001 — CONFIRMED**. Commercial naming clearance is **pending**.
 
 ORYVA supersedes the earlier name HALO. Technical naming remains `Sun.Security`; product repository: [sun-oryva](https://github.com/sunstriker2009/sun-oryva). MarketPilot AI is an independent application and initial integration target.
+
+**ASTELVO by Sun** — Connect. Script. Explore.  
+Interactive scripting workspace, initially for SQL Server and PostgreSQL.  
+Registry: **SUN-009 — CONFIRMED**. Technical identity: `Sun.Workspace`. Repository creation and commercial clearance are pending.
 
 ## Documentation
 
@@ -34,11 +38,12 @@ ORYVA supersedes the earlier name HALO. Technical naming remains `Sun.Security`;
 | [HALO → ORYVA Decision](decisions/0002-halo-to-oryva.md) | Historical rename rationale |
 | [Product Proposal Template](templates/PRODUCT-PROPOSAL.md) | Starting new proposals |
 | [Naming Review Template](templates/NAMING-REVIEW.md) | Candidate evaluation and clearance |
+| [ASTELVO naming decision](decisions/0003-astelvo-script-workspace.md) | SUN-009 approval and naming rationale |
 | [Changelog](CHANGELOG.md) | Version history |
 
 ## Registry status
 
-**Confirmed:** ORYVA.  
+**Confirmed:** ORYVA, ASTELVO.  
 **Proposed only:** ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON, FORGE. These are not approved products and must not trigger automatic project creation.
 
 ## Governance
