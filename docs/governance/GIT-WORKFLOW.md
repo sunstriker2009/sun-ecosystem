@@ -97,7 +97,11 @@ The [Repository Factory](https://github.com/sunstriker2009/sun-foundry) is the s
 
 Factory verification does not replace this policy or security-sensitive human review. GitHub Free personal private repositories may lack ruleset enforcement; the provisioner must report that limitation and fail closed for strict Apply/Verify rather than claim compliance. Track actual enforcement per repository.
 
-## 9. Repository adoption and verification checklist
+## 9. Product branding and repository assets
+
+All SUN product repositories should follow the [Product Repository Branding Standard](PRODUCT-BRANDING.md). Approve the concept first; commit a versioned panoramic README banner, compact SVG variants and product-specific brand guide through the normal feature-branch and squash-PR workflow. For existing repositories, track brand adoption as a checklist rather than assuming compliance. ASTELVO and ORYVA serve as reference examples. Branding assets do not bypass CI or review requirements.
+
+## 10. Repository adoption and verification checklist
 
 Track implementation **per repository**, not merely policy publication:
 
@@ -111,5 +115,6 @@ Track implementation **per repository**, not merely policy publication:
 - [ ] Conventional Commit PR titles and squash subjects followed.
 - [ ] SemVer/changelog/tag process adopted where releases exist.
 - [ ] Release automation gated until approved.
+- [ ] Product branding standard adoption assessed and tracked in the product repository.
 
 **Governance milestone:** Policy documentation approval is separate from verifying each repository's live GitHub settings. Maintain adoption evidence in product-specific project tracking, not in this high-level ecosystem repository.
