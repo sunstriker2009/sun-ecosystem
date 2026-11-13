@@ -91,7 +91,13 @@ This policy applies to `sun-ecosystem`, `sun-oryva`, `marketpilot-ai` and future
 
 Exceptions require **explicit owner approval** before use, documented with: affected repository, exact deviation, business/technical rationale, risks, compensating controls, approver, approval date and expiration/review date. Emergency exceptions must be time-bounded and reviewed retrospectively. No exception is implicit from having admin privileges.
 
-## 8. Repository adoption and verification checklist
+## 8. Automated provisioning and verification
+
+The [Repository Factory](https://github.com/sunstriker2009/sun-repo-bootstrap) is the standard implementation for new SUN repositories, using [sun-repo-template](https://github.com/sunstriker2009/sun-repo-template). Its [Repository Factory workflow](https://github.com/sunstriker2009/sun-repo-bootstrap/actions/workflows/repository-factory-v1.yml) creates or resumes setup, seeds required CI checks, applies governance and runs strict verification. The [Repository Maintenance workflow](https://github.com/sunstriker2009/sun-repo-bootstrap/actions/workflows/repository-factory-resume.yml) provides targeted diagnosis, planning, application and verification for existing repositories.
+
+Factory verification does not replace this policy or security-sensitive human review. GitHub Free personal private repositories may lack ruleset enforcement; the provisioner must report that limitation and fail closed for strict Apply/Verify rather than claim compliance. Track actual enforcement per repository.
+
+## 9. Repository adoption and verification checklist
 
 Track implementation **per repository**, not merely policy publication:
 
