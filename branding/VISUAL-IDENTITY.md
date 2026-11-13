@@ -16,6 +16,10 @@ Minimal, geometric, contemporary. Deep dark surfaces with restrained luminous ac
 
 Proposed product accents: ORYVA gold (#F6C453), ORBIT electric blue (#4F8CFF), NOVA violet (#A78BFA), PRISM spectral multicolor, PULSAR cyan (#22D3EE), LUMEN emerald (#34D399), BEACON orange (#FB923C), FORGE red (#F87171). **Proposed product names and accent choices are not approvals.**
 
+## Approved cross-repository branding practice
+
+All SUN product repositories follow the [Product Repository Branding Standard](../docs/governance/PRODUCT-BRANDING.md): owner-reviewed concepts using SUN's arc, purpose-led symbols (optionally suggesting the product initial), differentiated palettes, a locally committed high-resolution panoramic README banner, and coordinated compact SVG assets. Preserve concept originals separately from production assets. ASTELVO and ORYVA are reference examples; existing repositories adopt through a tracked checklist, not presumed compliance.
+
 ## Logo principles
 - Work at 24×24 pixels.
 - Provide monochrome and full-color variants.

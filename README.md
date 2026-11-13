@@ -31,6 +31,7 @@ Registry: **SUN-009 — CONFIRMED**. Technical identity: `Sun.Workspace`. Reposi
 | [Repository Template](https://github.com/sunstriker2009/sun-repo-template) | Standard starting structure and CI workflows for new SUN repositories |
 | [Git Workflow & Merge Policy v1.0](docs/governance/GIT-WORKFLOW.md) | Authoritative cross-repository PR, squash merge, CI, review and release governance |
 | [Naming Guidelines v1.0](branding/NAMING-GUIDELINES.md) | Naming rules, scoring, workflow and clearance |
+| [Product Repository Branding Standard](docs/governance/PRODUCT-BRANDING.md) | Approved concept workflow, README banners, SVG assets and existing-repository adoption checklist |
 | [Visual Identity](branding/VISUAL-IDENTITY.md) | Provisional palette, typography and logo direction |
 | [ORYVA product documentation](https://github.com/sunstriker2009/sun-oryva) | Architecture, design system, engineering roadmap and implementation (maintained outside SUN ecosystem) |
 | [Visual Identity Concept 01](branding/VISUAL-CONCEPT-01.md) | Artwork and design exploration |
@@ -47,6 +48,10 @@ Registry: **SUN-009 — CONFIRMED**. Technical identity: `Sun.Workspace`. Reposi
 
 **Confirmed:** ORYVA, ASTELVO.  
 **Proposed only:** ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON, FORGE. These are not approved products and must not trigger automatic project creation.
+
+## Product repository branding
+
+SUN product repositories follow the [Product Repository Branding Standard](docs/governance/PRODUCT-BRANDING.md): purpose-led symbols incorporating SUN's arc, distinct palettes, approved panoramic README banners and coordinated compact SVG variants. [ASTELVO](https://github.com/sunstriker2009/sun-astelvo) and [ORYVA](https://github.com/sunstriker2009/sun-oryva) are reference examples; existing repositories should track adoption independently.
 
 ## Repository provisioning
 
