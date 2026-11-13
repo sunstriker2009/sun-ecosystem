@@ -33,7 +33,17 @@ Use an appropriate wide composition (16:9 or wider where suitable) that stays le
 
 When replacing a production image, use a **new versioned filename** (for example, `readme-banner-v2.png`) and update the README reference to prevent stale GitHub/browser image caching. Keep old versions only when useful for provenance or documentation.
 
-## 3. Compact and production assets
+## 3. Canonical artwork and derivative assets
+
+The **owner-approved original artwork is the canonical visual source of truth**. Preserve the original unmodified, preferably with source/layer files or a transparent export of the symbol. Where feasible, extract the actual symbol and SUN arc from that source for high-resolution, transparent raster assets rather than independently redrawing them.
+
+- Derive high-resolution standalone marks, app illustrations and raster icons from the approved symbol source, preserving the intended material, gradient, lighting and proportions.
+- Prefer a transparent original or layered source for clean extraction. Cropping a flattened banner can include glow, background and compositing artifacts; do not claim an exact transparent extraction without checking it.
+- Treat vector SVGs as **purpose-built adaptations** where resolution independence, monochrome, accessibility or tiny UI sizes require simplified geometry. Label adaptations as such, and review them against the canonical artwork.
+- Never substitute a visually similar regenerated image or third-party image for the approved original.
+- Maintain source provenance, export scripts, dimensions and usage rules in the product brand guide. Validate small sizes and do not assume a raster crop is suitable at 16–32 px.
+
+## 4. Compact and production assets
 
 Provide complementary **SVG** assets for application headers, internal UI and documentation:
 
@@ -44,7 +54,7 @@ Provide complementary **SVG** assets for application headers, internal UI and do
 
 Compact assets must retain the same recognizable symbol, SUN arc, palette logic and typography as the panoramic banner, simplified appropriately for small placements. Avoid embedding raster artwork inside an SVG as a substitute for a vector icon.
 
-## 4. Asset organization
+## 5. Asset organization
 
 Recommended product-repository structure:
 
@@ -68,7 +78,7 @@ branding/
 
 Naming can vary to accommodate existing repositories. **Separate exploratory concepts from approved production assets.** Keep README image references relative to repository paths. Maintain a short asset manifest in `BRAND-GUIDE.md` describing purpose, version and approved usage. GitHub Social Preview may use the same visual direction, but its upload through GitHub Settings is a separate operation.
 
-## 5. Repository workflow
+## 6. Repository workflow
 
 1. Develop and review concepts; obtain explicit owner approval before declaring the identity final.
 2. Produce panoramic banner and coordinated compact assets from the approved direction.
@@ -76,7 +86,7 @@ Naming can vary to accommodate existing repositories. **Separate exploratory con
 4. Open a PR, validate paths, image readability, visual consistency and required CI; squash merge under SUN governance.
 5. For future revisions, keep a new versioned banner filename and update the brand guide and references in the same PR.
 
-## 6. Existing-repository adoption
+## 7. Existing-repository adoption
 
 Treat existing products as an **adoption checklist**, not an assumption of compliance. Review each product independently; record missing assets and follow-up PRs in that product repository. ASTELVO and ORYVA are **reference examples**, not evidence that every item below has been completed.
 
@@ -86,7 +96,7 @@ Treat existing products as an **adoption checklist**, not an assumption of compl
 - [ ] Banner committed locally with a versioned filename and readable at GitHub widths.
 - [ ] SVG full lockup and standalone symbol.
 - [ ] Light, dark, monochrome and small-size variants; app-icon exports.
-- [ ] Concept originals separated from production assets.
+- [ ] Canonical approved source preserved; high-resolution derivatives trace to that source.\n- [ ] Concept originals separated from production assets.
 - [ ] Product brand guide documents approval, palette, typography, locations and usage rules.
 - [ ] Changes merged via feature branch, CI and squash PR.
 
