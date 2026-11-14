@@ -12,6 +12,21 @@ The approved parent-brand banner and [symbol](branding/assets/symbol-canonical-v
 
 Earlier exploratory artwork remains documented in [Visual Identity Concept 01](branding/VISUAL-CONCEPT-01.md); names depicted there are proposals, not confirmed products.
 
+## Ecosystem at a glance
+
+See the [ecosystem relationship diagram](docs/architecture/ECOSYSTEM-MAP.md) for confirmed products, shared repository infrastructure and the independent MarketPilot AI integration target.
+
+| Area | Component | Role |
+|---|---|---|
+| Parent brand | **SUN** | Naming, registry, branding and governance |
+| Repository infrastructure | [STRATA](https://github.com/sunstriker2009/sun-strata) | Reusable repository foundation |
+| Repository infrastructure | [FOUNDRY](https://github.com/sunstriker2009/sun-foundry) | Repository factory and governance verification |
+| Confirmed product | [ORYVA](https://github.com/sunstriker2009/sun-oryva) | Identity and security platform — SUN-001 |
+| Confirmed product | [ASTELVO](https://github.com/sunstriker2009/sun-astelvo) | Scripting workspace — SUN-009 |
+| Independent application | [MarketPilot AI](https://github.com/sunstriker2009/marketpilot-ai) | Planned ORYVA integration target; not a registered SUN product |
+
+STRATA and FOUNDRY are tracked in the [infrastructure registry](registry/INFRASTRUCTURE.md), separately from numbered SUN products.
+
 ## Confirmed products
 
 **ORYVA by Sun** — Identity. Trust. Protection.  
@@ -38,6 +53,8 @@ Registry: **SUN-009 — CONFIRMED**. Technical identity: `Sun.Workspace`. Reposi
 | [ORYVA product documentation](https://github.com/sunstriker2009/sun-oryva) | Architecture, design system, engineering roadmap and implementation (maintained outside SUN ecosystem) |
 | [Visual Identity Concept 01](branding/VISUAL-CONCEPT-01.md) | Artwork and design exploration |
 | [Product Registry](registry/PRODUCTS.md) | Confirmed and proposed product names |
+| [Infrastructure Registry](registry/INFRASTRUCTURE.md) | STRATA and FOUNDRY, separately from product IDs |
+| [Ecosystem Map](docs/architecture/ECOSYSTEM-MAP.md) | Mermaid diagram of current organizational relationships |
 | [Machine-readable Registry](registry/products.json) | Structured product metadata |
 | [Brand Architecture Decision](decisions/0001-sun-brand-architecture.md) | Endorsed brand model |
 | [HALO → ORYVA Decision](decisions/0002-halo-to-oryva.md) | Historical rename rationale |
@@ -48,7 +65,7 @@ Registry: **SUN-009 — CONFIRMED**. Technical identity: `Sun.Workspace`. Reposi
 
 ## Registry status
 
-**Confirmed:** ORYVA, ASTELVO. FOUNDRY is the SUN repository-provisioning tool.  
+**Confirmed products:** ORYVA (SUN-001), ASTELVO (SUN-009). **Infrastructure:** STRATA and FOUNDRY (no product IDs).  
 **Proposed only:** ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON, FORGE. These are not approved products and must not trigger automatic project creation.
 
 ## Product repository branding
