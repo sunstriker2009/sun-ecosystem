@@ -9,7 +9,7 @@ flowchart TD
     STRATA["STRATA — repository template"]
     FOUNDRY["FOUNDRY — repository factory"]
     ORYVA["ORYVA — identity and security platform (SUN-001)"]
-    ASTELVO["ASTELVO — scripting workspace (SUN-009)"]
+    ASTELVO["ASTELVO — scripting workspace (SUN-002)"]
     MARKET["MarketPilot AI — independent application"]
 
     SUN -->|governs branding and policy| STRATA
