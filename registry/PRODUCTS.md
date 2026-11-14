@@ -14,6 +14,8 @@
 | SUN-008 | FORGE | Developer tools and utilities | PROPOSED | TBD |
 | SUN-009 | **ASTELVO** | Interactive scripting workspace and saved connections | **CONFIRMED** | Sun.Workspace |
 
+STRATA and FOUNDRY are tracked as established SUN infrastructure in [INFRASTRUCTURE.md](INFRASTRUCTURE.md), not as numbered products. MarketPilot AI remains an independent application and is not part of the SUN product registry.
+
 ## SUN-001 — ORYVA
 - **Public identity:** ORYVA by Sun
 - **Tagline:** Identity. Trust. Protection.
