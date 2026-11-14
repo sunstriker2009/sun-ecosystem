@@ -1,14 +1,16 @@
+![SUN — The Product Ecosystem](branding/assets/readme-banner-v1.png)
+
 # ☀️ SUN Product Ecosystem
 
 **One source. Many independent products.**
 
 This repository is the canonical reference for SUN product naming, brand architecture, visual identity direction, product registry, and recorded branding decisions. It does **not** contain application implementation or development milestones.
 
-## Visual identity — Concept 01
+## SUN parent identity
 
-![SUN and ORYVA visual identity concept](branding/assets/a_sleek_high_end_branding_identity_presentation_m.png)
+The approved parent-brand banner and [symbol](branding/assets/symbol-canonical-v1.png) represent the SUN product family. Compact SVGs are simplified adaptations of the approved symbol. See the [SUN Parent Brand Guide](branding/BRAND-GUIDE.md).
 
-Explore the [concept notes](branding/VISUAL-CONCEPT-01.md). This is an **exploratory concept**, not a finalized production logo. The other product names pictured remain proposals only.
+Earlier exploratory artwork remains documented in [Visual Identity Concept 01](branding/VISUAL-CONCEPT-01.md); names depicted there are proposals, not confirmed products.
 
 ## Confirmed products
 
