@@ -18,9 +18,9 @@ Registry: **SUN-001 — CONFIRMED**. Commercial naming clearance is **pending**.
 
 ORYVA supersedes the earlier name HALO. Technical naming remains `Sun.Security`; product repository: [sun-oryva](https://github.com/sunstriker2009/sun-oryva). MarketPilot AI is an independent application and initial integration target.
 
-**ASTELVO by Sun** — Connect. Script. Explore.  
-Interactive scripting workspace, initially for SQL Server and PostgreSQL.  
-Registry: **SUN-009 — CONFIRMED**. Technical identity: `Sun.Workspace`. Repository creation and commercial clearance are pending.
+**ASTELVO by Sun** — Organize. Script. Explore.  
+Local code organizer and interactive scripting workspace, with language-aware editing and planned JavaScript, Python and C# runtime adapters.  
+Registry: **SUN-009 — CONFIRMED**. Technical identity: `Sun.Workspace`. Repository established; commercial clearance remains pending.
 
 ## Documentation
 
@@ -46,7 +46,7 @@ Registry: **SUN-009 — CONFIRMED**. Technical identity: `Sun.Workspace`. Reposi
 
 ## Registry status
 
-**Confirmed:** ORYVA, ASTELVO.  
+**Confirmed:** ORYVA, ASTELVO. FOUNDRY is the SUN repository-provisioning tool.  
 **Proposed only:** ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON, FORGE. These are not approved products and must not trigger automatic project creation.
 
 ## Product repository branding
