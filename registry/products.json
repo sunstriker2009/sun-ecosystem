@@ -35,6 +35,15 @@
   ],
   "infrastructure": [
     {
+      "id": "SUN-G001",
+      "name": "SUN Ecosystem",
+      "status": "ESTABLISHED",
+      "classification": "GOVERNANCE_AUTHORITY",
+      "purpose": "SUN portfolio registry, branding and governance",
+      "repository": "sun-ecosystem"
+    },
+    {
+      "id": "SUN-G002",
       "name": "STRATA",
       "status": "ESTABLISHED",
       "classification": "REPOSITORY_TEMPLATE",
@@ -42,6 +51,7 @@
       "repository": "sun-strata"
     },
     {
+      "id": "SUN-G003",
       "name": "FOUNDRY",
       "status": "ESTABLISHED",
       "classification": "REPOSITORY_FACTORY",
@@ -90,8 +100,19 @@
     }
   ],
   "idPolicy": {
-    "assignment": "sequential_on_confirmation",
-    "nextId": "SUN-003",
-    "proposalsReserveIds": false
+    "productSeries": {
+      "format": "SUN-NNN",
+      "assignment": "sequential_on_confirmation",
+      "nextId": "SUN-003",
+      "proposalsReserveIds": false
+    },
+    "governanceSeries": {
+      "format": "SUN-GNNN",
+      "assignment": "sequential_on_establishment",
+      "nextId": "SUN-G004",
+      "proposalsReserveIds": false
+    },
+    "retiredIdsReusable": false,
+    "renamePreservesId": true
   }
 }
