@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "updated": "2026-11-14",
   "parentBrand": "SUN",
   "products": [
@@ -20,51 +20,6 @@
     },
     {
       "id": "SUN-002",
-      "name": "ORBIT",
-      "status": "PROPOSED",
-      "purpose": "Workflow orchestration and coordination",
-      "suggestedNamespace": "Sun.Orchestration"
-    },
-    {
-      "id": "SUN-003",
-      "name": "NOVA",
-      "status": "PROPOSED",
-      "purpose": "AI agents and intelligent automation",
-      "suggestedNamespace": "Sun.Agents"
-    },
-    {
-      "id": "SUN-004",
-      "name": "PRISM",
-      "status": "PROPOSED",
-      "purpose": "AI intelligence, research and insights"
-    },
-    {
-      "id": "SUN-005",
-      "name": "PULSAR",
-      "status": "PROPOSED",
-      "purpose": "Event processing and messaging"
-    },
-    {
-      "id": "SUN-006",
-      "name": "LUMEN",
-      "status": "PROPOSED",
-      "purpose": "Analytics and visualization",
-      "suggestedNamespace": "Sun.Analytics"
-    },
-    {
-      "id": "SUN-007",
-      "name": "BEACON",
-      "status": "PROPOSED",
-      "purpose": "Monitoring and observability"
-    },
-    {
-      "id": "SUN-008",
-      "name": "FORGE",
-      "status": "PROPOSED",
-      "purpose": "Developer tools and utilities"
-    },
-    {
-      "id": "SUN-009",
       "name": "ASTELVO",
       "status": "CONFIRMED",
       "purpose": "Local code organizer and interactive scripting workspace with extensible language execution adapters",
@@ -93,5 +48,50 @@
       "tagline": "Build. Standardize. Launch.",
       "repository": "sun-foundry"
     }
-  ]
+  ],
+  "proposals": [
+    {
+      "name": "ORBIT",
+      "status": "PROPOSED",
+      "purpose": "Workflow orchestration and coordination",
+      "suggestedNamespace": "Sun.Orchestration"
+    },
+    {
+      "name": "NOVA",
+      "status": "PROPOSED",
+      "purpose": "AI agents and intelligent automation",
+      "suggestedNamespace": "Sun.Agents"
+    },
+    {
+      "name": "PRISM",
+      "status": "PROPOSED",
+      "purpose": "AI intelligence, research and insights"
+    },
+    {
+      "name": "PULSAR",
+      "status": "PROPOSED",
+      "purpose": "Event processing and messaging"
+    },
+    {
+      "name": "LUMEN",
+      "status": "PROPOSED",
+      "purpose": "Analytics and visualization",
+      "suggestedNamespace": "Sun.Analytics"
+    },
+    {
+      "name": "BEACON",
+      "status": "PROPOSED",
+      "purpose": "Monitoring and observability"
+    },
+    {
+      "name": "FORGE",
+      "status": "PROPOSED",
+      "purpose": "Developer tools and utilities"
+    }
+  ],
+  "idPolicy": {
+    "assignment": "sequential_on_confirmation",
+    "nextId": "SUN-003",
+    "proposalsReserveIds": false
+  }
 }
