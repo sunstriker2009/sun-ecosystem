@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-14 — Sequential product IDs
+- Reassign ASTELVO from SUN-009 to SUN-002 by owner decision; preserve the original decision with an explicit correction.
+- Remove reserved IDs from all unapproved product proposals; next confirmed product receives SUN-003.
+- Record sequential-on-confirmation numbering policy in both registry formats.
+
 ## 2026-11-14 — Ecosystem synchronization
 - Record STRATA and FOUNDRY as infrastructure, separate from the numbered SUN product registry.
 - Add ecosystem relationship map distinguishing implemented infrastructure, confirmed products, and planned ORYVA–MarketPilot AI integration.
