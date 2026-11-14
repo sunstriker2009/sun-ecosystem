@@ -22,7 +22,7 @@ See the [ecosystem relationship diagram](docs/architecture/ECOSYSTEM-MAP.md) for
 | Repository infrastructure | [STRATA](https://github.com/sunstriker2009/sun-strata) | Reusable repository foundation |
 | Repository infrastructure | [FOUNDRY](https://github.com/sunstriker2009/sun-foundry) | Repository factory and governance verification |
 | Confirmed product | [ORYVA](https://github.com/sunstriker2009/sun-oryva) | Identity and security platform — SUN-001 |
-| Confirmed product | [ASTELVO](https://github.com/sunstriker2009/sun-astelvo) | Scripting workspace — SUN-009 |
+| Confirmed product | [ASTELVO](https://github.com/sunstriker2009/sun-astelvo) | Scripting workspace — SUN-002 |
 | Independent application | [MarketPilot AI](https://github.com/sunstriker2009/marketpilot-ai) | Planned ORYVA integration target; not a registered SUN product |
 
 STRATA and FOUNDRY are tracked in the [infrastructure registry](registry/INFRASTRUCTURE.md), separately from numbered SUN products.
@@ -37,7 +37,7 @@ ORYVA supersedes the earlier name HALO. Technical naming remains `Sun.Security`;
 
 **ASTELVO by Sun** — Organize. Script. Explore.  
 Local code organizer and interactive scripting workspace, with language-aware editing and planned JavaScript, Python and C# runtime adapters.  
-Registry: **SUN-009 — CONFIRMED**. Technical identity: `Sun.Workspace`. Repository established; commercial clearance remains pending.
+Registry: **SUN-002 — CONFIRMED**. Technical identity: `Sun.Workspace`. Repository established; commercial clearance remains pending.
 
 ## Documentation
 
@@ -60,13 +60,13 @@ Registry: **SUN-009 — CONFIRMED**. Technical identity: `Sun.Workspace`. Reposi
 | [HALO → ORYVA Decision](decisions/0002-halo-to-oryva.md) | Historical rename rationale |
 | [Product Proposal Template](templates/PRODUCT-PROPOSAL.md) | Starting new proposals |
 | [Naming Review Template](templates/NAMING-REVIEW.md) | Candidate evaluation and clearance |
-| [ASTELVO naming decision](decisions/0003-astelvo-script-workspace.md) | SUN-009 approval and naming rationale |
+| [ASTELVO naming decision](decisions/0003-astelvo-script-workspace.md) | SUN-002 approval and naming rationale |
 | [Changelog](CHANGELOG.md) | Version history |
 
 ## Registry status
 
-**Confirmed products:** ORYVA (SUN-001), ASTELVO (SUN-009). **Infrastructure:** STRATA and FOUNDRY (no product IDs).  
-**Proposed only:** ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON, FORGE. These are not approved products and must not trigger automatic project creation.
+**Confirmed products:** ORYVA (SUN-001), ASTELVO (SUN-002). **Infrastructure:** STRATA and FOUNDRY (no product IDs).  
+**Unnumbered proposals:** ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON, FORGE. Proposed names have no reserved SUN IDs and must not trigger automatic project creation. The next confirmed product receives **SUN-003**.
 
 ## Product repository branding
 
