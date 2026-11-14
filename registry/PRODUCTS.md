@@ -18,7 +18,7 @@
 - **Public identity:** ORYVA by Sun
 - **Tagline:** Identity. Trust. Protection.
 - **Name:** Confirmed by product owner 2026-10-30; supersedes HALO.
-- **Repository convention:** sun-oryva (proposed repository, not a claim it exists).
+- **Repository:** [sun-oryva](https://github.com/sunstriker2009/sun-oryva) (established).
 - **Backend packages:** Sun.Security.*
 - **Frontend packages:** @sun-security/*
 - **Initial integration target:** MarketPilot AI, an independent application.
@@ -30,10 +30,10 @@ The proposed names ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON and FORGE have pote
 
 ## SUN-009 — ASTELVO
 - **Public identity:** ASTELVO by Sun
-- **Tagline:** Connect. Script. Explore.
+- **Tagline:** Organize. Script. Explore.
 - **Name:** Confirmed by product owner 2026-11-12 ("Sounds good, kick off").
 - **Technical identity:** Sun.Workspace; Sun.Workspace.*; @sun-workspace/*.
-- **Repository convention:** sun-astelvo; creation pending.
-- **Initial scope:** Local desktop workspace for SQL Server and PostgreSQL scripting, saved profiles, per-profile script folders, single-attempt connection flow, Windows authentication and Kubernetes forwarding.
+- **Repository:** [sun-astelvo](https://github.com/sunstriker2009/sun-astelvo) (established).
+- **Initial scope:** Local code and scripting workspace with folders, tags, smart collections and planned language-aware JavaScript, Python and C# execution adapters. Database connections and Kubernetes support are future extensions; see the product roadmap.
 - **Extension direction:** Additional execution providers and transports; implementation planning belongs in the product repository.
 - **Commercial clearance:** PENDING. Preliminary exact-name web screening only; trademarks, domains and package availability have not been cleared.

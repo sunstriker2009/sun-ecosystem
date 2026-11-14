@@ -3,7 +3,7 @@
 **Version:** 1.0  
 **Status:** Approved direction — product-specific assets require owner approval  
 **Scope:** All SUN product repositories, new and existing  
-**Reference implementations:** [ASTELVO](https://github.com/sunstriker2009/sun-astelvo) and [ORYVA](https://github.com/sunstriker2009/sun-oryva)
+**Reference implementations:** [FOUNDRY](https://github.com/sunstriker2009/sun-foundry/blob/main/branding/ADOPTION-CHECKLIST.md) (canonical layout and migration checklist), [ASTELVO](https://github.com/sunstriker2009/sun-astelvo) and [ORYVA](https://github.com/sunstriker2009/sun-oryva) (product-specific adaptations)
 
 This standard complements the [SUN Visual Identity](../../branding/VISUAL-IDENTITY.md) and [Git Workflow & Merge Policy](GIT-WORKFLOW.md). A product's own brand guide records approved choices; the ecosystem guide governs consistency.
 
