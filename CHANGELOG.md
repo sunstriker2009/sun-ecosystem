@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-14 — Ecosystem synchronization
+- Record STRATA and FOUNDRY as infrastructure, separate from the numbered SUN product registry.
+- Add ecosystem relationship map distinguishing implemented infrastructure, confirmed products, and planned ORYVA–MarketPilot AI integration.
+- Improve README navigation and synchronize machine-readable infrastructure metadata without changing existing product IDs or approval statuses.
+
 ## 2026-11-12
 - Confirm ASTELVO by Sun as SUN-009 for an extensible scripting workspace, initially SQL Server and PostgreSQL.
 - Record the naming decision and capability identifiers; commercial clearance remains pending.
