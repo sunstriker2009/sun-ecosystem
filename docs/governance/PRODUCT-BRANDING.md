@@ -54,29 +54,61 @@ Provide complementary **SVG** assets for application headers, internal UI and do
 
 Compact assets must retain the same recognizable symbol, SUN arc, palette logic and typography as the panoramic banner, simplified appropriately for small placements. Avoid embedding raster artwork inside an SVG as a substitute for a vector icon.
 
-## 5. Asset organization
+## 5. Standard asset naming and lifecycle
 
-Recommended product-repository structure:
+Use **purpose-first, product-neutral names** in each product repository. The repository already identifies the product, so filenames need not repeat its name.
+
+| Asset class | Standard filename or pattern | Rule |
+| --- | --- | --- |
+| Approved README artwork | `branding/assets/readme-banner-v1.png` | Version on replacement; preserve approved composition |
+| Approved original artwork | `branding/archive/originals/readme-banner-v1.png` | Exact, immutable copy of the approved source when the banner itself is the original |
+| Canonical transparent symbol | `branding/assets/symbol-canonical-v1.png` | Version on source revision, not on every export |
+| PNG icons | `branding/assets/icons/icon-16.png`, `icon-24.png`, etc. | Size suffix is pixel dimension; derive from approved version |
+| Vector symbol | `branding/assets/symbol-dark.svg`, `symbol-light.svg`, `symbol-mono.svg`, `symbol-small.svg` | Usage or theme variant |
+| Full lockup | `branding/assets/lockup-dark.svg`, `lockup-light.svg`, `lockup-mono.svg` | Usage or theme variant |
+| Comparison/review sheets | `branding/archive/intermediate/<descriptive-name>.png` | Never used by production |
+| Rejected/exploratory concepts | `branding/archive/concepts/concept-01.png` | Preserve relevant history and approval state |
+| Superseded production assets | `branding/archive/retired/<original-filename>` | Archive only if needed for provenance |
+
+Recommended structure:
 
 ```text
 branding/
   BRAND-GUIDE.md
-  concepts/
-    concept-01.png
-  assets/
+  assets/                    # Approved, actively used assets only
     readme-banner-v1.png
-    lockup-dark.svg
-    lockup-light.svg
-    lockup-mono.svg
+    symbol-canonical-v1.png
     symbol-dark.svg
     symbol-light.svg
     symbol-mono.svg
     symbol-small.svg
+    lockup-dark.svg
+    lockup-light.svg
+    lockup-mono.svg
     icons/
-      app-icon-256.png
+      icon-16.png
+      icon-24.png
+      icon-32.png
+      icon-48.png
+      icon-64.png
+      icon-128.png
+      icon-256.png
+      icon-512.png
+      icon-1024.png
+  archive/                   # Historical and nonproduction artifacts
+    README.md
+    originals/
+      readme-banner-v1.png
+    concepts/
+      concept-01.png
+    intermediate/
+      small-icon-comparison.png
+    retired/
 ```
 
-Naming can vary to accommodate existing repositories. **Separate exploratory concepts from approved production assets.** Keep README image references relative to repository paths. Maintain a short asset manifest in `BRAND-GUIDE.md` describing purpose, version and approved usage. GitHub Social Preview may use the same visual direction, but its upload through GitHub Settings is a separate operation.
+**Source-of-truth rule:** When the approved concept is identical to the production banner, archive an **exact byte-for-byte copy** under `archive/originals/` and retain the production banner in `assets/`. Do not manufacture a separate concept image. If the approved original is different, preserve its real file and document its provenance.
+
+**Migration rule:** Existing filenames are allowed temporarily. New assets follow the standard; rename legacy files only in an explicit migration PR that updates every reference. Do not rename a live README banner solely for cosmetic consistency. Keep intermediate assets out of the production directory; retain only approved masters and purpose-built production exports there. Preserve a manifest mapping legacy filenames to the standard.
 
 ## 6. Repository workflow
 
