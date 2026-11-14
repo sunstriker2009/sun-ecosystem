@@ -28,7 +28,7 @@ Registry: **SUN-009 — CONFIRMED**. Technical identity: `Sun.Workspace`. Reposi
 |---|---|
 | [Brand Guidelines](branding/BRAND-GUIDELINES.md) | SUN vision, positioning and architecture |
 | [Repository Factory](https://github.com/sunstriker2009/sun-foundry) | Automated repository creation, CI initialization, governance application, verification and recovery |
-| [Repository Template](https://github.com/sunstriker2009/sun-repo-template) | Standard starting structure and CI workflows for new SUN repositories |
+| [STRATA — Repository Foundation](https://github.com/sunstriker2009/sun-strata) | Standard starting structure and CI workflows for new SUN repositories |
 | [Git Workflow & Merge Policy v1.0](docs/governance/GIT-WORKFLOW.md) | Authoritative cross-repository PR, squash merge, CI, review and release governance |
 | [Naming Guidelines v1.0](branding/NAMING-GUIDELINES.md) | Naming rules, scoring, workflow and clearance |
 | [Product Repository Branding Standard](docs/governance/PRODUCT-BRANDING.md) | Approved concept workflow, README banners, SVG assets and existing-repository adoption checklist |
@@ -55,7 +55,7 @@ SUN product repositories follow the [Product Repository Branding Standard](docs/
 
 ## Repository provisioning
 
-Use [Repository Factory](https://github.com/sunstriker2009/sun-foundry) to create and initialize new SUN repositories from the [standard template](https://github.com/sunstriker2009/sun-repo-template). The Factory provisions CI and governance, verifies supported enforcement, and supports resuming interrupted setup. [Repository Maintenance](https://github.com/sunstriker2009/sun-foundry/actions/workflows/repository-factory-resume.yml) handles existing-repository diagnosis and governance changes. For operation and limitations, see the [Factory workflow guide](https://github.com/sunstriker2009/sun-foundry/blob/main/docs/WORKFLOWS.md). Private repositories on unsupported GitHub plans cannot be treated as strictly verified; the Factory fails closed in that case.
+Use [FOUNDRY — Repository Factory](https://github.com/sunstriker2009/sun-foundry) to create and initialize new SUN repositories from the [STRATA template](https://github.com/sunstriker2009/sun-strata). The Factory provisions CI and governance, verifies supported enforcement, and supports resuming interrupted setup. [Repository Maintenance](https://github.com/sunstriker2009/sun-foundry/actions/workflows/repository-factory-resume.yml) handles existing-repository diagnosis and governance changes. For operation and limitations, see the [Factory workflow guide](https://github.com/sunstriker2009/sun-foundry/blob/main/docs/WORKFLOWS.md). Private repositories on unsupported GitHub plans cannot be treated as strictly verified; the Factory fails closed in that case.
 
 ## Governance
 
