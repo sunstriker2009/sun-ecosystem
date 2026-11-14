@@ -18,14 +18,14 @@ See the [ecosystem relationship diagram](docs/architecture/ECOSYSTEM-MAP.md) for
 
 | Area | Component | Role |
 |---|---|---|
-| Parent brand | **SUN** | Naming, registry, branding and governance |
-| Repository infrastructure | [STRATA](https://github.com/sunstriker2009/sun-strata) | Reusable repository foundation |
-| Repository infrastructure | [FOUNDRY](https://github.com/sunstriker2009/sun-foundry) | Repository factory and governance verification |
+| Governance | **SUN Ecosystem** | SUN-G001 — naming, registry, branding and governance |
+| Repository infrastructure | [STRATA](https://github.com/sunstriker2009/sun-strata) | SUN-G002 — reusable repository foundation |
+| Repository infrastructure | [FOUNDRY](https://github.com/sunstriker2009/sun-foundry) | SUN-G003 — repository factory and governance verification |
 | Confirmed product | [ORYVA](https://github.com/sunstriker2009/sun-oryva) | Identity and security platform — SUN-001 |
 | Confirmed product | [ASTELVO](https://github.com/sunstriker2009/sun-astelvo) | Scripting workspace — SUN-002 |
 | Independent application | [MarketPilot AI](https://github.com/sunstriker2009/marketpilot-ai) | Planned ORYVA integration target; not a registered SUN product |
 
-STRATA and FOUNDRY are tracked in the [infrastructure registry](registry/INFRASTRUCTURE.md), separately from numbered SUN products.
+SUN Ecosystem, STRATA and FOUNDRY are tracked in the [governance and infrastructure registry](registry/INFRASTRUCTURE.md) using the separate SUN-G series.
 
 ## Confirmed products
 
@@ -53,7 +53,7 @@ Registry: **SUN-002 — CONFIRMED**. Technical identity: `Sun.Workspace`. Reposi
 | [ORYVA product documentation](https://github.com/sunstriker2009/sun-oryva) | Architecture, design system, engineering roadmap and implementation (maintained outside SUN ecosystem) |
 | [Visual Identity Concept 01](branding/VISUAL-CONCEPT-01.md) | Artwork and design exploration |
 | [Product Registry](registry/PRODUCTS.md) | Confirmed and proposed product names |
-| [Infrastructure Registry](registry/INFRASTRUCTURE.md) | STRATA and FOUNDRY, separately from product IDs |
+| [Governance & Infrastructure Registry](registry/INFRASTRUCTURE.md) | SUN-G001 through SUN-G003, separate from product IDs |
 | [Ecosystem Map](docs/architecture/ECOSYSTEM-MAP.md) | Mermaid diagram of current organizational relationships |
 | [Machine-readable Registry](registry/products.json) | Structured product metadata |
 | [Brand Architecture Decision](decisions/0001-sun-brand-architecture.md) | Endorsed brand model |
@@ -65,7 +65,7 @@ Registry: **SUN-002 — CONFIRMED**. Technical identity: `Sun.Workspace`. Reposi
 
 ## Registry status
 
-**Confirmed products:** ORYVA (SUN-001), ASTELVO (SUN-002). **Infrastructure:** STRATA and FOUNDRY (no product IDs).  
+**Confirmed products:** ORYVA (SUN-001), ASTELVO (SUN-002). **Governance & infrastructure:** SUN Ecosystem (SUN-G001), STRATA (SUN-G002), FOUNDRY (SUN-G003).  
 **Unnumbered proposals:** ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON, FORGE. Proposed names have no reserved SUN IDs and must not trigger automatic project creation. The next confirmed product receives **SUN-003**.
 
 ## Product repository branding
