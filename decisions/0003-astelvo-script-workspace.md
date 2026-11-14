@@ -17,3 +17,7 @@ This repository records brand decisions only. Architecture, delivery milestones,
 
 ## Clearance
 Internal naming approval is complete. Commercial clearance remains PENDING: no trademark, domain, GitHub, NuGet or npm availability claim is made. Initial exact-name web searches surfaced no obvious ASTELVO match; that is not commercial clearance.
+
+## Registry ID correction — 2026-11-14
+
+The product owner changed the SUN registry policy to assign IDs **sequentially upon product confirmation**, rather than reserving IDs for proposals. ASTELVO is therefore **SUN-002** (previously SUN-009). The original decision text above is retained as historical context; its ID and proposal-reservation statements are superseded by this correction. The proposed names ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON and FORGE no longer hold reserved IDs. The next approved product receives SUN-003.
