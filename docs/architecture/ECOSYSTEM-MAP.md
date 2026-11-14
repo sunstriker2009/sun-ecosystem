@@ -5,9 +5,9 @@
 
 ```mermaid
 flowchart TD
-    SUN["SUN — parent identity and governance"]
-    STRATA["STRATA — repository template"]
-    FOUNDRY["FOUNDRY — repository factory"]
+    SUN["SUN Ecosystem — governance (SUN-G001)"]
+    STRATA["STRATA — repository template (SUN-G002)"]
+    FOUNDRY["FOUNDRY — repository factory (SUN-G003)"]
     ORYVA["ORYVA — identity and security platform (SUN-001)"]
     ASTELVO["ASTELVO — scripting workspace (SUN-002)"]
     MARKET["MarketPilot AI — independent application"]
