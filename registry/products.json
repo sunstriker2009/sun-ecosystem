@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated": "2026-11-12",
+  "updated": "2026-11-14",
   "parentBrand": "SUN",
   "products": [
     {
@@ -76,6 +76,22 @@
       "frontendPackages": "@sun-workspace/*",
       "commercialClearance": "PENDING",
       "confirmedOn": "2026-11-12"
+    }
+  ],
+  "infrastructure": [
+    {
+      "name": "STRATA",
+      "status": "ESTABLISHED",
+      "classification": "REPOSITORY_TEMPLATE",
+      "tagline": "Structure. Foundation. Growth.",
+      "repository": "sun-strata"
+    },
+    {
+      "name": "FOUNDRY",
+      "status": "ESTABLISHED",
+      "classification": "REPOSITORY_FACTORY",
+      "tagline": "Build. Standardize. Launch.",
+      "repository": "sun-foundry"
     }
   ]
 }
