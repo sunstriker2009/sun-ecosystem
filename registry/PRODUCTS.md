@@ -21,7 +21,7 @@
 
 These names are **unapproved and unnumbered**. The next approved product receives **SUN-003**, regardless of its candidate name. Proposed names may be revised, withdrawn or approved later.
 
-STRATA and FOUNDRY are tracked as established SUN infrastructure in [INFRASTRUCTURE.md](INFRASTRUCTURE.md), not as numbered products. MarketPilot AI remains an independent application and is not part of the SUN product registry.
+SUN Ecosystem (SUN-G001), STRATA (SUN-G002) and FOUNDRY (SUN-G003) are tracked in the separate [governance and infrastructure registry](INFRASTRUCTURE.md). They do not consume SUN-NNN product IDs. MarketPilot AI remains an independent application and is not part of the SUN product registry.
 
 ## SUN-001 — ORYVA
 - **Public identity:** ORYVA by Sun
