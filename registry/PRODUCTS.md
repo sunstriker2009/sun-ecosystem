@@ -1,18 +1,25 @@
-# SUN Product Registry v1.0
+# SUN Product Registry v1.1
 
-**Updated:** 2026-11-12. Product IDs are stable across renames. A proposal is not an approved product or authorization to create a repository.
+**Updated:** 2026-11-14. Product IDs are assigned sequentially **only upon confirmation** (SUN-001, SUN-002, ...), and remain stable after assignment except for explicitly recorded corrections. Proposals do not reserve IDs or authorize repository creation.
 
 | ID | Name | Purpose | Status | Technical identity |
 |---|---|---|---|---|
 | SUN-001 | **ORYVA** | Identity, authentication, authorization, security | **CONFIRMED** | Sun.Security |
-| SUN-002 | ORBIT | Workflow orchestration and coordination | PROPOSED | Sun.Orchestration (suggested) |
-| SUN-003 | NOVA | AI agents and intelligent automation | PROPOSED | Sun.Agents (suggested) |
-| SUN-004 | PRISM | AI intelligence, research, insights | PROPOSED | TBD |
-| SUN-005 | PULSAR | Event processing and messaging | PROPOSED | TBD |
-| SUN-006 | LUMEN | Analytics and visualization | PROPOSED | Sun.Analytics (suggested) |
-| SUN-007 | BEACON | Monitoring and observability | PROPOSED | TBD |
-| SUN-008 | FORGE | Developer tools and utilities | PROPOSED | TBD |
-| SUN-009 | **ASTELVO** | Interactive scripting workspace and saved connections | **CONFIRMED** | Sun.Workspace |
+| SUN-002 | **ASTELVO** | Interactive scripting workspace and saved connections | **CONFIRMED** | Sun.Workspace |
+
+## Unnumbered product proposals
+
+| Candidate | Purpose | Status | Suggested technical identity |
+|---|---|---|---|
+| ORBIT | Workflow orchestration and coordination | PROPOSED | Sun.Orchestration (suggested) |
+| NOVA | AI agents and intelligent automation | PROPOSED | Sun.Agents (suggested) |
+| PRISM | AI intelligence, research, insights | PROPOSED | TBD |
+| PULSAR | Event processing and messaging | PROPOSED | TBD |
+| LUMEN | Analytics and visualization | PROPOSED | Sun.Analytics (suggested) |
+| BEACON | Monitoring and observability | PROPOSED | TBD |
+| FORGE | Developer tools and utilities | PROPOSED | TBD |
+
+These names are **unapproved and unnumbered**. The next approved product receives **SUN-003**, regardless of its candidate name. Proposed names may be revised, withdrawn or approved later.
 
 STRATA and FOUNDRY are tracked as established SUN infrastructure in [INFRASTRUCTURE.md](INFRASTRUCTURE.md), not as numbered products. MarketPilot AI remains an independent application and is not part of the SUN product registry.
 
@@ -30,7 +37,7 @@ STRATA and FOUNDRY are tracked as established SUN infrastructure in [INFRASTRUCT
 ## Naming risk notes
 The proposed names ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON and FORGE have potential existing-software associations and require fresh conflict research before approval. PULSAR in particular overlaps with Apache Pulsar in messaging; FORGE overlaps with Atlassian Forge in developer tools.
 
-## SUN-009 — ASTELVO
+## SUN-002 — ASTELVO
 - **Public identity:** ASTELVO by Sun
 - **Tagline:** Organize. Script. Explore.
 - **Name:** Confirmed by product owner 2026-11-12 ("Sounds good, kick off").
