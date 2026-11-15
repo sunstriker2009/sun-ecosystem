@@ -7,8 +7,8 @@
       "classification": "product",
       "name": "ORYVA",
       "summary": "Identity, authentication, authorization and security",
-      "icon": null,
-      "iconSha256": null
+      "icon": "branding/registry/sun-oryva.png",
+      "iconSha256": "e82544750a39ce4bbddce360225a8a5e93b572b48ec91c8151d617185bbe3187"
     },
     {
       "repository": "sunstriker2009/sun-astelvo",
