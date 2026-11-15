@@ -25,3 +25,6 @@ The approved panoramic banner appears at the top of README.md. The earlier explo
 ## Governance
 
 No product registry rename. No new product ID. Preserve existing governance, naming decisions and historical brand concepts.
+## Active asset directory convention
+
+Only `branding/assets/symbol.png` and `branding/assets/readme-banner.png` are active parent-brand images at the root of `branding/assets/`. Exploratory images, legacy SVG adaptations, and their reference READMEs are kept under `branding/assets/refs/` (including `refs/vector/`). These are reference materials, not production assets. Byte-identical versioned original PNGs remain preserved separately under `branding/archive/originals/`.
