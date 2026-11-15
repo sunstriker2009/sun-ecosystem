@@ -39,7 +39,7 @@ def render(root: Path) -> str:
                 raise ValueError(f"Invalid or duplicate registry ID: {ident}")
             seen_ids.add(ident)
             expected = known.get(ident)
-            if expected is None or expected["repository"] != repo:
+            if expected is None or f"sunstriker2009/{expected['repository']}" != repo:
                 raise ValueError(f"Unapproved registry identity: {ident} / {repo}")
             if (ident.startswith("SUN-G")) != (category == "infrastructure"):
                 raise ValueError(f"Classification does not match registry ID: {ident}")
