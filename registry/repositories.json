@@ -34,8 +34,8 @@
       "classification": "infrastructure",
       "name": "FOUNDRY",
       "summary": "Repository factory and governance verification",
-      "icon": null,
-      "iconSha256": null
+      "icon": "branding/registry/sun-foundry.png",
+      "iconSha256": "af689d697e7cb0dca847006ba520e53bed3e546285182bfd9273eb5c528adbe3"
     }
   ]
 }
