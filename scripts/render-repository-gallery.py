@@ -56,10 +56,10 @@ def render(root: Path) -> str:
                 raise ValueError(f"Icon digest without icon for {repo}")
             tile = f"<strong>{name}</strong>"
         else:
-            if not isinstance(icon, str) or not re.fullmatch(r"branding/registry/[a-z0-9-]+\\.png", icon):
+            if not isinstance(icon, str) or not re.fullmatch(r"branding/registry/[a-z0-9-]+\.png", icon):
                 raise ValueError(f"Unsafe icon path for {repo}")
             path = root / icon
-            if not path.is_file() or path.read_bytes()[:8] != b"\\x89PNG\\r\\n\\x1a\\n":
+            if not path.is_file() or path.read_bytes()[:8] != b"\x89PNG\r\n\x1a\n":
                 raise ValueError(f"Missing or invalid PNG for {repo}")
             if not isinstance(digest, str) or not SHA_RE.fullmatch(digest) or hashlib.sha256(path.read_bytes()).hexdigest() != digest:
                 raise ValueError(f"Icon hash mismatch for {repo}")
