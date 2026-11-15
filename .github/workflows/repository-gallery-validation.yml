@@ -1,13 +1,8 @@
 name: Repository gallery validation
 on:
   pull_request:
-    paths:
-      - 'registry/repositories.json'
-      - 'registry/products.json'
-      - 'branding/registry/**'
-      - 'scripts/render-repository-gallery.py'
-      - 'README.md'
-      - '.github/workflows/repository-gallery-validation.yml'
+  push:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
