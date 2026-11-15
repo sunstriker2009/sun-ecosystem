@@ -31,7 +31,7 @@ Generated from [the repository catalog](registry/repositories.json). Approved id
 <table>
 <tr>
 <td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-foundry"><strong>FOUNDRY</strong></a><p><strong>FOUNDRY</strong></p><small>SUN-G003 · Repository factory and governance verification</small></td>
-<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-strata"><strong>STRATA</strong></a><p><strong>STRATA</strong></p><small>SUN-G002 · Reusable repository template</small></td>
+<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-strata"><img src="branding/registry/sun-strata.png" alt="STRATA icon" width="72" height="72"></a><p><strong>STRATA</strong></p><small>SUN-G002 · Reusable repository template</small></td>
 </tr>
 </table>
 <!-- SUN-REPOSITORY-GALLERY:END -->
