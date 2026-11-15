@@ -1,9 +1,41 @@
 {
   "schemaVersion": 1,
   "repositories": [
-    {"repository": "sunstriker2009/sun-oryva", "registryId": "SUN-001", "classification": "product", "name": "ORYVA", "summary": "Identity, authentication, authorization and security", "icon": null, "iconSha256": null},
-    {"repository": "sunstriker2009/sun-astelvo", "registryId": "SUN-002", "classification": "product", "name": "ASTELVO", "summary": "Local code organizer and interactive scripting workspace", "icon": null, "iconSha256": null},
-    {"repository": "sunstriker2009/sun-strata", "registryId": "SUN-G002", "classification": "infrastructure", "name": "STRATA", "summary": "Reusable repository template", "icon": null, "iconSha256": null},
-    {"repository": "sunstriker2009/sun-foundry", "registryId": "SUN-G003", "classification": "infrastructure", "name": "FOUNDRY", "summary": "Repository factory and governance verification", "icon": null, "iconSha256": null}
+    {
+      "repository": "sunstriker2009/sun-oryva",
+      "registryId": "SUN-001",
+      "classification": "product",
+      "name": "ORYVA",
+      "summary": "Identity, authentication, authorization and security",
+      "icon": null,
+      "iconSha256": null
+    },
+    {
+      "repository": "sunstriker2009/sun-astelvo",
+      "registryId": "SUN-002",
+      "classification": "product",
+      "name": "ASTELVO",
+      "summary": "Local code organizer and interactive scripting workspace",
+      "icon": "branding/registry/sun-astelvo.png",
+      "iconSha256": "3dc2ddfccaafccf13175bd4f206ae48f578aa1d3b8e55a5c5260b1963f2f19ae"
+    },
+    {
+      "repository": "sunstriker2009/sun-strata",
+      "registryId": "SUN-G002",
+      "classification": "infrastructure",
+      "name": "STRATA",
+      "summary": "Reusable repository template",
+      "icon": null,
+      "iconSha256": null
+    },
+    {
+      "repository": "sunstriker2009/sun-foundry",
+      "registryId": "SUN-G003",
+      "classification": "infrastructure",
+      "name": "FOUNDRY",
+      "summary": "Repository factory and governance verification",
+      "icon": null,
+      "iconSha256": null
+    }
   ]
 }
