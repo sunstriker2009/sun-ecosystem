@@ -16,7 +16,7 @@
 | [Sync Approved SUN Symbol](https://github.com/sunstriker2009/sun-foundry/actions/workflows/sync-approved-sun-symbol.yml) | FOUNDRY | Manual | Preview/apply sync of approved PNG to ecosystem gallery | Merged canonical branding is approved; canonical path eligible for protected squash auto-merge; legacy overrides manual |
 | [Reconcile Approved SUN Symbols](https://github.com/sunstriker2009/sun-foundry/actions/workflows/reconcile-approved-symbols.yml) | FOUNDRY | Daily 08:17 UTC; manual | Compare canonical symbols on product `main` with the gallery; open a PR only when changed | `repository-symbol-sync`; confirmed catalog entries only; gallery PR protected squash auto-merge |
 | [Sync Merged SUN Branding (legacy approval entry)](https://github.com/sunstriker2009/sun-foundry/actions/workflows/propose-symbol-approval.yml) | FOUNDRY | Manual | Compatibility entry point for canonical symbol sync | Owner + `repository-administration`; delegates to canonical sync; no separate approval-ledger PR |
-| [Repository gallery validation](https://github.com/sunstriker2009/sun-ecosystem/actions/workflows/repository-gallery-validation.yml) | Ecosystem | Relevant PR paths; manual | Validate catalog identity, PNG integrity and generated README | Required check as configured; no write operations |
+| [Repository gallery validation](https://github.com/sunstriker2009/sun-ecosystem/actions/workflows/repository-gallery-validation.yml) | Ecosystem | Every PR; main pushes; manual | Universal `gallery` check: validate catalog identity, PNG integrity and generated README | Required check after governance alignment; no write operations |
 | [Symbol approval ledger validation](https://github.com/sunstriker2009/sun-ecosystem/actions/workflows/symbol-approval-validation.yml) | Ecosystem | Relevant PR paths | Validate approved symbol ledger schema, membership and digest format | Read-only; does **not** visually approve artwork |
 | [Symbol sync validation](https://github.com/sunstriker2009/sun-foundry/actions/workflows/symbol-sync-validation.yml) | FOUNDRY | Relevant PR paths | Syntax and safety-invariant checks for sync and approval automation | Read-only CI; no merge decision |
 
@@ -101,3 +101,9 @@ Store token values **only in GitHub Actions secrets**. Grant only the repository
 - [SUN Git workflow governance](../governance/GIT-WORKFLOW.md) — authoritative merge and review policy.
 
 When adding, renaming, retiring or materially changing a shared workflow, update **this handbook in the same PR or a paired ecosystem PR**. Product-specific workflows may be linked from here in a later fleet inventory; they are not automatically discovered by this document.
+
+## Ecosystem required-check rollout
+
+The existing repository-gallery workflow now emits the stable `gallery` job on every PR and `main` push, without path filters. It is a lightweight, standard-library-only validation of the shared registry and generated gallery; documentation-only PRs receive the same check.
+
+Merge this workflow change and confirm it passes before merging the paired FOUNDRY policy update that expects `gallery` for `sun-ecosystem`. Then run governance alignment Plan → Apply for `sun-ecosystem`, followed by fleet audit. This updates the existing explicitly mapped ruleset; it does not create a second ruleset.
