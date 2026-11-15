@@ -10,10 +10,12 @@
 |---|---|---|---|---|
 | [Repository Factory](https://github.com/sunstriker2009/sun-foundry/actions/workflows/repository-factory-v1.yml) | FOUNDRY | Manual | Create or resume STRATA-based SUN repository, seed CI and enforce governance | Owner confirmation + `repository-administration`; seed PR reviewed/squash-merged |
 | [Repository Maintenance](https://github.com/sunstriker2009/sun-foundry/actions/workflows/repository-factory-resume.yml) | FOUNDRY | Manual | Diagnose, plan, apply or verify governance for existing repository | Owner-controlled; never assume unsupported private-repo enforcement |
+| [SUN Governance Fleet Audit](https://github.com/sunstriker2009/sun-foundry/actions/workflows/governance-fleet-audit.yml) | FOUNDRY | Manual | Read-only audit of the explicit SUN allowlist; summary and JSON results | Owner + `repository-administration`; drift returns exit 2; no settings changed |
+| [SUN Governance Alignment](https://github.com/sunstriker2009/sun-foundry/actions/workflows/governance-alignment.yml) | FOUNDRY | Manual | Plan → Apply → Verify for explicitly mapped existing ruleset IDs | Owner + `repository-administration`; Apply requires a reviewed Plan run ID, matching live state and short-name confirmation |
 | [Register SUN Repository](https://github.com/sunstriker2009/sun-foundry/actions/workflows/register-sun-repository.yml) | FOUNDRY | Manual; also Factory post-Verify hook | Propose pending-only ecosystem catalog registration | Owner confirmation; **no** automatic ID assignment or auto-merge |
-| [Sync Approved SUN Symbol](https://github.com/sunstriker2009/sun-foundry/actions/workflows/sync-approved-sun-symbol.yml) | FOUNDRY | Manual | Preview/apply sync of approved PNG to ecosystem gallery | SHA-256 must match approval ledger; canonical path eligible for protected squash auto-merge; legacy overrides manual |
-| [Reconcile Approved SUN Symbols](https://github.com/sunstriker2009/sun-foundry/actions/workflows/reconcile-approved-symbols.yml) | FOUNDRY | Daily 08:17 UTC; manual | Compare approved canonical digests to product `main`; open gallery PR only when needed | `repository-symbol-sync`; unapproved bytes skipped; gallery PR protected squash auto-merge |
-| [Propose SUN Symbol Approval](https://github.com/sunstriker2009/sun-foundry/actions/workflows/propose-symbol-approval.yml) | FOUNDRY | Manual | Preview candidate fingerprint or propose approval-ledger PR | Owner + `repository-administration`; **manual artwork approval and merge required** |
+| [Sync Approved SUN Symbol](https://github.com/sunstriker2009/sun-foundry/actions/workflows/sync-approved-sun-symbol.yml) | FOUNDRY | Manual | Preview/apply sync of approved PNG to ecosystem gallery | Merged canonical branding is approved; canonical path eligible for protected squash auto-merge; legacy overrides manual |
+| [Reconcile Approved SUN Symbols](https://github.com/sunstriker2009/sun-foundry/actions/workflows/reconcile-approved-symbols.yml) | FOUNDRY | Daily 08:17 UTC; manual | Compare canonical symbols on product `main` with the gallery; open a PR only when changed | `repository-symbol-sync`; confirmed catalog entries only; gallery PR protected squash auto-merge |
+| [Sync Merged SUN Branding (legacy approval entry)](https://github.com/sunstriker2009/sun-foundry/actions/workflows/propose-symbol-approval.yml) | FOUNDRY | Manual | Compatibility entry point for canonical symbol sync | Owner + `repository-administration`; delegates to canonical sync; no separate approval-ledger PR |
 | [Repository gallery validation](https://github.com/sunstriker2009/sun-ecosystem/actions/workflows/repository-gallery-validation.yml) | Ecosystem | Relevant PR paths; manual | Validate catalog identity, PNG integrity and generated README | Required check as configured; no write operations |
 | [Symbol approval ledger validation](https://github.com/sunstriker2009/sun-ecosystem/actions/workflows/symbol-approval-validation.yml) | Ecosystem | Relevant PR paths | Validate approved symbol ledger schema, membership and digest format | Read-only; does **not** visually approve artwork |
 | [Symbol sync validation](https://github.com/sunstriker2009/sun-foundry/actions/workflows/symbol-sync-validation.yml) | FOUNDRY | Relevant PR paths | Syntax and safety-invariant checks for sync and approval automation | Read-only CI; no merge decision |
@@ -31,25 +33,52 @@ For the exact workflow inputs, consult the linked workflow's **Run workflow** di
 
 ### Approve new or revised artwork
 
-1. Commit the proposed raster to the product repository as `branding/assets/symbol.png` through its normal PR/CI process; document its provenance and visual approval in the product brand guide.
-2. Run **Propose SUN Symbol Approval** in `preview` mode with the repository repeated for confirmation.
-3. Visually inspect the exact PNG on the product repository's `main`. Then use `apply` to create an ecosystem PR changing only `registry/symbol-approvals.json`.
-4. **Manually review and merge** that approval PR. The digest ledger is the explicit trust boundary; no filename or product commit is approval by itself.
-5. Allow **Reconcile Approved SUN Symbols** to pick up the newly approved digest, or manually dispatch reconciliation for immediate processing. It opens a gallery PR and requests GitHub native protected squash auto-merge. No PR is needed if already synchronized.
+1. Publish or update `branding/assets/symbol.png` through the product repository's branding PR, recording provenance and visual approval.
+2. Review and merge that branding PR. The merge approves the canonical artwork for registry synchronization; no separate digest-approval PR is required.
+3. Allow daily **Reconcile Approved SUN Symbols** to process it, or dispatch reconciliation manually. It opens a protected squash-auto-merge gallery PR only when the catalog icon differs. SHA-256 is change-detection metadata, not an approval gate.
+
+### Align governance and find the Plan run ID
+
+1. Open **SUN Governance Alignment** on `main`. Choose a short repository name such as `sun-foundry` and operation `plan`; leave the Apply-only fields empty. The owner is implicitly `sunstriker2009`.
+2. Approve the administration environment if prompted. Wait for the Plan run to succeed and inspect its before/after diff and `governance-alignment-plan` artifact.
+3. Open that successful run's page. The numeric value after `/actions/runs/` in its URL is the **Plan run ID**. It identifies this particular workflow execution; PR numbers, commit hashes and display run counters identify different objects.
+
+Example from a successful FOUNDRY Plan:
+
+```text
+https://github.com/sunstriker2009/sun-foundry/actions/runs/43751547708
+```
+
+The Plan run ID in that example is `43751547708`. Use the ID from **your selected successful Plan**, rather than reusing this example for later work. Each new Plan execution has its own run ID.
+
+4. Start a new alignment run with the same repository and the following Apply fields:
+
+| Input | Example value |
+| --- | --- |
+| Repository | `sun-foundry` |
+| Operation | `apply` |
+| Plan run ID | `43751547708` — replace with your reviewed Plan's run ID |
+| Confirmation | `sun-foundry` |
+
+5. Apply downloads the exact Plan artifact using this ID, confirms it belongs to the same repository, and compares the plan with current policy and live state before writing. It verifies the readback automatically. Run the fleet audit afterward for the consolidated report.
+
+Plan artifacts expire after seven days. Run a fresh Plan if its artifact expires or governance/policy changes. Apply and Verify runs also produce artifacts, but Apply accepts only a successful **Plan** artifact. Paste numeric digits; the workflow trims surrounding whitespace and rejects malformed IDs. When workflow code has been fixed, start a new dispatch on `main` to use the new version.
+
+See the [alignment operating guide](https://github.com/sunstriker2009/sun-foundry/blob/main/docs/GOVERNANCE-ALIGNMENT.md) and [short-name input guide](https://github.com/sunstriker2009/sun-foundry/blob/main/docs/WORKFLOW-INPUTS.md).
 
 ### Run a one-off gallery synchronization
 
-Use **Sync Approved SUN Symbol**, first `preview`, then `apply`. The member must be confirmed in the catalog, and its source SHA-256 must already be in the approval ledger. Canonical `branding/assets/symbol.png` changes can request protected squash auto-merge; legacy paths remain manual. Never use this to approve unreviewed artwork.
+Use **Sync Approved SUN Symbol**, first `preview`, then `apply`. The member must be confirmed in the catalog, and the canonical artwork must have been approved through its merged branding PR. Canonical `branding/assets/symbol.png` changes can request protected squash auto-merge; legacy paths remain manual. Never use this to approve unreviewed artwork.
 
 ### Troubleshoot a failed workflow
 
-Inspect the specific GitHub Actions run and PR checks. For Factory interruption use **Repository Maintenance** or Factory resume; do not delete or overwrite an ambiguous seed branch. For symbol failures, compare product source SHA-256 against `registry/symbol-approvals.json`, check registration status, verify required token permissions and environment configuration, and inspect whether an existing sync branch is blocking a retry. Do not bypass CI or governance to clear failures.
+Inspect the specific GitHub Actions run and PR checks. For Factory interruption use **Repository Maintenance** or Factory resume; do not delete or overwrite an ambiguous seed branch. For symbol failures, check the merged canonical PNG, registration status, verify required token permissions and environment configuration, and inspect whether an existing sync branch is blocking a retry. Do not bypass CI or governance to clear failures.
 
 ## Credentials and environments
 
 | Environment | Secret | Usage |
 |---|---|---|
-| FOUNDRY `repository-administration` | `SUN_REPO_ADMIN_TOKEN` | Owner-gated Factory, maintenance, registration, manual symbol sync and approval proposals |
+| FOUNDRY `repository-administration` | `SUN_REPO_ADMIN_TOKEN` | Owner-gated Factory, maintenance, registration, manual symbol sync, fleet audit and governance alignment |
 | FOUNDRY `repository-symbol-sync` | `SUN_SYMBOL_SYNC_TOKEN` | Unattended approved-symbol reconciliation; environment restricted to `main`, no required reviewers |
 
 Store token values **only in GitHub Actions secrets**. Grant only the repository access and permissions needed. Do not commit or paste tokens into PRs. Token expiration/rotation is an operator responsibility.
@@ -57,8 +86,8 @@ Store token values **only in GitHub Actions secrets**. Grant only the repository
 ## Rules that must not be automated away
 
 - New SUN IDs, names, classifications, and product registrations require explicit governance approval.
-- New or changed artwork requires human visual approval and a reviewed approval-ledger PR.
-- Gallery sync may auto-merge **only after** digest verification and GitHub's configured required checks/reviews.
+- New or changed artwork requires human visual review and a merged product branding PR.
+- Gallery sync may auto-merge only for eligible canonical sources and after GitHub's configured required checks/reviews.
 - Protected `main`, feature branches, squash-only merges and automatic branch deletion remain the default.
 - Do not create disposable repositories or run mutation-heavy fleet tests without explicit approval.
 - Keep scheduled checks low-frequency and path-filter PR CI to conserve GitHub Actions minutes.
@@ -67,7 +96,7 @@ Store token values **only in GitHub Actions secrets**. Grant only the repository
 
 - [SUN product registry](../../registry/products.json) — confirmed identities.
 - [SUN repository gallery catalog](../../registry/repositories.json) — repository entries and synchronized icons.
-- [SUN symbol approval ledger](../../registry/symbol-approvals.json) — owner-approved canonical PNG fingerprints.
+- [Historical SUN symbol approval ledger](../../registry/symbol-approvals.json) — retained historical data; current synchronization does not use it as an approval gate.
 - [FOUNDRY workflow guide](https://github.com/sunstriker2009/sun-foundry/blob/main/docs/WORKFLOWS.md) — operational implementation details.
 - [SUN Git workflow governance](../governance/GIT-WORKFLOW.md) — authoritative merge and review policy.
 
