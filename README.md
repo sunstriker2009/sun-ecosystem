@@ -12,6 +12,30 @@ The approved parent-brand banner and [symbol](branding/assets/symbol-canonical-v
 
 Earlier exploratory artwork remains documented in [Visual Identity Concept 01](branding/VISUAL-CONCEPT-01.md); names depicted there are proposals, not confirmed products.
 
+<!-- SUN-REPOSITORY-GALLERY:START -->
+## SUN Repository Gallery
+
+Generated from [the repository catalog](registry/repositories.json). Approved identities remain governed by [products.json](registry/products.json).
+
+### Products
+
+<table>
+<tr>
+<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-astelvo"><strong>ASTELVO</strong></a><p><strong>ASTELVO</strong></p><small>SUN-002 · Local code organizer and interactive scripting workspace</small></td>
+<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-oryva"><strong>ORYVA</strong></a><p><strong>ORYVA</strong></p><small>SUN-001 · Identity, authentication, authorization and security</small></td>
+</tr>
+</table>
+
+### Infrastructure
+
+<table>
+<tr>
+<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-foundry"><strong>FOUNDRY</strong></a><p><strong>FOUNDRY</strong></p><small>SUN-G003 · Repository factory and governance verification</small></td>
+<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-strata"><strong>STRATA</strong></a><p><strong>STRATA</strong></p><small>SUN-G002 · Reusable repository template</small></td>
+</tr>
+</table>
+<!-- SUN-REPOSITORY-GALLERY:END -->
+
 ## Ecosystem at a glance
 
 See the [ecosystem relationship diagram](docs/architecture/ECOSYSTEM-MAP.md) for confirmed products, shared repository infrastructure and the independent MarketPilot AI integration target.
