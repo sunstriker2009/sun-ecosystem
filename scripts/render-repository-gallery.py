@@ -54,7 +54,7 @@ def render(root: Path) -> str:
         if icon is None:
             if digest is not None:
                 raise ValueError(f"Icon digest without icon for {repo}")
-            tile = f"**{name}**"
+            tile = f"<strong>{name}</strong>"
         else:
             if not isinstance(icon, str) or not re.fullmatch(r"branding/registry/[a-z0-9-]+\\.png", icon):
                 raise ValueError(f"Unsafe icon path for {repo}")
