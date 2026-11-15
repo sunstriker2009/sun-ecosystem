@@ -68,6 +68,7 @@ Registry: **SUN-002 — CONFIRMED**. Technical identity: `Sun.Workspace`. Reposi
 | Document | Purpose |
 |---|---|
 | [Brand Guidelines](branding/BRAND-GUIDELINES.md) | SUN vision, positioning and architecture |
+| [Reusable Prompts](docs/prompts/README.md) | Copyable collaboration prompts, including thread continuation handoffs |
 | [SUN Workflow Handbook](docs/workflows/README.md) | Central catalog of shared SUN workflows, triggers, permissions, approval gates and operator recipes |
 | [Repository Factory](https://github.com/sunstriker2009/sun-foundry) | Automated repository creation, CI initialization, governance application, verification and recovery |
 | [STRATA — Repository Foundation](https://github.com/sunstriker2009/sun-strata) | Standard starting structure and CI workflows for new SUN repositories |
