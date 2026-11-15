@@ -1,4 +1,4 @@
-![SUN — The Product Ecosystem](branding/assets/readme-banner-v1.png)
+![SUN — The Product Ecosystem](branding/assets/readme-banner.png)
 
 # ☀️ SUN Product Ecosystem
 
@@ -8,7 +8,7 @@ This repository is the canonical reference for SUN product naming, brand archite
 
 ## SUN parent identity
 
-The approved parent-brand banner and [symbol](branding/assets/symbol-canonical-v1.png) represent the SUN product family. Compact SVGs are simplified adaptations of the approved symbol. See the [SUN Parent Brand Guide](branding/BRAND-GUIDE.md).
+The approved parent-brand banner and [symbol](branding/assets/symbol.png) represent the SUN product family. Compact SVGs are simplified adaptations of the approved symbol. See the [SUN Parent Brand Guide](branding/BRAND-GUIDE.md).
 
 Earlier exploratory artwork remains documented in [Visual Identity Concept 01](branding/VISUAL-CONCEPT-01.md); names depicted there are proposals, not confirmed products.
 
