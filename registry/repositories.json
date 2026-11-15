@@ -25,8 +25,8 @@
       "classification": "infrastructure",
       "name": "STRATA",
       "summary": "Reusable repository template",
-      "icon": null,
-      "iconSha256": null
+      "icon": "branding/registry/sun-strata.png",
+      "iconSha256": "36592bdf3a8b1ff7e9b0e5b0ce5df09c91755110766dcfd135c15da5c8fb9cee"
     },
     {
       "repository": "sunstriker2009/sun-foundry",
