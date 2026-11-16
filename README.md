@@ -74,7 +74,7 @@ Registry: **SUN-002 — CONFIRMED**. Technical identity: `Sun.Workspace`. Reposi
 | [STRATA — Repository Foundation](https://github.com/sunstriker2009/sun-strata) | Standard starting structure and CI workflows for new SUN repositories |
 | [Git Workflow & Merge Policy v1.0](docs/governance/GIT-WORKFLOW.md) | Authoritative cross-repository PR, squash merge, CI, review and release governance |
 | [Naming Guidelines v1.0](branding/NAMING-GUIDELINES.md) | Naming rules, scoring, workflow and clearance |
-| [Product Repository Branding Standard](docs/governance/PRODUCT-BRANDING.md) | Approved concept workflow, README banners, SVG assets and existing-repository adoption checklist |
+| [Product Repository Branding Standard](docs/governance/PRODUCT-BRANDING.md) | Approved concept workflow, README banners, PNG assets, optional SVG adaptations and existing-repository adoption checklist |
 | [Visual Identity](branding/VISUAL-IDENTITY.md) | Provisional palette, typography and logo direction |
 | [ORYVA product documentation](https://github.com/sunstriker2009/sun-oryva) | Architecture, design system, engineering roadmap and implementation (maintained outside SUN ecosystem) |
 | [Visual Identity Concept 01](branding/VISUAL-CONCEPT-01.md) | Artwork and design exploration |
@@ -96,7 +96,7 @@ Registry: **SUN-002 — CONFIRMED**. Technical identity: `Sun.Workspace`. Reposi
 
 ## Product repository branding
 
-SUN product repositories follow the [Product Repository Branding Standard](docs/governance/PRODUCT-BRANDING.md): purpose-led symbols incorporating SUN's arc, distinct palettes, approved panoramic README banners and coordinated compact SVG variants. [ASTELVO](https://github.com/sunstriker2009/sun-astelvo) and [ORYVA](https://github.com/sunstriker2009/sun-oryva) are reference examples; existing repositories should track adoption independently.
+SUN product repositories follow the [Product Repository Branding Standard](docs/governance/PRODUCT-BRANDING.md): purpose-led symbols incorporating SUN's arc, distinct palettes, approved panoramic README banners and coordinated PNG compact assets, with optional SVG adaptations. [ASTELVO](https://github.com/sunstriker2009/sun-astelvo) and [ORYVA](https://github.com/sunstriker2009/sun-oryva) are reference examples; existing repositories should track adoption independently.
 
 ## Repository provisioning
 
@@ -107,3 +107,7 @@ Use [FOUNDRY — Repository Factory](https://github.com/sunstriker2009/sun-found
 Names become confirmed only after explicit owner approval. Internal naming approval does not imply trademark, domain, NuGet, npm, or GitHub availability. Visual colors and marks are provisional unless expressly approved. All changes follow the [SUN Git Workflow & Merge Policy v1.0](docs/governance/GIT-WORKFLOW.md): protected `main`, pull requests, passing required CI, applicable review, **squash-only merges**, and automatic branch cleanup. Record substantive brand decisions under `decisions/`.
 
 **Guidelines version:** 1.0 — 2026-10-30.
+
+## Resuming governance work
+
+Read the [governance handoff](docs/governance/HANDOFF.md) for verified evidence, pending validation, cross-repository responsibilities and resume boundaries before continuing after thread archival.
