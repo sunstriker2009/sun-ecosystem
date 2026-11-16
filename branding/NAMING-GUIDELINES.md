@@ -35,12 +35,12 @@ For each new concept: establish purpose and audience; decide SUN fit; propose 5â
 ## Technical conventions
 | Surface | Pattern | Example |
 |---|---|---|
-| Public | PRODUCT by Sun | ORYVA by Sun |
+| Public | PRODUCT by Sun | OUTPOST by Sun |
 | Repository | sun-product | sun-oryva |
 | .NET | Sun.Capability | Sun.Security |
 | NuGet | Sun.Capability.* | Sun.Security.AspNetCore |
 | npm | @sun-capability/* | @sun-security/react |
-| Integration | Powered by PRODUCT | Powered by ORYVA |
+| Integration | Powered by PRODUCT | Powered by OUTPOST |
 
 Technical identifiers may stay stable even if a public product name changes. All package examples are conventions, not proof of availability.
 

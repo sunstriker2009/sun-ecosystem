@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "repositories": [
     {
-      "repository": "sunstriker2009/sun-oryva",
+      "repository": "sunstriker2009/sun-outpost",
       "registryId": "SUN-001",
       "classification": "product",
-      "name": "ORYVA",
+      "name": "OUTPOST",
       "summary": "Identity, authentication, authorization and security",
       "icon": "branding/registry/sun-oryva.png",
       "iconSha256": "e82544750a39ce4bbddce360225a8a5e93b572b48ec91c8151d617185bbe3187"

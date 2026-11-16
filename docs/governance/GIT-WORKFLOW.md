@@ -3,7 +3,7 @@
 **Version:** 1.0  
 **Status:** Approved  
 **Effective:** 2026-10-30  
-**Scope:** SUN ecosystem, ORYVA by Sun, MarketPilot AI, and future SUN product repositories  
+**Scope:** SUN ecosystem, OUTPOST by Sun, MarketPilot AI, and future SUN product repositories  
 **Authority:** SUN ecosystem governance; owner: `sunstriker2009`
 
 This document is the **authoritative** cross-repository Git workflow policy. Product repositories should link here rather than maintain divergent copies. Repository-specific CI check names and reviewer rules may vary, but must satisfy the minimum controls below. This policy is normative; documenting a requirement does **not** configure GitHub settings automatically.
@@ -99,7 +99,7 @@ Factory verification does not replace this policy or security-sensitive human re
 
 ## 9. Product branding and repository assets
 
-All SUN product repositories should follow the [Product Repository Branding Standard](PRODUCT-BRANDING.md). Approve the concept first; commit a versioned panoramic README banner, compact SVG variants and product-specific brand guide through the normal feature-branch and squash-PR workflow. For existing repositories, track brand adoption as a checklist rather than assuming compliance. WORKBENCH and ORYVA serve as reference examples. Branding assets do not bypass CI or review requirements.
+All SUN product repositories should follow the [Product Repository Branding Standard](PRODUCT-BRANDING.md). Approve the concept first; commit a versioned panoramic README banner, compact SVG variants and product-specific brand guide through the normal feature-branch and squash-PR workflow. For existing repositories, track brand adoption as a checklist rather than assuming compliance. WORKBENCH and OUTPOST serve as reference examples. Branding assets do not bypass CI or review requirements.
 
 ## 10. Repository adoption and verification checklist
 

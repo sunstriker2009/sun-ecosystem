@@ -12,7 +12,7 @@ SUN is the parent brand for a family of independently usable software products, 
 
 ## Brand architecture
 - Parent: **SUN** (visual/umbrella identity).
-- Endorsement: **PRODUCT by Sun** (e.g., ORYVA by Sun).
+- Endorsement: **PRODUCT by Sun** (e.g., OUTPOST by Sun).
 - Public product identities remain independent.
 - Technical namespaces use **Sun.<Capability>**, not necessarily the public product name.
 - External applications may say **Powered by PRODUCT** after integration, subject to product branding guidance.
@@ -23,7 +23,7 @@ Modern, sophisticated, dependable, minimal, geometric, and internationally appro
 ## Portfolio policy
 A product name is appropriate for an independently useful platform, application, or named developer product. Small shared utilities may retain ordinary technical names without a distinct public brand.
 
-MarketPilot AI remains an independent application and may be described as **Powered by ORYVA** after integration. It is not automatically part of the SUN portfolio.
+MarketPilot AI remains an independent application and may be described as **Powered by OUTPOST** after integration. It is not automatically part of the SUN portfolio.
 
 ## Governance
 - Approved names and proposed names must always be distinguished.

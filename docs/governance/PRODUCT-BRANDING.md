@@ -3,7 +3,7 @@
 **Version:** 1.0  
 **Status:** Approved direction — product-specific assets require owner approval  
 **Scope:** All SUN product repositories, new and existing  
-**Reference implementations:** [FOUNDRY](https://github.com/sunstriker2009/sun-foundry/blob/main/branding/ADOPTION-CHECKLIST.md) (canonical layout and migration checklist), [WORKBENCH](https://github.com/sunstriker2009/sun-workbench) and [ORYVA](https://github.com/sunstriker2009/sun-oryva) (product-specific adaptations)
+**Reference implementations:** [FOUNDRY](https://github.com/sunstriker2009/sun-foundry/blob/main/branding/ADOPTION-CHECKLIST.md) (canonical layout and migration checklist), [WORKBENCH](https://github.com/sunstriker2009/sun-workbench) and [OUTPOST](https://github.com/sunstriker2009/sun-outpost) (product-specific adaptations)
 
 This standard complements the [SUN Visual Identity](../../branding/VISUAL-IDENTITY.md) and [Git Workflow & Merge Policy](GIT-WORKFLOW.md). A product's own brand guide records approved choices; the ecosystem guide governs consistency.
 
@@ -120,7 +120,7 @@ branding/
 
 ## 7. Existing-repository adoption
 
-Treat existing products as an **adoption checklist**, not an assumption of compliance. Review each product independently; record missing assets and follow-up PRs in that product repository. WORKBENCH and ORYVA are **reference examples**, not evidence that every item below has been completed.
+Treat existing products as an **adoption checklist**, not an assumption of compliance. Review each product independently; record missing assets and follow-up PRs in that product repository. WORKBENCH and OUTPOST are **reference examples**, not evidence that every item below has been completed.
 
 - [ ] Owner-approved concept and documented SUN arc / purpose / optional initial-letter rationale.
 - [ ] Distinct approved palette and consistent family typography/spacing.
@@ -133,7 +133,7 @@ Treat existing products as an **adoption checklist**, not an assumption of compl
 - [ ] Product brand guide documents approval, palette, typography, locations and usage rules.
 - [ ] Changes merged via feature branch, CI and squash PR.
 
-**Initial review targets:** [WORKBENCH](https://github.com/sunstriker2009/sun-workbench), [ORYVA](https://github.com/sunstriker2009/sun-oryva), [FOUNDRY](https://github.com/sunstriker2009/sun-foundry), then remaining SUN products as appropriate. No existing repository is automatically changed by adoption of this document.
+**Initial review targets:** [WORKBENCH](https://github.com/sunstriker2009/sun-workbench), [OUTPOST](https://github.com/sunstriker2009/sun-outpost), [FOUNDRY](https://github.com/sunstriker2009/sun-foundry), then remaining SUN products as appropriate. No existing repository is automatically changed by adoption of this document.
 
 ## 8. Package installation and numbered revisions
 
