@@ -11,13 +11,13 @@
       "iconSha256": "e82544750a39ce4bbddce360225a8a5e93b572b48ec91c8151d617185bbe3187"
     },
     {
-      "repository": "sunstriker2009/sun-astelvo",
+      "repository": "sunstriker2009/sun-workbench",
       "registryId": "SUN-002",
       "classification": "product",
-      "name": "ASTELVO",
+      "name": "WORKBENCH",
       "summary": "Local code organizer and interactive scripting workspace",
-      "icon": "branding/registry/sun-astelvo.png",
-      "iconSha256": "3dc2ddfccaafccf13175bd4f206ae48f578aa1d3b8e55a5c5260b1963f2f19ae"
+      "icon": "branding/registry/sun-workbench.png",
+      "iconSha256": "74510e6401e69cf3096d8869cc08ffc2d018a1afca000ebd67965511a83577d7"
     },
     {
       "repository": "sunstriker2009/sun-strata",

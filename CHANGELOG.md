@@ -31,3 +31,8 @@
 - Added initial product registry with seven unapproved candidates.
 - Documented provisional visual identity and naming review templates.
 - Recorded commercial-clearance requirement separately from internal naming approval.
+
+## WORKBENCH naming migration
+
+- Record the owner-approved ASTELVO → WORKBENCH by Sun rename, preserving SUN-002 and Sun.Workspace.
+- Map the same product to sunstriker2009/sun-workbench; historical decisions, assets and compatibility identifiers remain preserved.

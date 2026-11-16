@@ -99,7 +99,7 @@ Factory verification does not replace this policy or security-sensitive human re
 
 ## 9. Product branding and repository assets
 
-All SUN product repositories should follow the [Product Repository Branding Standard](PRODUCT-BRANDING.md). Approve the concept first; commit a versioned panoramic README banner, compact SVG variants and product-specific brand guide through the normal feature-branch and squash-PR workflow. For existing repositories, track brand adoption as a checklist rather than assuming compliance. ASTELVO and ORYVA serve as reference examples. Branding assets do not bypass CI or review requirements.
+All SUN product repositories should follow the [Product Repository Branding Standard](PRODUCT-BRANDING.md). Approve the concept first; commit a versioned panoramic README banner, compact SVG variants and product-specific brand guide through the normal feature-branch and squash-PR workflow. For existing repositories, track brand adoption as a checklist rather than assuming compliance. WORKBENCH and ORYVA serve as reference examples. Branding assets do not bypass CI or review requirements.
 
 ## 10. Repository adoption and verification checklist
 
