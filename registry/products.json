@@ -20,17 +20,18 @@
     },
     {
       "id": "SUN-002",
-      "name": "ASTELVO",
+      "name": "WORKBENCH",
       "status": "CONFIRMED",
       "purpose": "Local code organizer and interactive scripting workspace with extensible language execution adapters",
-      "publicName": "ASTELVO by Sun",
+      "publicName": "WORKBENCH by Sun",
       "tagline": "Organize. Script. Explore.",
       "namespace": "Sun.Workspace",
       "repository": "sun-workbench",
       "backendPackages": "Sun.Workspace.*",
       "frontendPackages": "@sun-workspace/*",
       "commercialClearance": "PENDING",
-      "confirmedOn": "2026-11-12"
+      "confirmedOn": "2026-11-12",
+      "supersedes": "ASTELVO"
     }
   ],
   "infrastructure": [

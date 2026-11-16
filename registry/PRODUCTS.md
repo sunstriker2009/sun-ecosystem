@@ -5,7 +5,7 @@
 | ID | Name | Purpose | Status | Technical identity |
 |---|---|---|---|---|
 | SUN-001 | **ORYVA** | Identity, authentication, authorization, security | **CONFIRMED** | Sun.Security |
-| SUN-002 | **ASTELVO** | Interactive scripting workspace and saved connections | **CONFIRMED** | Sun.Workspace |
+| SUN-002 | **WORKBENCH** | Interactive scripting workspace and saved connections | **CONFIRMED** | Sun.Workspace |
 
 ## Unnumbered product proposals
 
@@ -37,12 +37,12 @@ SUN Ecosystem (SUN-G001), STRATA (SUN-G002) and FOUNDRY (SUN-G003) are tracked i
 ## Naming risk notes
 The proposed names ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON and FORGE have potential existing-software associations and require fresh conflict research before approval. PULSAR in particular overlaps with Apache Pulsar in messaging; FORGE overlaps with Atlassian Forge in developer tools.
 
-## SUN-002 — ASTELVO
-- **Public identity:** ASTELVO by Sun
+## SUN-002 — WORKBENCH
+- **Public identity:** WORKBENCH by Sun
 - **Tagline:** Organize. Script. Explore.
 - **Name:** Confirmed by product owner 2026-11-12 ("Sounds good, kick off").
 - **Technical identity:** Sun.Workspace; Sun.Workspace.*; @sun-workspace/*.
-- **Repository:** [sun-astelvo](https://github.com/sunstriker2009/sun-workbench) (established).
+- **Repository:** [sun-workbench](https://github.com/sunstriker2009/sun-workbench) (established).
 - **Initial scope:** Local code and scripting workspace with folders, tags, smart collections and planned language-aware JavaScript, Python and C# execution adapters. Database connections and Kubernetes support are future extensions; see the product roadmap.
 - **Extension direction:** Additional execution providers and transports; implementation planning belongs in the product repository.
 - **Commercial clearance:** PENDING. Preliminary exact-name web screening only; trademarks, domains and package availability have not been cleared.

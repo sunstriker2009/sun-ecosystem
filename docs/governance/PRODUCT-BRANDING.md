@@ -3,7 +3,7 @@
 **Version:** 1.0  
 **Status:** Approved direction — product-specific assets require owner approval  
 **Scope:** All SUN product repositories, new and existing  
-**Reference implementations:** [FOUNDRY](https://github.com/sunstriker2009/sun-foundry/blob/main/branding/ADOPTION-CHECKLIST.md) (canonical layout and migration checklist), [ASTELVO](https://github.com/sunstriker2009/sun-workbench) and [ORYVA](https://github.com/sunstriker2009/sun-oryva) (product-specific adaptations)
+**Reference implementations:** [FOUNDRY](https://github.com/sunstriker2009/sun-foundry/blob/main/branding/ADOPTION-CHECKLIST.md) (canonical layout and migration checklist), [WORKBENCH](https://github.com/sunstriker2009/sun-workbench) and [ORYVA](https://github.com/sunstriker2009/sun-oryva) (product-specific adaptations)
 
 This standard complements the [SUN Visual Identity](../../branding/VISUAL-IDENTITY.md) and [Git Workflow & Merge Policy](GIT-WORKFLOW.md). A product's own brand guide records approved choices; the ecosystem guide governs consistency.
 
@@ -120,7 +120,7 @@ branding/
 
 ## 7. Existing-repository adoption
 
-Treat existing products as an **adoption checklist**, not an assumption of compliance. Review each product independently; record missing assets and follow-up PRs in that product repository. ASTELVO and ORYVA are **reference examples**, not evidence that every item below has been completed.
+Treat existing products as an **adoption checklist**, not an assumption of compliance. Review each product independently; record missing assets and follow-up PRs in that product repository. WORKBENCH and ORYVA are **reference examples**, not evidence that every item below has been completed.
 
 - [ ] Owner-approved concept and documented SUN arc / purpose / optional initial-letter rationale.
 - [ ] Distinct approved palette and consistent family typography/spacing.
@@ -133,7 +133,7 @@ Treat existing products as an **adoption checklist**, not an assumption of compl
 - [ ] Product brand guide documents approval, palette, typography, locations and usage rules.
 - [ ] Changes merged via feature branch, CI and squash PR.
 
-**Initial review targets:** [ASTELVO](https://github.com/sunstriker2009/sun-workbench), [ORYVA](https://github.com/sunstriker2009/sun-oryva), [FOUNDRY](https://github.com/sunstriker2009/sun-foundry), then remaining SUN products as appropriate. No existing repository is automatically changed by adoption of this document.
+**Initial review targets:** [WORKBENCH](https://github.com/sunstriker2009/sun-workbench), [ORYVA](https://github.com/sunstriker2009/sun-oryva), [FOUNDRY](https://github.com/sunstriker2009/sun-foundry), then remaining SUN products as appropriate. No existing repository is automatically changed by adoption of this document.
 
 ## 8. Package installation and numbered revisions
 
@@ -141,4 +141,4 @@ For repositories explicitly adopting the [FOUNDRY installer](https://github.com/
 
 On first installation, v1 backs up existing assets and v2 records the installed result. Subsequent installs and rollbacks append the next integer version, independent of the uploaded filename. A successful installation removes the unnumbered upload and saves a complete snapshot, rather than merely renaming the original ZIP bytes. The feature-branch hook appends a follow-up commit on the upload branch; review artwork and required checks before its squash merge. Invalid packages do not consume a version. See the installer guide for no-op, rollback and failure behavior.
 
-ASTELVO's first installation merged in [#39](https://github.com/sunstriker2009/sun-workbench/pull/39). Live rollback and broader adoption remain pending. Existing `branding/archive/` material stays intact until a separate reviewed migration preserves original artwork, concepts and provenance; asset snapshots alone do not preserve every historical document. The installer does not update product names, README text, app copies or generator configuration. Consult the [governance handoff](HANDOFF.md) before resuming rollout.
+WORKBENCH's first installation merged in [#39](https://github.com/sunstriker2009/sun-workbench/pull/39). Live rollback and broader adoption remain pending. Existing `branding/archive/` material stays intact until a separate reviewed migration preserves original artwork, concepts and provenance; asset snapshots alone do not preserve every historical document. The installer does not update product names, README text, app copies or generator configuration. Consult the [governance handoff](HANDOFF.md) before resuming rollout.
