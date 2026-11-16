@@ -12,6 +12,7 @@
 | [Repository Maintenance](https://github.com/sunstriker2009/sun-foundry/actions/workflows/repository-factory-resume.yml) | FOUNDRY | Manual | Diagnose, plan, apply or verify governance for existing repository | Owner-controlled; never assume unsupported private-repo enforcement |
 | [SUN Governance Fleet Audit](https://github.com/sunstriker2009/sun-foundry/actions/workflows/governance-fleet-audit.yml) | FOUNDRY | Manual | Read-only audit of the explicit SUN allowlist; summary and JSON results | Owner + `repository-administration`; drift returns exit 2; no settings changed |
 | [SUN Governance Alignment](https://github.com/sunstriker2009/sun-foundry/actions/workflows/governance-alignment.yml) | FOUNDRY | Manual | Plan → Apply → Verify for explicitly mapped existing ruleset IDs | Owner + `repository-administration`; Apply requires a reviewed Plan run ID, matching live state and short-name confirmation |
+| [SUN Branding ZIP Installer](https://github.com/sunstriker2009/sun-foundry/actions/workflows/branding-zip-install.yml) | FOUNDRY | Manual | Validate an inbox ZIP; propose numbered asset installation or rollback | Implicit owner + repository dropdown; `repository-administration`; Preview is read-only, Apply opens a visually reviewed squash-merge PR |
 | [Register SUN Repository](https://github.com/sunstriker2009/sun-foundry/actions/workflows/register-sun-repository.yml) | FOUNDRY | Manual; also Factory post-Verify hook | Propose pending-only ecosystem catalog registration | Owner confirmation; **no** automatic ID assignment or auto-merge |
 | [Sync Approved SUN Symbol](https://github.com/sunstriker2009/sun-foundry/actions/workflows/sync-approved-sun-symbol.yml) | FOUNDRY | Manual | Preview/apply sync of approved PNG to ecosystem gallery | Merged canonical branding is approved; canonical path eligible for protected squash auto-merge; legacy overrides manual |
 | [Reconcile Approved SUN Symbols](https://github.com/sunstriker2009/sun-foundry/actions/workflows/reconcile-approved-symbols.yml) | FOUNDRY | Daily 08:17 UTC; manual | Compare canonical symbols on product `main` with the gallery; open a PR only when changed | `repository-symbol-sync`; confirmed catalog entries only; gallery PR protected squash auto-merge |
@@ -36,6 +37,18 @@ For the exact workflow inputs, consult the linked workflow's **Run workflow** di
 1. Publish or update `branding/assets/symbol.png` through the product repository's branding PR, recording provenance and visual approval.
 2. Review and merge that branding PR. The merge approves the canonical artwork for registry synchronization; no separate digest-approval PR is required.
 3. Allow daily **Reconcile Approved SUN Symbols** to process it, or dispatch reconciliation manually. It opens a protected squash-auto-merge gallery PR only when the catalog icon differs. SHA-256 is change-detection metadata, not an approval gate.
+
+### Install or roll back a branding ZIP
+
+1. Upload the original ZIP to the **target repository’s** `branding/inbox/` through a normal upload PR and merge it. Example: `branding/inbox/strata.zip`. This stages the package; active artwork has not changed.
+2. Run **SUN Branding ZIP Installer** from FOUNDRY `main`, choose the short target name, operation `preview` and the ZIP basename. Leave confirmation and rollback empty. The owner is always implicit. No Plan run ID is needed.
+3. Review the changed paths, target commit and proposed revision. Run `apply` with the same filename and short-name confirmation. Review the resulting branding PR’s artwork and checks, then squash-merge it.
+4. The first install backs up the existing asset tree as `branding/revisions/v1.zip` and records the installed tree as `v2.zip`. Later installs use `v3.zip` onward. Failed validation preserves the original upload name and consumes no revision; an identical package creates no PR or revision.
+5. To roll back, set **Rollback revision** to an existing `v1.zip`, `v2.zip`, etc. Filename is ignored. Preview, then Apply and review/merge its PR. Restoring a snapshot creates another new version; historical ZIPs remain immutable.
+
+The v1 uploader uses a committed inbox because dispatch forms cannot attach files. Packages are limited to 20 MB compressed and use `branding/assets/` at the ZIP root or beneath one enclosing export folder. Icons remain under `branding/assets/icons/`. The installer changes the asset tree, revision snapshots and consumed inbox upload only. Repository intro text, app-specific copies/configuration and legacy archive cleanup remain explicit follow-up work. Merging the installation PR approves the artwork for the normal daily/manual registry reconciliation; no digest approval gate is added.
+
+An existing `chore/branding-install` branch blocks another Apply. Merge it, or close/delete it before retrying. If target branding or revision history changes while its PR is pending, recreate the proposal from current main. For exact package requirements, safety limits and failure recovery see the [branding ZIP installer guide](https://github.com/sunstriker2009/sun-foundry/blob/main/docs/BRANDING-ZIP-INSTALLER.md). The first live installation/rollback pilot is pending the installer rollout.
 
 ### Align governance and find the Plan run ID
 
@@ -78,7 +91,7 @@ Inspect the specific GitHub Actions run and PR checks. For Factory interruption 
 
 | Environment | Secret | Usage |
 |---|---|---|
-| FOUNDRY `repository-administration` | `SUN_REPO_ADMIN_TOKEN` | Owner-gated Factory, maintenance, registration, manual symbol sync, fleet audit and governance alignment |
+| FOUNDRY `repository-administration` | `SUN_REPO_ADMIN_TOKEN` | Owner-gated Factory, maintenance, registration, manual symbol sync, fleet audit, governance alignment and branding ZIP PRs |
 | FOUNDRY `repository-symbol-sync` | `SUN_SYMBOL_SYNC_TOKEN` | Unattended approved-symbol reconciliation; environment restricted to `main`, no required reviewers |
 
 Store token values **only in GitHub Actions secrets**. Grant only the repository access and permissions needed. Do not commit or paste tokens into PRs. Token expiration/rotation is an operator responsibility.
@@ -103,6 +116,8 @@ Store token values **only in GitHub Actions secrets**. Grant only the repository
 When adding, renaming, retiring or materially changing a shared workflow, update **this handbook in the same PR or a paired ecosystem PR**. Product-specific workflows may be linked from here in a later fleet inventory; they are not automatically discovered by this document.
 
 ## Ecosystem required-check rollout
+
+Rollout completed across the five-repository fleet; the operator reported the final audit successful. Keep the following ordering for future policy changes.
 
 The existing repository-gallery workflow now emits the stable `gallery` job on every PR and `main` push, without path filters. It is a lightweight, standard-library-only validation of the shared registry and generated gallery; documentation-only PRs receive the same check.
 
