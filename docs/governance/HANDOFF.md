@@ -14,9 +14,9 @@ This repository is the source of truth for names, permanent IDs, policy, registr
 
 ## Decisions to preserve after memory cleanup
 
-- Confirmed products are ORYVA (SUN-001, `Sun.Security`) and WORKBENCH (SUN-002, `Sun.Workspace`). HALO is superseded by ORYVA. WORKBENCH's earlier SUN-009 assignment was explicitly corrected to SUN-002.
+- Confirmed products are OUTPOST (SUN-001, `Sun.Security`) and WORKBENCH (SUN-002, `Sun.Workspace`). HALO is superseded by OUTPOST. WORKBENCH's earlier SUN-009 assignment was explicitly corrected to SUN-002.
 - Products use SUN-NNN; established governance/infrastructure uses SUN-GNNN. IDs are sequential upon confirmation, permanent, never reserved for proposals or reused. Current next IDs are SUN-003 and SUN-G004; read the live registry before assignment.
-- ORBIT/NOVA/PRISM/PULSAR/LUMEN/BEACON/FORGE remain unnumbered proposals. MarketPilot AI is an independent application and intended ORYVA integration target, not a registered SUN product.
+- ORBIT/NOVA/PRISM/PULSAR/LUMEN/BEACON/FORGE remain unnumbered proposals. MarketPilot AI is an independent application and intended OUTPOST integration target, not a registered SUN product.
 - Internal approval does not establish trademark/domain/package clearance. Do not infer a new identity from artwork or export filenames. The owner has explicitly approved WORKBENCH and sun-workbench; Gatehouse identity reconciliation remains outside this change.
 - Approved original artwork is canonical. Preserve PNG consistency across banners, symbols and icons. Vectors are optional adaptations when useful; never replace approved raster artwork with a visually similar regeneration.
 - Main is protected and PR-only; required checks, applicable human security review, resolved conversations and squash-only merges apply. Keep GitHub as the system of record.

@@ -5,18 +5,22 @@
   "products": [
     {
       "id": "SUN-001",
-      "name": "ORYVA",
+      "name": "OUTPOST",
       "status": "CONFIRMED",
       "purpose": "Identity, authentication, authorization and security",
-      "publicName": "ORYVA by Sun",
+      "publicName": "OUTPOST by Sun",
       "tagline": "Identity. Trust. Protection.",
       "namespace": "Sun.Security",
-      "repository": "sun-oryva",
+      "repository": "sun-outpost",
       "backendPackages": "Sun.Security.*",
       "frontendPackages": "@sun-security/*",
       "commercialClearance": "PENDING",
-      "supersedes": "HALO",
-      "initialIntegration": "MarketPilot AI"
+      "supersedes": "ORYVA",
+      "initialIntegration": "MarketPilot AI",
+      "previousNames": [
+        "HALO",
+        "ORYVA"
+      ]
     },
     {
       "id": "SUN-002",

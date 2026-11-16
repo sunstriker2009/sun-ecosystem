@@ -4,7 +4,7 @@
 
 | ID | Name | Purpose | Status | Technical identity |
 |---|---|---|---|---|
-| SUN-001 | **ORYVA** | Identity, authentication, authorization, security | **CONFIRMED** | Sun.Security |
+| SUN-001 | **OUTPOST** | Identity, authentication, authorization, security | **CONFIRMED** | Sun.Security |
 | SUN-002 | **WORKBENCH** | Interactive scripting workspace and saved connections | **CONFIRMED** | Sun.Workspace |
 
 ## Unnumbered product proposals
@@ -23,11 +23,11 @@ These names are **unapproved and unnumbered**. The next approved product receive
 
 SUN Ecosystem (SUN-G001), STRATA (SUN-G002) and FOUNDRY (SUN-G003) are tracked in the separate [governance and infrastructure registry](INFRASTRUCTURE.md). They do not consume SUN-NNN product IDs. MarketPilot AI remains an independent application and is not part of the SUN product registry.
 
-## SUN-001 — ORYVA
-- **Public identity:** ORYVA by Sun
+## SUN-001 — OUTPOST
+- **Public identity:** OUTPOST by Sun
 - **Tagline:** Identity. Trust. Protection.
 - **Name:** Confirmed by product owner 2026-10-30; supersedes HALO.
-- **Repository:** [sun-oryva](https://github.com/sunstriker2009/sun-oryva) (established).
+- **Repository:** [sun-oryva](https://github.com/sunstriker2009/sun-outpost) (established).
 - **Backend packages:** Sun.Security.*
 - **Frontend packages:** @sun-security/*
 - **Initial integration target:** MarketPilot AI, an independent application.

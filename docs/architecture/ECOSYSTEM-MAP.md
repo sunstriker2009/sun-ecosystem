@@ -8,7 +8,7 @@ flowchart TD
     SUN["SUN Ecosystem — governance (SUN-G001)"]
     STRATA["STRATA — repository template (SUN-G002)"]
     FOUNDRY["FOUNDRY — repository factory (SUN-G003)"]
-    ORYVA["ORYVA — identity and security platform (SUN-001)"]
+    ORYVA["OUTPOST — identity and security platform (SUN-001)"]
     WORKBENCH["WORKBENCH — scripting workspace (SUN-002)"]
     MARKET["MarketPilot AI — independent application"]
 
@@ -26,8 +26,8 @@ flowchart TD
 
 - **SUN Ecosystem** is the central authority for portfolio naming, brand guidelines, product registry and governance; it is not an application runtime.
 - **STRATA** is a reusable repository template. **FOUNDRY** uses STRATA to provision repositories and apply/verify governance. Neither is a product runtime dependency.
-- **ORYVA** and **WORKBENCH** are confirmed, independently usable SUN products. Their implementation and delivery status belong in their own repositories.
-- **MarketPilot AI** is an independent application and initial planned ORYVA integration target; do not describe it as already powered by ORYVA until verified.
+- **OUTPOST** and **WORKBENCH** are confirmed, independently usable SUN products. Their implementation and delivery status belong in their own repositories.
+- **MarketPilot AI** is an independent application and initial planned OUTPOST integration target; do not describe it as already powered by OUTPOST until verified.
 - Dotted links indicate intended or illustrative relationships, **not evidence of historical provisioning or completed integration**.
 
 ## Authoritative sources

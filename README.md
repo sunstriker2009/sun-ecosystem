@@ -21,7 +21,7 @@ Generated from [the repository catalog](registry/repositories.json). Approved id
 
 <table>
 <tr>
-<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-oryva"><img src="branding/registry/sun-oryva.png" alt="ORYVA icon" width="72" height="72"></a><p><strong>ORYVA</strong></p><small>SUN-001 · Identity, authentication, authorization and security</small></td>
+<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-outpost"><img src="branding/registry/sun-oryva.png" alt="OUTPOST icon" width="72" height="72"></a><p><strong>OUTPOST</strong></p><small>SUN-001 · Identity, authentication, authorization and security</small></td>
 <td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-workbench"><img src="branding/registry/sun-workbench.png" alt="WORKBENCH icon" width="72" height="72"></a><p><strong>WORKBENCH</strong></p><small>SUN-002 · Local code organizer and interactive scripting workspace</small></td>
 </tr>
 </table>
@@ -45,19 +45,19 @@ See the [ecosystem relationship diagram](docs/architecture/ECOSYSTEM-MAP.md) for
 | Governance | **SUN Ecosystem** | SUN-G001 — naming, registry, branding and governance |
 | Repository infrastructure | [STRATA](https://github.com/sunstriker2009/sun-strata) | SUN-G002 — reusable repository foundation |
 | Repository infrastructure | [FOUNDRY](https://github.com/sunstriker2009/sun-foundry) | SUN-G003 — repository factory and governance verification |
-| Confirmed product | [ORYVA](https://github.com/sunstriker2009/sun-oryva) | Identity and security platform — SUN-001 |
+| Confirmed product | [OUTPOST](https://github.com/sunstriker2009/sun-outpost) | Identity and security platform — SUN-001 |
 | Confirmed product | [WORKBENCH](https://github.com/sunstriker2009/sun-workbench) | Scripting workspace — SUN-002 |
-| Independent application | [MarketPilot AI](https://github.com/sunstriker2009/marketpilot-ai) | Planned ORYVA integration target; not a registered SUN product |
+| Independent application | [MarketPilot AI](https://github.com/sunstriker2009/marketpilot-ai) | Planned OUTPOST integration target; not a registered SUN product |
 
 SUN Ecosystem, STRATA and FOUNDRY are tracked in the [governance and infrastructure registry](registry/INFRASTRUCTURE.md) using the separate SUN-G series.
 
 ## Confirmed products
 
-**ORYVA by Sun** — Identity. Trust. Protection.  
+**OUTPOST by Sun** — Identity. Trust. Protection.  
 Reusable authentication, authorization, identity and security platform.  
 Registry: **SUN-001 — CONFIRMED**. Commercial naming clearance is **pending**.
 
-ORYVA supersedes the earlier name HALO. Technical naming remains `Sun.Security`; product repository: [sun-oryva](https://github.com/sunstriker2009/sun-oryva). MarketPilot AI is an independent application and initial integration target.
+OUTPOST supersedes the earlier name HALO. Technical naming remains `Sun.Security`; product repository: [sun-oryva](https://github.com/sunstriker2009/sun-outpost). MarketPilot AI is an independent application and initial integration target.
 
 **WORKBENCH by Sun** — Organize. Script. Explore.  
 Local code organizer and interactive scripting workspace, with language-aware editing and planned JavaScript, Python and C# runtime adapters.  
@@ -76,14 +76,14 @@ Registry: **SUN-002 — CONFIRMED**. Technical identity: `Sun.Workspace`. Reposi
 | [Naming Guidelines v1.0](branding/NAMING-GUIDELINES.md) | Naming rules, scoring, workflow and clearance |
 | [Product Repository Branding Standard](docs/governance/PRODUCT-BRANDING.md) | Approved concept workflow, README banners, PNG assets, optional SVG adaptations and existing-repository adoption checklist |
 | [Visual Identity](branding/VISUAL-IDENTITY.md) | Provisional palette, typography and logo direction |
-| [ORYVA product documentation](https://github.com/sunstriker2009/sun-oryva) | Architecture, design system, engineering roadmap and implementation (maintained outside SUN ecosystem) |
+| [OUTPOST product documentation](https://github.com/sunstriker2009/sun-outpost) | Architecture, design system, engineering roadmap and implementation (maintained outside SUN ecosystem) |
 | [Visual Identity Concept 01](branding/VISUAL-CONCEPT-01.md) | Artwork and design exploration |
 | [Product Registry](registry/PRODUCTS.md) | Confirmed and proposed product names |
 | [Governance & Infrastructure Registry](registry/INFRASTRUCTURE.md) | SUN-G001 through SUN-G003, separate from product IDs |
 | [Ecosystem Map](docs/architecture/ECOSYSTEM-MAP.md) | Mermaid diagram of current organizational relationships |
 | [Machine-readable Registry](registry/products.json) | Structured product metadata |
 | [Brand Architecture Decision](decisions/0001-sun-brand-architecture.md) | Endorsed brand model |
-| [HALO → ORYVA Decision](decisions/0002-halo-to-oryva.md) | Historical rename rationale |
+| [HALO → OUTPOST Decision](decisions/0002-halo-to-oryva.md) | Historical rename rationale |
 | [Product Proposal Template](templates/PRODUCT-PROPOSAL.md) | Starting new proposals |
 | [Naming Review Template](templates/NAMING-REVIEW.md) | Candidate evaluation and clearance |
 | [WORKBENCH naming decision](decisions/0004-workbench-rename.md) | SUN-002 approval and naming rationale |
@@ -91,12 +91,12 @@ Registry: **SUN-002 — CONFIRMED**. Technical identity: `Sun.Workspace`. Reposi
 
 ## Registry status
 
-**Confirmed products:** ORYVA (SUN-001), WORKBENCH (SUN-002). **Governance & infrastructure:** SUN Ecosystem (SUN-G001), STRATA (SUN-G002), FOUNDRY (SUN-G003).  
+**Confirmed products:** OUTPOST (SUN-001), WORKBENCH (SUN-002). **Governance & infrastructure:** SUN Ecosystem (SUN-G001), STRATA (SUN-G002), FOUNDRY (SUN-G003).  
 **Unnumbered proposals:** ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON, FORGE. Proposed names have no reserved SUN IDs and must not trigger automatic project creation. The next confirmed product receives **SUN-003**.
 
 ## Product repository branding
 
-SUN product repositories follow the [Product Repository Branding Standard](docs/governance/PRODUCT-BRANDING.md): purpose-led symbols incorporating SUN's arc, distinct palettes, approved panoramic README banners and coordinated PNG compact assets, with optional SVG adaptations. [WORKBENCH](https://github.com/sunstriker2009/sun-workbench) and [ORYVA](https://github.com/sunstriker2009/sun-oryva) are reference examples; existing repositories should track adoption independently.
+SUN product repositories follow the [Product Repository Branding Standard](docs/governance/PRODUCT-BRANDING.md): purpose-led symbols incorporating SUN's arc, distinct palettes, approved panoramic README banners and coordinated PNG compact assets, with optional SVG adaptations. [WORKBENCH](https://github.com/sunstriker2009/sun-workbench) and [OUTPOST](https://github.com/sunstriker2009/sun-outpost) are reference examples; existing repositories should track adoption independently.
 
 ## Repository provisioning
 
