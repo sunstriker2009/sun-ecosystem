@@ -21,7 +21,7 @@ Generated from [the repository catalog](registry/repositories.json). Approved id
 
 <table>
 <tr>
-<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-astelvo"><img src="branding/registry/sun-astelvo.png" alt="ASTELVO icon" width="72" height="72"></a><p><strong>ASTELVO</strong></p><small>SUN-002 · Local code organizer and interactive scripting workspace</small></td>
+<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-workbench"><img src="branding/registry/sun-astelvo.png" alt="ASTELVO icon" width="72" height="72"></a><p><strong>ASTELVO</strong></p><small>SUN-002 · Local code organizer and interactive scripting workspace</small></td>
 <td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-oryva"><img src="branding/registry/sun-oryva.png" alt="ORYVA icon" width="72" height="72"></a><p><strong>ORYVA</strong></p><small>SUN-001 · Identity, authentication, authorization and security</small></td>
 </tr>
 </table>
@@ -46,7 +46,7 @@ See the [ecosystem relationship diagram](docs/architecture/ECOSYSTEM-MAP.md) for
 | Repository infrastructure | [STRATA](https://github.com/sunstriker2009/sun-strata) | SUN-G002 — reusable repository foundation |
 | Repository infrastructure | [FOUNDRY](https://github.com/sunstriker2009/sun-foundry) | SUN-G003 — repository factory and governance verification |
 | Confirmed product | [ORYVA](https://github.com/sunstriker2009/sun-oryva) | Identity and security platform — SUN-001 |
-| Confirmed product | [ASTELVO](https://github.com/sunstriker2009/sun-astelvo) | Scripting workspace — SUN-002 |
+| Confirmed product | [ASTELVO](https://github.com/sunstriker2009/sun-workbench) | Scripting workspace — SUN-002 |
 | Independent application | [MarketPilot AI](https://github.com/sunstriker2009/marketpilot-ai) | Planned ORYVA integration target; not a registered SUN product |
 
 SUN Ecosystem, STRATA and FOUNDRY are tracked in the [governance and infrastructure registry](registry/INFRASTRUCTURE.md) using the separate SUN-G series.
@@ -96,7 +96,7 @@ Registry: **SUN-002 — CONFIRMED**. Technical identity: `Sun.Workspace`. Reposi
 
 ## Product repository branding
 
-SUN product repositories follow the [Product Repository Branding Standard](docs/governance/PRODUCT-BRANDING.md): purpose-led symbols incorporating SUN's arc, distinct palettes, approved panoramic README banners and coordinated PNG compact assets, with optional SVG adaptations. [ASTELVO](https://github.com/sunstriker2009/sun-astelvo) and [ORYVA](https://github.com/sunstriker2009/sun-oryva) are reference examples; existing repositories should track adoption independently.
+SUN product repositories follow the [Product Repository Branding Standard](docs/governance/PRODUCT-BRANDING.md): purpose-led symbols incorporating SUN's arc, distinct palettes, approved panoramic README banners and coordinated PNG compact assets, with optional SVG adaptations. [ASTELVO](https://github.com/sunstriker2009/sun-workbench) and [ORYVA](https://github.com/sunstriker2009/sun-oryva) are reference examples; existing repositories should track adoption independently.
 
 ## Repository provisioning
 

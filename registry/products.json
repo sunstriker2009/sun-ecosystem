@@ -26,7 +26,7 @@
       "publicName": "ASTELVO by Sun",
       "tagline": "Organize. Script. Explore.",
       "namespace": "Sun.Workspace",
-      "repository": "sun-astelvo",
+      "repository": "sun-workbench",
       "backendPackages": "Sun.Workspace.*",
       "frontendPackages": "@sun-workspace/*",
       "commercialClearance": "PENDING",

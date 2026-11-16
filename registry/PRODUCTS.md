@@ -42,7 +42,7 @@ The proposed names ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON and FORGE have pote
 - **Tagline:** Organize. Script. Explore.
 - **Name:** Confirmed by product owner 2026-11-12 ("Sounds good, kick off").
 - **Technical identity:** Sun.Workspace; Sun.Workspace.*; @sun-workspace/*.
-- **Repository:** [sun-astelvo](https://github.com/sunstriker2009/sun-astelvo) (established).
+- **Repository:** [sun-astelvo](https://github.com/sunstriker2009/sun-workbench) (established).
 - **Initial scope:** Local code and scripting workspace with folders, tags, smart collections and planned language-aware JavaScript, Python and C# execution adapters. Database connections and Kubernetes support are future extensions; see the product roadmap.
 - **Extension direction:** Additional execution providers and transports; implementation planning belongs in the product repository.
 - **Commercial clearance:** PENDING. Preliminary exact-name web screening only; trademarks, domains and package availability have not been cleared.
