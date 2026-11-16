@@ -45,7 +45,7 @@ The **owner-approved original artwork is the canonical visual source of truth**.
 
 ## 4. Compact and production assets
 
-Provide complementary **SVG** assets for application headers, internal UI and documentation:
+Use approved **PNG** compact assets that stay consistent with the banner and canonical symbol. Provide complementary SVG adaptations only where a concrete application, monochrome, accessibility or scaling need justifies them; SVG is not a universal delivery requirement. Where SVG variants are adopted, consider:
 
 - Full horizontal lockup and standalone symbol.
 - Light, dark and monochrome variants.
@@ -126,10 +126,19 @@ Treat existing products as an **adoption checklist**, not an assumption of compl
 - [ ] Distinct approved palette and consistent family typography/spacing.
 - [ ] High-resolution panoramic README banner with symbol, name, “by Sun” and tagline.
 - [ ] Banner committed locally with a versioned filename and readable at GitHub widths.
-- [ ] SVG full lockup and standalone symbol.
-- [ ] Light, dark, monochrome and small-size variants; app-icon exports.
-- [ ] Canonical approved source preserved; high-resolution derivatives trace to that source.\n- [ ] Concept originals separated from production assets.
+- [ ] Approved PNG symbol and compact exports; optional SVG lockup/symbol adaptations where required by actual usage.
+- [ ] Legible app-icon exports and any theme/monochrome variants required by actual usage.
+- [ ] Canonical approved source preserved; high-resolution derivatives trace to that source.
+- [ ] Concept originals separated from production assets.
 - [ ] Product brand guide documents approval, palette, typography, locations and usage rules.
 - [ ] Changes merged via feature branch, CI and squash PR.
 
 **Initial review targets:** [ASTELVO](https://github.com/sunstriker2009/sun-astelvo), [ORYVA](https://github.com/sunstriker2009/sun-oryva), [FOUNDRY](https://github.com/sunstriker2009/sun-foundry), then remaining SUN products as appropriate. No existing repository is automatically changed by adoption of this document.
+
+## 8. Package installation and numbered revisions
+
+For repositories explicitly adopting the [FOUNDRY installer](https://github.com/sunstriker2009/sun-foundry/blob/main/docs/BRANDING-ZIP-INSTALLER.md), its canonical installation destinations are `branding/assets/readme-banner.png`, `symbol.png` and `icons/icon-{size}.png`. These stable package paths are an approved alternative to the versioned active filenames described above; history is recorded in immutable complete snapshots under `branding/revisions/v1.zip`, `v2.zip`, etc. Do not rename stable installer destinations on each revision.
+
+On first installation, v1 backs up existing assets and v2 records the installed result. Subsequent installs and rollbacks append the next integer version, independent of the uploaded filename. A successful installation removes the unnumbered upload and saves a complete snapshot, rather than merely renaming the original ZIP bytes. The feature-branch hook appends a follow-up commit on the upload branch; review artwork and required checks before its squash merge. Invalid packages do not consume a version. See the installer guide for no-op, rollback and failure behavior.
+
+ASTELVO's first installation merged in [#39](https://github.com/sunstriker2009/sun-astelvo/pull/39). Live rollback and broader adoption remain pending. Existing `branding/archive/` material stays intact until a separate reviewed migration preserves original artwork, concepts and provenance; asset snapshots alone do not preserve every historical document. The installer does not update product names, README text, app copies or generator configuration. Consult the [governance handoff](HANDOFF.md) before resuming rollout.
