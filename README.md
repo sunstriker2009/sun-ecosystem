@@ -21,7 +21,7 @@ Generated from [the repository catalog](registry/repositories.json). Approved id
 
 <table>
 <tr>
-<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-outpost"><img src="branding/registry/sun-oryva.png" alt="OUTPOST icon" width="72" height="72"></a><p><strong>OUTPOST</strong></p><small>SUN-001 · Identity, authentication, authorization and security</small></td>
+<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-outpost"><img src="branding/registry/sun-outpost.png" alt="OUTPOST icon" width="72" height="72"></a><p><strong>OUTPOST</strong></p><small>SUN-001 · Identity, authentication, authorization and security</small></td>
 <td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-workbench"><img src="branding/registry/sun-workbench.png" alt="WORKBENCH icon" width="72" height="72"></a><p><strong>WORKBENCH</strong></p><small>SUN-002 · Local code organizer and interactive scripting workspace</small></td>
 </tr>
 </table>
