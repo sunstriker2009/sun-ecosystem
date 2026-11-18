@@ -31,15 +31,8 @@ Generated from [the repository catalog](registry/repositories.json). Approved id
 <table>
 <tr>
 <td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-foundry"><img src="branding/registry/sun-foundry.png" alt="FOUNDRY icon" width="72" height="72"></a><p><strong>FOUNDRY</strong></p><small>SUN-G003 · Repository factory and governance verification</small></td>
+<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-foundry-pilot"><strong>Foundry Pilot</strong></a><p><strong>Foundry Pilot</strong></p><small>SUN-G004 · Isolated repository for validating Foundry provisioning and inherited branding</small></td>
 <td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-strata"><img src="branding/registry/sun-strata.png" alt="STRATA icon" width="72" height="72"></a><p><strong>STRATA</strong></p><small>SUN-G002 · Reusable repository template</small></td>
-</tr>
-</table>
-
-### Pending registration
-
-<table>
-<tr>
-<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-foundry-pilot"><strong>sun-foundry-pilot</strong></a><p><strong>sun-foundry-pilot</strong></p><small>Pending · Repository registration pending owner review</small></td>
 </tr>
 </table>
 <!-- SUN-REPOSITORY-GALLERY:END -->

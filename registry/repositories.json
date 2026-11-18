@@ -39,10 +39,10 @@
     },
     {
       "repository": "sunstriker2009/sun-foundry-pilot",
-      "registryId": null,
-      "classification": "pending",
-      "name": "sun-foundry-pilot",
-      "summary": "Repository registration pending owner review",
+      "registryId": "SUN-G004",
+      "classification": "infrastructure",
+      "name": "Foundry Pilot",
+      "summary": "Isolated repository for validating Foundry provisioning and inherited branding",
       "icon": null,
       "iconSha256": null
     }
