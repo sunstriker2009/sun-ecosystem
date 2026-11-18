@@ -1,7 +1,7 @@
 # SUN Brand Guidelines
 
-**Version:** 1.0  
-**Approved:** 2026-10-30
+**Version:** 2.0  
+**Approved:** 2026-11-18
 
 ## Vision
 SUN is the parent brand for a family of independently usable software products, libraries, frameworks, and developer tools. Products share a recognizable identity without requiring technical dependencies on one another.
@@ -19,6 +19,18 @@ SUN is the parent brand for a family of independently usable software products, 
 
 ## Brand character
 Modern, sophisticated, dependable, minimal, geometric, and internationally approachable. Inspiration includes astronomy, planetary systems, light, optics, energy, motion, and exploration; literal celestial terminology is not mandatory.
+
+## Product families and visual themes
+
+Use the recognizable SUN arc, the **“by Sun”** endorsement in endorsed lockups, and consistent typography, spacing and optical proportions as shared family cues. Build each central symbol around the product’s purpose. Distinguish families through their visual themes and individual products through their silhouettes, palettes and imagery.
+
+| Family | Examples | Visual direction |
+| --- | --- | --- |
+| Governance and orchestration | STRATA, FOUNDRY, Foundry Pilot | Structural forms, layered materials and grounded compositions suggest foundations, tooling and coordination. |
+| Productivity tools | WORKBENCH, CodeFolio | Draw from the work people do, such as opening a reference, editing a parameter, or organizing and running scripts. |
+| Application products | OUTPOST | Develop each theme from the application’s purpose. OUTPOST’s orbital outpost imagery expresses a protected point of access for an identity and security platform. |
+
+Use these families to guide visual design. Consult the [Product Repository Branding Standard](../docs/governance/PRODUCT-BRANDING.md) for concept review, asset delivery and adoption.
 
 ## Portfolio policy
 A product name is appropriate for an independently useful platform, application, or named developer product. Small shared utilities may retain ordinary technical names without a distinct public brand.

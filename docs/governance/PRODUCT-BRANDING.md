@@ -1,11 +1,12 @@
 # SUN Product Repository Branding Standard
 
-**Version:** 1.0  
+**Version:** 2.0  
+**Effective:** 2026-11-18  
 **Status:** Approved direction — product-specific assets require owner approval  
 **Scope:** All SUN product repositories, new and existing  
 **Reference implementations:** [FOUNDRY](https://github.com/sunstriker2009/sun-foundry/blob/main/branding/ADOPTION-CHECKLIST.md) (canonical layout and migration checklist), [WORKBENCH](https://github.com/sunstriker2009/sun-workbench) and [OUTPOST](https://github.com/sunstriker2009/sun-outpost) (product-specific adaptations)
 
-This standard complements the [SUN Visual Identity](../../branding/VISUAL-IDENTITY.md) and [Git Workflow & Merge Policy](GIT-WORKFLOW.md). A product's own brand guide records approved choices; the ecosystem guide governs consistency.
+This standard complements the [SUN Brand Guidelines](../../branding/BRAND-GUIDELINES.md), [SUN Visual Identity](../../branding/VISUAL-IDENTITY.md) and [Git Workflow & Merge Policy](GIT-WORKFLOW.md). A product's own brand guide records approved choices; the ecosystem guide governs consistency.
 
 ## 1. Concept and approval
 
@@ -14,12 +15,12 @@ Before finalizing assets, produce concept artwork for explicit owner review. Eac
 - Incorporate the recognizable **SUN arc** as the family connection.
 - Communicate the product's **core purpose** through its central symbol.
 - Where natural, subtly suggest the **first character** of the public product name.
-- Use a **distinct product palette** to avoid close resemblance to sibling products.
-- Maintain consistent family typography, optical weight, proportions, spacing and professional finish.
+- Use its [product-family visual theme](../../branding/BRAND-GUIDELINES.md#product-families-and-visual-themes) and a **distinct product palette and silhouette** to differentiate it within the portfolio.
+- Maintain consistent family typography, optical weight, proportions, spacing and professional finish. Use the **“by Sun”** endorsement in the endorsed lockup and README banner.
 
 **Priority:** product purpose and immediate recognizability outweigh forcing a letter shape. Avoid generic symbols, excessively complex motifs and confusing similarity to other SUN products. Do not imply approval from an exploratory image.
 
-Record approval, rejected alternatives where useful, final palette (color values), typography, clear space, minimum sizes, contrast/accessibility considerations and usage restrictions in the product's brand guide.
+Record the selected product family, approval, rejected alternatives where useful, final palette (color values), typography, clear space, minimum sizes, contrast/accessibility considerations and usage restrictions in the product's brand guide.
 
 ## 2. README panoramic banner
 
@@ -41,7 +42,7 @@ The **owner-approved original artwork is the canonical visual source of truth**.
 - Prefer a transparent original or layered source for clean extraction. Cropping a flattened banner can include glow, background and compositing artifacts; do not claim an exact transparent extraction without checking it.
 - Treat vector SVGs as **purpose-built adaptations** where resolution independence, monochrome, accessibility or tiny UI sizes require simplified geometry. Label adaptations as such, and review them against the canonical artwork.
 - Never substitute a visually similar regenerated image or third-party image for the approved original.
-- Maintain source provenance, export scripts, dimensions and usage rules in the product brand guide. Validate small sizes and do not assume a raster crop is suitable at 16–32 px.
+- Maintain source provenance, export scripts, dimensions and usage rules in the product brand guide. Review icons at their actual output sizes. Where needed, adjust the SUN arc’s weight or contrast so it remains recognizable at small sizes, and record the adaptation in the product brand guide.
 
 ## 4. Compact and production assets
 
@@ -123,15 +124,17 @@ branding/
 Treat existing products as an **adoption checklist**, not an assumption of compliance. Review each product independently; record missing assets and follow-up PRs in that product repository. WORKBENCH and OUTPOST are **reference examples**, not evidence that every item below has been completed.
 
 - [ ] Owner-approved concept and documented SUN arc / purpose / optional initial-letter rationale.
-- [ ] Distinct approved palette and consistent family typography/spacing.
+- [ ] Documented product-family theme, distinct approved palette and consistent family typography and spacing.
 - [ ] High-resolution panoramic README banner with symbol, name, “by Sun” and tagline.
 - [ ] Banner committed locally with a versioned filename and readable at GitHub widths.
 - [ ] Approved PNG symbol and compact exports; optional SVG lockup/symbol adaptations where required by actual usage.
-- [ ] Legible app-icon exports and any theme/monochrome variants required by actual usage.
+- [ ] Legible app-icon exports with a recognizable SUN arc at their intended sizes, plus any theme or monochrome variants required by actual usage.
 - [ ] Canonical approved source preserved; high-resolution derivatives trace to that source.
 - [ ] Concept originals separated from production assets.
 - [ ] Product brand guide documents approval, palette, typography, locations and usage rules.
 - [ ] Changes merged via feature branch, CI and squash PR.
+
+For v2 adoption, review existing identities against their family theme and shared SUN cues. Record any follow-up for brand guides, registry or gallery references, and approved assets. Apply changes through the normal repository PR and artwork approval processes.
 
 **Initial review targets:** [WORKBENCH](https://github.com/sunstriker2009/sun-workbench), [OUTPOST](https://github.com/sunstriker2009/sun-outpost), [FOUNDRY](https://github.com/sunstriker2009/sun-foundry), then remaining SUN products as appropriate. No existing repository is automatically changed by adoption of this document.
 
