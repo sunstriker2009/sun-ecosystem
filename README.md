@@ -34,6 +34,14 @@ Generated from [the repository catalog](registry/repositories.json). Approved id
 <td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-strata"><img src="branding/registry/sun-strata.png" alt="STRATA icon" width="72" height="72"></a><p><strong>STRATA</strong></p><small>SUN-G002 · Reusable repository template</small></td>
 </tr>
 </table>
+
+### Pending registration
+
+<table>
+<tr>
+<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-foundry-pilot"><strong>sun-foundry-pilot</strong></a><p><strong>sun-foundry-pilot</strong></p><small>Pending · Repository registration pending owner review</small></td>
+</tr>
+</table>
 <!-- SUN-REPOSITORY-GALLERY:END -->
 
 ## Ecosystem at a glance

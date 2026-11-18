@@ -36,6 +36,15 @@
       "summary": "Repository factory and governance verification",
       "icon": "branding/registry/sun-foundry.png",
       "iconSha256": "af689d697e7cb0dca847006ba520e53bed3e546285182bfd9273eb5c528adbe3"
+    },
+    {
+      "repository": "sunstriker2009/sun-foundry-pilot",
+      "registryId": null,
+      "classification": "pending",
+      "name": "sun-foundry-pilot",
+      "summary": "Repository registration pending owner review",
+      "icon": null,
+      "iconSha256": null
     }
   ]
 }
