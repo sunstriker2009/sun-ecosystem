@@ -85,6 +85,7 @@ Registry: **SUN-002 — CONFIRMED**. Technical identity: `Sun.Workspace`. Reposi
 | [Machine-readable Registry](registry/products.json) | Structured product metadata |
 | [Brand Architecture Decision](decisions/0001-sun-brand-architecture.md) | Endorsed brand model |
 | [Outpost naming decision](decisions/product-renames/sun-001-outpost.md) | ORYVA → Outpost and SUN-001 continuity |
+| [Product Ideas](docs/product-ideas.md) | Early concepts and product direction |
 | [Product Proposal Template](templates/PRODUCT-PROPOSAL.md) | Starting new proposals |
 | [Naming Review Template](templates/NAMING-REVIEW.md) | Candidate evaluation and clearance |
 | [Workbench naming decision](decisions/0004-workbench-rename.md) | SUN-002 approval and naming rationale |
