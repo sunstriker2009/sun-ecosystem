@@ -26,7 +26,7 @@ Record the selected product family, approval, rejected alternatives where useful
 
 Place an **approved, high-resolution panoramic image** at the top of each product README. It must contain:
 
-- Product symbol and public product name.
+- Product symbol and public product name set in **ALL CAPS** (for example, **CODEFOLIO**).
 - **“by Sun”** endorsement.
 - Approved product tagline.
 
@@ -125,7 +125,7 @@ Treat existing products as an **adoption checklist**, not an assumption of compl
 
 - [ ] Owner-approved concept and documented SUN arc / purpose / optional initial-letter rationale.
 - [ ] Documented product-family theme, distinct approved palette and consistent family typography and spacing.
-- [ ] High-resolution panoramic README banner with symbol, name, “by Sun” and tagline.
+- [ ] High-resolution panoramic README banner with symbol, product name in all caps, “by Sun” and tagline.
 - [ ] Banner committed locally with a versioned filename and readable at GitHub widths.
 - [ ] Approved PNG symbol and compact exports; optional SVG lockup/symbol adaptations where required by actual usage.
 - [ ] Legible app-icon exports with a recognizable SUN arc at their intended sizes, plus any theme or monochrome variants required by actual usage.
