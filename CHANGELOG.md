@@ -5,6 +5,7 @@
 - Publish product-family visual themes for governance and orchestration, productivity tools, and application products.
 - Define shared SUN identity cues and document how to adapt the arc for small icons.
 - Add a product-family review to the existing adoption workflow.
+- Specify all-caps product names on panoramic README banners.
 
 ## 2026-11-14 — Governance and infrastructure IDs
 - Adopt separate SUN-GNNN numbering for governance and shared repository infrastructure.
