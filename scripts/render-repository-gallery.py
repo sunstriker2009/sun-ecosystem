@@ -19,6 +19,8 @@ def render(root: Path) -> str:
     authority = json.loads((root / "registry/products.json").read_text(encoding="utf-8"))
     if catalog.get("schemaVersion") != 1 or not isinstance(catalog.get("repositories"), list):
         raise ValueError("Unsupported repository catalog schema")
+    if catalog.get("galleryDirectory") != "gallery":
+        raise ValueError("Repository catalog must use the top-level gallery directory")
     known = {x["id"]: x for group in ("products", "infrastructure") for x in authority[group]}
     rows = catalog["repositories"]
     if not rows:
@@ -61,7 +63,7 @@ def render(root: Path) -> str:
                 raise ValueError(f"Icon digest without icon for {repo}")
             tile = f"<strong>{name}</strong>"
         else:
-            if not isinstance(icon, str) or not re.fullmatch(r"branding/registry/[a-z0-9-]+\.png", icon):
+            if not isinstance(icon, str) or not re.fullmatch(r"gallery/[a-z0-9-]+\.png", icon):
                 raise ValueError(f"Unsafe icon path for {repo}")
             path = root / icon
             if not path.is_file() or path.read_bytes()[:8] != b"\x89PNG\r\n\x1a\n":
