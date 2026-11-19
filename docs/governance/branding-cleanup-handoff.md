@@ -4,14 +4,15 @@ The owner chose to keep Ecosystem and Foundry separate. Ecosystem owns the share
 
 ## Review decisions
 
-- Confirm whether the SUN parent brand needs a full product-style package. Its generated gallery images have a live purpose and need an explicit path decision if moved.
-- Agree how to produce and validate the root manifest, optionally carry the approved artwork preview, preserve fonts and styles, and handle rollback from existing numbered snapshots.
+- Confirm whether the SUN parent brand needs the full icon set.
+- An incoming installer package may contain `preview.png`. Install it as `branding/assets/concept-artwork.png` when present. Review font and style preservation and rollback from existing numbered snapshots.
+- Defer `asset-manifest.json` until its purpose and consumers are clear.
 - Agree whether to retire Workbench’s unused-looking extra icon sizes and social exports after checking distribution outside Git.
 
 ## Suggested rollout for review
 
 1. Agree on the package contract in Ecosystem and review the Foundry compatibility changes. Coordinate Foundry’s template seed checks with the planned Strata tree.
-2. Stage any shared-action pin changes that are needed for the new format. Check installer, rollback, template provisioning, and gallery validation before removing dependent paths.
+2. Stage any shared-action pin changes needed for the new format. Coordinate Ecosystem’s move from `branding/registry/` to top-level `gallery/` with the registry image paths, README generation, gallery validation, and Foundry workflows. Check installer, rollback, template provisioning, and gallery validation before removing dependent paths.
 3. Propose focused cleanup PRs in the affected repositories. Keep product PRs and docs local in scope. Ecosystem and Foundry can reference multiple repositories when coordinating the rollout.
 4. Use the approved layout for CodeFolio when its repository and branding are taken up.
 
