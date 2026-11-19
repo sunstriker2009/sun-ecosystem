@@ -49,10 +49,10 @@
     },
     {
       "repository": "sunstriker2009/sun-codefolio",
-      "registryId": null,
-      "classification": "pending",
-      "name": "sun-codefolio",
-      "summary": "Repository registration pending owner review",
+      "registryId": "SUN-P002",
+      "classification": "product",
+      "name": "CodeFolio",
+      "summary": "Searchable code snippet reference and interactive snippet builder",
       "icon": null,
       "iconSha256": null
     }
