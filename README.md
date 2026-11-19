@@ -19,6 +19,7 @@ Generated from [the repository catalog](registry/repositories.json). Approved id
 
 <table>
 <tr>
+<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-codefolio"><strong>CodeFolio</strong></a><p><strong>CodeFolio</strong></p><small>SUN-P002 · Searchable code snippet reference and interactive snippet builder</small></td>
 <td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-outpost"><img src="gallery/sun-outpost.png" alt="Outpost icon" width="72" height="72"></a><p><strong>Outpost</strong></p><small>SUN-C001 · Identity, authentication, authorization and security</small></td>
 <td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-workbench"><img src="gallery/sun-workbench.png" alt="Workbench icon" width="72" height="72"></a><p><strong>Workbench</strong></p><small>SUN-P001 · Local code organizer and interactive scripting workspace</small></td>
 </tr>
@@ -46,6 +47,7 @@ See the [ecosystem relationship diagram](docs/architecture/ECOSYSTEM-MAP.md) for
 | Repository infrastructure | [Foundry](https://github.com/sunstriker2009/sun-foundry) | SUN-G003 — repository factory and governance verification |
 | Confirmed product | [Outpost](https://github.com/sunstriker2009/sun-outpost) | Identity and security platform — SUN-C001 |
 | Confirmed product | [Workbench](https://github.com/sunstriker2009/sun-workbench) | Scripting workspace — SUN-P001 |
+| Confirmed product | [CodeFolio](https://github.com/sunstriker2009/sun-codefolio) | Code snippet reference and builder — SUN-P002 |
 | Independent application | [MarketPilot AI](https://github.com/sunstriker2009/sun-marketpilot-ai) | Planned Outpost integration target; not a registered SUN product |
 
 SUN Ecosystem, Strata, Foundry, and Foundry Pilot are tracked in the [governance and infrastructure registry](registry/INFRASTRUCTURE.md) using the separate SUN-G series.
@@ -89,8 +91,8 @@ Registry: **SUN-P001 — CONFIRMED**. Technical identity: `Sun.Workspace`. Repos
 
 ## Registry status
 
-**Confirmed products:** Outpost (SUN-C001), Workbench (SUN-P001). **Governance & infrastructure:** SUN Ecosystem (SUN-G001), Strata (SUN-G002), Foundry (SUN-G003), Foundry Pilot (SUN-G004).  
-**Unnumbered proposals:** ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON, FORGE. Proposed names have no reserved SUN IDs and must not trigger automatic project creation. The next IDs are **SUN-P002** for productivity, **SUN-C002** for application components, and **SUN-G005** for governance and infrastructure.
+**Confirmed products:** Outpost (SUN-C001), Workbench (SUN-P001), CodeFolio (SUN-P002). **Governance & infrastructure:** SUN Ecosystem (SUN-G001), Strata (SUN-G002), Foundry (SUN-G003), Foundry Pilot (SUN-G004).
+**Unnumbered proposals:** ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON, FORGE. Proposed names have no reserved SUN IDs and must not trigger automatic project creation. The next IDs are **SUN-P003** for productivity, **SUN-C002** for application components, and **SUN-G005** for governance and infrastructure.
 
 ## Product repository branding
 

@@ -1,13 +1,14 @@
 # SUN Product Registry v1.1
 
-**Updated:** 2026-11-18. Each family numbers its products independently. **SUN-PNNN** identifies productivity products and **SUN-CNNN** identifies application components. Assign the next ID in the appropriate family **only upon confirmation**. IDs remain stable across renames and repository moves. Proposals do not reserve IDs or authorize repository creation.
+**Updated:** 2026-11-19. Each family numbers its products independently. **SUN-PNNN** identifies productivity products and **SUN-CNNN** identifies application components. Assign the next ID in the appropriate family **only upon confirmation**. IDs remain stable across renames and repository moves. Proposals do not reserve IDs or authorize repository creation.
 
 | ID | Name | Family | Purpose | Status | Technical identity |
 |---|---|---|---|---|---|
 | SUN-C001 | **Outpost** | Application components | Identity, authentication, authorization, security | **CONFIRMED** | Sun.Security |
 | SUN-P001 | **Workbench** | Productivity | Interactive scripting workspace and saved connections | **CONFIRMED** | Sun.Workspace |
+| SUN-P002 | **CodeFolio** | Productivity | Searchable code snippet reference and interactive snippet builder | **CONFIRMED** | TBD |
 
-The next IDs are **SUN-P002** and **SUN-C002**. The [ID migration decision](../decisions/sun-family-ids.md) records the previous IDs.
+The next IDs are **SUN-P003** and **SUN-C002**. The [ID migration decision](../decisions/sun-family-ids.md) records the previous IDs.
 
 ## Unnumbered product proposals
 
@@ -48,3 +49,9 @@ The proposed names ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON and FORGE have pote
 - **Initial scope:** Local code and scripting workspace with folders, tags, smart collections and planned language-aware JavaScript, Python and C# execution adapters. Database connections and Kubernetes support are future extensions; see the product roadmap.
 - **Extension direction:** Additional execution providers and transports; implementation planning belongs in the product repository.
 - **Commercial clearance:** PENDING. Preliminary exact-name web screening only; trademarks, domains and package availability have not been cleared.
+
+## SUN-P002 — CodeFolio
+- **Public identity:** CodeFolio by Sun.
+- **Repository:** [sun-codefolio](https://github.com/sunstriker2009/sun-codefolio) (established).
+- **Initial scope:** Searchable code snippets with worked examples, an interactive builder, and named variants. See [Product Ideas](../docs/product-ideas.md#codefolio-by-sun).
+- **Commercial clearance:** PENDING.
