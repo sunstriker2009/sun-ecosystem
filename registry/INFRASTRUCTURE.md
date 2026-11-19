@@ -2,7 +2,7 @@
 
 **Updated:** 2026-11-18
 
-Governance and shared engineering infrastructure use the **SUN-GNNN** identifier series. This is separate from confirmed products, which use **SUN-NNN**. IDs are assigned sequentially only when a repository/component is formally established; proposed entries do not reserve numbers.
+Governance and shared engineering infrastructure use the **SUN-GNNN** identifier series. Productivity products use **SUN-PNNN**, and application components use **SUN-CNNN**. IDs are assigned sequentially only when a repository/component is formally established; proposed entries do not reserve numbers.
 
 | ID | Component | Public identity | Purpose | Repository | Classification |
 |---|---|---|---|---|---|
@@ -15,10 +15,10 @@ Governance and shared engineering infrastructure use the **SUN-GNNN** identifier
 
 ## Numbering governance
 
-1. **SUN-NNN** identifies approved independent products/platforms; **SUN-GNNN** identifies established governance, templates, tooling and shared ecosystem infrastructure.
+1. **SUN-GNNN** identifies established governance, templates, tooling, and shared ecosystem infrastructure. Each [product family](PRODUCTS.md) maintains its own sequence.
 2. Assign the next sequential ID **upon confirmation/establishment**, never when a candidate is merely proposed.
 3. Keep IDs permanent across renaming or repository relocation; do not reuse retired IDs. Corrections require an explicit documented decision.
 4. SUN-G classification does **not** imply a runtime dependency on the SUN Ecosystem repository. Strata and Foundry remain independently versioned repositories.
 5. Do not introduce additional prefix series without an explicit governance decision.
 
-The [product registry](PRODUCTS.md) is authoritative for SUN-NNN assignments. The [machine-readable registry](products.json) contains both series. Implementation and releases remain in each component's own repository.
+The [product registry](PRODUCTS.md) is authoritative for SUN-P and SUN-C assignments. The [machine-readable registry](products.json) contains all three series. Implementation and releases remain in each component's own repository.

@@ -11,3 +11,5 @@ HALO was initially confirmed for a reusable identity and security product, but a
 
 ## Consequences
 Update future references from HALO to ORYVA. Preserve this record for history. ORYVA's internal approval does **not** imply completed trademark, domain or package clearance; record that separately before commercialization.
+
+Outpost’s current ID is `SUN-C001`. See the [family ID migration](sun-family-ids.md).

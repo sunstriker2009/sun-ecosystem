@@ -24,11 +24,11 @@ SUN is modern, dependable, and understated. Use clear typography, restrained geo
 
 Build each central symbol around the product’s purpose and give its identity a recognizable visual connection to the Sun that fits the composition. CodeFolio uses a sunrise arc above the folio, and Workbench uses sunlight as part of its artwork. A sunrise, a sunlit edge, or another recognizable expression of the Sun can serve the same role. Use the **“by Sun”** endorsement in endorsed lockups and keep typography, spacing, and optical proportions consistent across the family. Distinguish individual products through their silhouettes, palettes, and imagery.
 
-| Family | Examples | Visual direction |
-| --- | --- | --- |
-| Governance and orchestration | Strata, Foundry, Foundry Pilot | Structural forms, layered materials and grounded compositions suggest foundations, tooling and coordination. |
-| Productivity tools | Workbench, CodeFolio | Draw from the work people do, such as opening a reference, editing a parameter, or organizing and running scripts. |
-| Application products | Outpost | Develop each theme from the application’s purpose. Outpost’s orbital outpost imagery expresses a protected point of access for an identity and security platform. |
+| Family | Registry series | Examples | Visual direction |
+| --- | --- | --- | --- |
+| Governance and orchestration | `SUN-GNNN` | Strata, Foundry, Foundry Pilot | Structural forms, layered materials and grounded compositions suggest foundations, tooling and coordination. |
+| Productivity tools | `SUN-PNNN` | Workbench, CodeFolio | Draw from the work people do, such as opening a reference, editing a parameter, or organizing and running scripts. |
+| Application components | `SUN-CNNN` | Outpost | Develop each theme from the application’s purpose. Outpost’s orbital outpost imagery expresses a protected point of access for an identity and security platform. |
 
 Use these families to guide visual design. Consult the [Product Repository Branding Standard](../docs/governance/PRODUCT-BRANDING.md) for concept review, asset delivery and adoption.
 

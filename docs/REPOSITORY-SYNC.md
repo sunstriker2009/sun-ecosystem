@@ -5,7 +5,7 @@ The authoritative product identities, SUN IDs and infrastructure classifications
 ## Catalog and icon rules
 
 - `repository` is a unique `sunstriker2009/name` slug; `name` and `summary` are display-only. Use the [approved display casing](../branding/NAMING-GUIDELINES.md#display-names-and-artwork) for `name`.
-- Confirmed `registryId`, `classification`, repository and name must agree with `registry/products.json`.
+- Confirmed `registryId`, `classification`, repository, and name must agree with `registry/products.json`. Infrastructure uses `SUN-GNNN`. Products use `SUN-PNNN` or `SUN-CNNN` according to their registered family.
 - An icon is optional while branding is not approved. Never copy a template icon as a new product's identity.
 - Once approved, a PNG is stored at `branding/registry/<repository-name>.png`, with its SHA-256 in `iconSha256`. The renderer checks PNG signature, file existence, hash and safe paths.
 - Run `python scripts/render-repository-gallery.py` to regenerate the README section between its markers; `--check` validates it without mutation.

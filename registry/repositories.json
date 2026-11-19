@@ -3,7 +3,7 @@
   "repositories": [
     {
       "repository": "sunstriker2009/sun-outpost",
-      "registryId": "SUN-001",
+      "registryId": "SUN-C001",
       "classification": "product",
       "name": "Outpost",
       "summary": "Identity, authentication, authorization and security",
@@ -12,7 +12,7 @@
     },
     {
       "repository": "sunstriker2009/sun-workbench",
-      "registryId": "SUN-002",
+      "registryId": "SUN-P001",
       "classification": "product",
       "name": "Workbench",
       "summary": "Local code organizer and interactive scripting workspace",

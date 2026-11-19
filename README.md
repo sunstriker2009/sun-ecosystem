@@ -21,8 +21,8 @@ Generated from [the repository catalog](registry/repositories.json). Approved id
 
 <table>
 <tr>
-<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-outpost"><img src="branding/registry/sun-outpost.png" alt="Outpost icon" width="72" height="72"></a><p><strong>Outpost</strong></p><small>SUN-001 · Identity, authentication, authorization and security</small></td>
-<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-workbench"><img src="branding/registry/sun-workbench.png" alt="Workbench icon" width="72" height="72"></a><p><strong>Workbench</strong></p><small>SUN-002 · Local code organizer and interactive scripting workspace</small></td>
+<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-outpost"><img src="branding/registry/sun-outpost.png" alt="Outpost icon" width="72" height="72"></a><p><strong>Outpost</strong></p><small>SUN-C001 · Identity, authentication, authorization and security</small></td>
+<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-workbench"><img src="branding/registry/sun-workbench.png" alt="Workbench icon" width="72" height="72"></a><p><strong>Workbench</strong></p><small>SUN-P001 · Local code organizer and interactive scripting workspace</small></td>
 </tr>
 </table>
 
@@ -46,8 +46,8 @@ See the [ecosystem relationship diagram](docs/architecture/ECOSYSTEM-MAP.md) for
 | Governance | **SUN Ecosystem** | SUN-G001 — naming, registry, branding and governance |
 | Repository infrastructure | [Strata](https://github.com/sunstriker2009/sun-strata) | SUN-G002 — reusable repository foundation |
 | Repository infrastructure | [Foundry](https://github.com/sunstriker2009/sun-foundry) | SUN-G003 — repository factory and governance verification |
-| Confirmed product | [Outpost](https://github.com/sunstriker2009/sun-outpost) | Identity and security platform — SUN-001 |
-| Confirmed product | [Workbench](https://github.com/sunstriker2009/sun-workbench) | Scripting workspace — SUN-002 |
+| Confirmed product | [Outpost](https://github.com/sunstriker2009/sun-outpost) | Identity and security platform — SUN-C001 |
+| Confirmed product | [Workbench](https://github.com/sunstriker2009/sun-workbench) | Scripting workspace — SUN-P001 |
 | Independent application | [MarketPilot AI](https://github.com/sunstriker2009/sun-marketpilot-ai) | Planned Outpost integration target; not a registered SUN product |
 
 SUN Ecosystem, Strata, Foundry, and Foundry Pilot are tracked in the [governance and infrastructure registry](registry/INFRASTRUCTURE.md) using the separate SUN-G series.
@@ -56,13 +56,13 @@ SUN Ecosystem, Strata, Foundry, and Foundry Pilot are tracked in the [governance
 
 **Outpost by Sun** — Identity. Trust. Protection.  
 Reusable authentication, authorization, identity and security platform.  
-Registry: **SUN-001 — CONFIRMED**. Commercial naming clearance is **pending**.
+Registry: **SUN-C001 — CONFIRMED**. Commercial naming clearance is **pending**.
 
 Outpost supersedes ORYVA, which previously superseded HALO. The [sun-outpost](https://github.com/sunstriker2009/sun-outpost) repository uses the `Sun.Security` technical identity. MarketPilot AI is an independent application and initial integration target.
 
 **Workbench by Sun** — Organize. Script. Explore.  
 Local code organizer and interactive scripting workspace, with language-aware editing and planned JavaScript, Python and C# runtime adapters.  
-Registry: **SUN-002 — CONFIRMED**. Technical identity: `Sun.Workspace`. Repository established; commercial clearance remains pending.
+Registry: **SUN-P001 — CONFIRMED**. Technical identity: `Sun.Workspace`. Repository established; commercial clearance remains pending.
 
 ## Documentation
 
@@ -84,17 +84,17 @@ Registry: **SUN-002 — CONFIRMED**. Technical identity: `Sun.Workspace`. Reposi
 | [Ecosystem Map](docs/architecture/ECOSYSTEM-MAP.md) | Mermaid diagram of current organizational relationships |
 | [Machine-readable Registry](registry/products.json) | Structured product metadata |
 | [Brand Architecture Decision](decisions/0001-sun-brand-architecture.md) | Endorsed brand model |
-| [Outpost naming decision](decisions/product-renames/sun-001-outpost.md) | ORYVA → Outpost and SUN-001 continuity |
+| [Outpost naming decision](decisions/product-renames/sun-001-outpost.md) | ORYVA → Outpost and SUN-C001 continuity |
 | [Product Ideas](docs/product-ideas.md) | Early concepts and product direction |
 | [Product Proposal Template](templates/PRODUCT-PROPOSAL.md) | Starting new proposals |
 | [Naming Review Template](templates/NAMING-REVIEW.md) | Candidate evaluation and clearance |
-| [Workbench naming decision](decisions/0004-workbench-rename.md) | SUN-002 approval and naming rationale |
+| [Workbench naming decision](decisions/0004-workbench-rename.md) | SUN-P001 approval and naming rationale |
 | [Changelog](CHANGELOG.md) | Version history |
 
 ## Registry status
 
-**Confirmed products:** Outpost (SUN-001), Workbench (SUN-002). **Governance & infrastructure:** SUN Ecosystem (SUN-G001), Strata (SUN-G002), Foundry (SUN-G003), Foundry Pilot (SUN-G004).  
-**Unnumbered proposals:** ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON, FORGE. Proposed names have no reserved SUN IDs and must not trigger automatic project creation. The next confirmed product receives **SUN-003**.
+**Confirmed products:** Outpost (SUN-C001), Workbench (SUN-P001). **Governance & infrastructure:** SUN Ecosystem (SUN-G001), Strata (SUN-G002), Foundry (SUN-G003), Foundry Pilot (SUN-G004).  
+**Unnumbered proposals:** ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON, FORGE. Proposed names have no reserved SUN IDs and must not trigger automatic project creation. The next IDs are **SUN-P002** for productivity, **SUN-C002** for application components, and **SUN-G005** for governance and infrastructure.
 
 ## Product repository branding
 

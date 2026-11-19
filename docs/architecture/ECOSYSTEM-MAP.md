@@ -8,8 +8,8 @@ flowchart TD
     SUN["SUN Ecosystem — governance (SUN-G001)"]
     Strata["Strata — repository template (SUN-G002)"]
     Foundry["Foundry — repository factory (SUN-G003)"]
-    Outpost["Outpost — identity and security platform (SUN-001)"]
-    Workbench["Workbench — scripting workspace (SUN-002)"]
+    Outpost["Outpost — identity and security platform (SUN-C001)"]
+    Workbench["Workbench — scripting workspace (SUN-P001)"]
     MARKET["MarketPilot AI — independent application"]
 
     SUN -->|governs branding and policy| Strata

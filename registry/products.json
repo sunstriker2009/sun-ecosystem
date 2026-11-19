@@ -4,7 +4,7 @@
   "parentBrand": "SUN",
   "products": [
     {
-      "id": "SUN-001",
+      "id": "SUN-C001",
       "name": "Outpost",
       "status": "CONFIRMED",
       "purpose": "Identity, authentication, authorization and security",
@@ -20,10 +20,14 @@
       "previousNames": [
         "HALO",
         "ORYVA"
+      ],
+      "family": "application_component",
+      "previousIds": [
+        "SUN-001"
       ]
     },
     {
-      "id": "SUN-002",
+      "id": "SUN-P001",
       "name": "Workbench",
       "status": "CONFIRMED",
       "purpose": "Local code organizer and interactive scripting workspace with extensible language execution adapters",
@@ -35,7 +39,12 @@
       "frontendPackages": "@sun-workspace/*",
       "commercialClearance": "PENDING",
       "confirmedOn": "2026-11-12",
-      "supersedes": "ASTELVO"
+      "supersedes": "ASTELVO",
+      "family": "productivity",
+      "previousIds": [
+        "SUN-002",
+        "SUN-009"
+      ]
     }
   ],
   "infrastructure": [
@@ -113,16 +122,22 @@
     }
   ],
   "idPolicy": {
-    "productSeries": {
-      "format": "SUN-NNN",
-      "assignment": "sequential_on_confirmation",
-      "nextId": "SUN-003",
-      "proposalsReserveIds": false
-    },
     "governanceSeries": {
       "format": "SUN-GNNN",
       "assignment": "sequential_on_establishment",
       "nextId": "SUN-G005",
+      "proposalsReserveIds": false
+    },
+    "productivitySeries": {
+      "format": "SUN-PNNN",
+      "assignment": "sequential_on_confirmation",
+      "nextId": "SUN-P002",
+      "proposalsReserveIds": false
+    },
+    "applicationComponentSeries": {
+      "format": "SUN-CNNN",
+      "assignment": "sequential_on_confirmation",
+      "nextId": "SUN-C002",
       "proposalsReserveIds": false
     },
     "retiredIdsReusable": false,

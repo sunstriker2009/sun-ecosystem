@@ -4,7 +4,7 @@ This page records early product ideas for the SUN ecosystem.
 
 ## CodeFolio by Sun
 
-**Status:** First release in planning. Formal SUN registry entry and repository provisioning are pending.
+**Status:** First release in planning. Formal SUN registry entry and repository provisioning are pending. CodeFolio belongs to the productivity line.
 
 CodeFolio brings the SnippetBook Visual Studio extension concept to an interactive website. It is a searchable reference for practical snippets, starting with Git, JavaScript, C#, and XPath. Developers can find a snippet by describing their task, learn from worked examples and tailor the code to their own use.
 
