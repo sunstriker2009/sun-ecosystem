@@ -1,12 +1,12 @@
 # SUN Product Repository Branding Standard
 
-**Version:** 2.0  
-**Effective:** 2026-11-18  
+**Version:** 2.1  
+**Effective:** Upon merge  
 **Status:** Approved direction — product-specific assets require owner approval  
-**Scope:** All SUN product repositories, new and existing  
-**Reference implementations:** [Foundry](https://github.com/sunstriker2009/sun-foundry/blob/main/branding/ADOPTION-CHECKLIST.md) (canonical layout and migration checklist), [Workbench](https://github.com/sunstriker2009/sun-workbench) and [Outpost](https://github.com/sunstriker2009/sun-outpost) (product-specific adaptations)
+**Scope:** SUN repository branding packages, new and existing. The SUN parent-brand exception is in section 5.  
+**Implementation:** [Foundry branding installer](https://github.com/sunstriker2009/sun-foundry/blob/main/docs/BRANDING-ZIP-INSTALLER.md)
 
-This standard complements the [SUN Brand Guidelines](../../branding/BRAND-GUIDELINES.md), [SUN Visual Identity](../../branding/VISUAL-IDENTITY.md) and [Git Workflow & Merge Policy](GIT-WORKFLOW.md). A product's own brand guide records approved choices; the ecosystem guide governs consistency.
+This standard complements the [SUN Brand Guidelines](../../branding/BRAND-GUIDELINES.md), [SUN Visual Identity](../../branding/VISUAL-IDENTITY.md) and [Git Workflow & Merge Policy](GIT-WORKFLOW.md).
 
 ## 1. Concept and approval
 
@@ -20,7 +20,7 @@ Before finalizing assets, produce concept artwork for explicit owner review. Eac
 
 **Priority:** product purpose and immediate recognizability outweigh forcing a letter shape. Avoid generic symbols, excessively complex motifs and confusing similarity to other SUN products. Do not imply approval from an exploratory image.
 
-Record the selected product family, approval, rejected alternatives where useful, final palette (color values), typography, clear space, minimum sizes, contrast/accessibility considerations and usage restrictions in the product's brand guide.
+Capture the approved family, palette, typography, accessibility considerations and usage restrictions in the artwork review when they matter for future use. Preserve any supporting font, license and style files used by the product.
 
 ## 2. README panoramic banner
 
@@ -32,7 +32,7 @@ Place an **approved, high-resolution panoramic image** at the top of each produc
 
 Use an appropriate wide composition (16:9 or wider where suitable) that stays legible at normal GitHub README widths, including mobile. Preserve aspect ratio; do not stretch or crop essential text. Commit the actual image into the repository; do not depend on temporary image-generation URLs or external hosts.
 
-When replacing a production image, use a **new versioned filename** (for example, `readme-banner-v2.png`) and update the README reference to prevent stale GitHub/browser image caching. Keep old versions only when useful for provenance or documentation.
+Keep the README image at the stable path `branding/assets/readme-banner.png` when revising the artwork.
 
 ## 3. Canonical artwork and derivative assets
 
@@ -42,7 +42,7 @@ The **owner-approved original artwork is the canonical visual source of truth**.
 - Prefer a transparent original or layered source for clean extraction. Cropping a flattened banner can include glow, background and compositing artifacts; do not claim an exact transparent extraction without checking it.
 - Treat vector SVGs as **purpose-built adaptations** where resolution independence, monochrome, accessibility or tiny UI sizes require simplified geometry. Label adaptations as such, and review them against the canonical artwork.
 - Never substitute a visually similar regenerated image or third-party image for the approved original.
-- Maintain source provenance, export scripts, dimensions and usage rules in the product brand guide. Review icons at their actual output sizes. Adapt the chosen SUN cue for small sizes as needed and record the adaptation in the product brand guide. For example, increase a sunrise arc’s weight or improve the contrast of a sunlit detail.
+- Review icons at their actual output sizes. Adapt the chosen SUN cue for small sizes as needed. For example, increase a sunrise arc’s weight or improve the contrast of a sunlit detail. Retain export scripts and supporting style files where they serve an active workflow.
 
 ## 4. Compact and production assets
 
@@ -55,37 +55,16 @@ Use approved **PNG** compact assets that stay consistent with the banner and can
 
 Compact assets should carry forward the banner’s recognizable symbol, chosen SUN cue, palette logic, and typography in a form suited to their display size. Avoid embedding raster artwork inside an SVG as a substitute for a vector icon.
 
-## 5. Standard asset naming and lifecycle
+## 5. Branding package layout
 
-Use **purpose-first, product-neutral names** in each product repository. The repository already identifies the product, so filenames need not repeat its name.
-
-| Asset class | Standard filename or pattern | Rule |
-| --- | --- | --- |
-| Approved README artwork | `branding/assets/readme-banner-v1.png` | Version on replacement; preserve approved composition |
-| Approved original artwork | `branding/archive/originals/readme-banner-v1.png` | Exact, immutable copy of the approved source when the banner itself is the original |
-| Canonical transparent symbol | `branding/assets/symbol-canonical-v1.png` | Version on source revision, not on every export |
-| PNG icons | `branding/assets/icons/icon-16.png`, `icon-24.png`, etc. | Size suffix is pixel dimension; derive from approved version |
-| Vector symbol | `branding/assets/symbol-dark.svg`, `symbol-light.svg`, `symbol-mono.svg`, `symbol-small.svg` | Usage or theme variant |
-| Full lockup | `branding/assets/lockup-dark.svg`, `lockup-light.svg`, `lockup-mono.svg` | Usage or theme variant |
-| Comparison/review sheets | `branding/archive/intermediate/<descriptive-name>.png` | Never used by production |
-| Rejected/exploratory concepts | `branding/archive/concepts/concept-01.png` | Preserve relevant history and approval state |
-| Superseded production assets | `branding/archive/retired/<original-filename>` | Archive only if needed for provenance |
-
-Recommended structure:
+Use stable filenames that describe the asset’s purpose.
 
 ```text
 branding/
-  BRAND-GUIDE.md
-  assets/                    # Approved, actively used assets only
-    readme-banner-v1.png
-    symbol-canonical-v1.png
-    symbol-dark.svg
-    symbol-light.svg
-    symbol-mono.svg
-    symbol-small.svg
-    lockup-dark.svg
-    lockup-light.svg
-    lockup-mono.svg
+  assets/
+    readme-banner.png
+    symbol.png
+    concept-artwork.png     # Optional
     icons/
       icon-16.png
       icon-24.png
@@ -96,52 +75,37 @@ branding/
       icon-256.png
       icon-512.png
       icon-1024.png
-  archive/                   # Historical and nonproduction artifacts
-    README.md
-    originals/
-      readme-banner-v1.png
-    concepts/
-      concept-01.png
-    intermediate/
-      small-icon-comparison.png
-    retired/
+  revisions/
+  manifest.json
 ```
 
-**Source-of-truth rule:** When the approved concept is identical to the production banner, archive an **exact byte-for-byte copy** under `archive/originals/` and retain the production banner in `assets/`. Do not manufacture a separate concept image. If the approved original is different, preserve its real file and document its provenance.
-
-**Migration rule:** Existing filenames are allowed temporarily. New assets follow the standard; rename legacy files only in an explicit migration PR that updates every reference. Do not rename a live README banner solely for cosmetic consistency. Keep intermediate assets out of the production directory; retain only approved masters and purpose-built production exports there. Preserve a manifest mapping legacy filenames to the standard.
+- The banner, canonical PNG symbol, and nine square PNG icons are required. Each icon’s actual dimensions must match its filename. Keep app-specific exports, fonts, font licenses, styles, and design tokens that have active consumers.
+- Use optional `branding/assets/concept-artwork.png` for the verified artwork reference used to build the package. Use the existing banner as the reference when it is the approved artwork itself.
+- Maintain current product metadata in `branding/manifest.json`, including `family-id`, `product-name` and `short-description`. Maintain these values with repository identity and setup. The imagery package does not include a separate asset manifest.
+- The SUN parent brand may ship a partial icon set. For temporary consistency, missing filenames may use renamed copies of the closest available approved SUN icon. The copies retain their original pixel dimensions. Exact-dimension validation applies to product packages.
+- Keep numbered ZIP snapshots under `branding/revisions/`. Dedicated per-repository branding guides, branding README files, archives, reference folders, and historical review material are outside the standard layout.
 
 ## 6. Repository workflow
 
-1. Develop and review concepts; obtain explicit owner approval before declaring the identity final.
-2. Produce panoramic banner and coordinated compact assets from the approved direction.
-3. Commit assets and the product brand guide on a feature branch; update README banner reference.
-4. Open a PR, validate paths, image readability, visual consistency and required CI; squash merge under SUN governance.
-5. For future revisions, keep a new versioned banner filename and update the brand guide and references in the same PR.
+1. Develop and review concepts. Obtain explicit owner approval before declaring the identity final.
+2. Produce the panoramic banner, symbol, and icons from the approved direction.
+3. Commit the approved assets on a feature branch and update the README to reference the canonical banner path when adopting it.
+4. Validate asset paths, icon dimensions, image readability, active references, and required CI. Squash merge under SUN governance.
+5. Use the same canonical paths for future artwork revisions.
 
 ## 7. Existing-repository adoption
 
-Treat existing products as an **adoption checklist**, not an assumption of compliance. Review each product independently; record missing assets and follow-up PRs in that product repository. Workbench and Outpost are **reference examples**, not evidence that every item below has been completed.
+Migrate existing layouts through reviewed repository PRs. Coordinate live README references, workflows, config, installers, and downstream consumers before moving files. Review the approved concept, SUN cue, family theme, palette, typography, and legibility as part of adoption.
 
-- [ ] Owner-approved concept with a documented rationale for the product symbol, its visual connection to SUN, and any initial-letter treatment.
-- [ ] Documented product-family theme, distinct approved palette and consistent family typography and spacing.
-- [ ] High-resolution panoramic README banner with symbol, product name in all caps, “by Sun” and tagline.
-- [ ] Banner committed locally with a versioned filename and readable at GitHub widths.
-- [ ] Approved PNG symbol and compact exports; optional SVG lockup/symbol adaptations where required by actual usage.
-- [ ] Legible app-icon exports that carry the chosen SUN cue at their intended sizes, plus any theme or monochrome variants required by actual usage.
-- [ ] Canonical approved source preserved; high-resolution derivatives trace to that source.
-- [ ] Concept originals separated from production assets.
-- [ ] Product brand guide documents approval, palette, typography, locations and usage rules.
-- [ ] Changes merged via feature branch, CI and squash PR.
+- [ ] Verify the approved banner uses the all-caps product name, “by Sun” endorsement, and tagline.
+- [ ] Verify the canonical symbol and required icon sizes. Preserve supporting assets and any application-specific exports with active consumers.
+- [ ] Check the product metadata against the repository identity.
+- [ ] Move approved removals into temporary `branding/recycling/`, preserving original repository-relative paths for recovery. Exclude recycled files from installation, asset discovery, and active branding validation.
+- [ ] Verify the migration across affected repositories before deleting recycling folders in a separate review.
+- [ ] Coordinate the Ecosystem gallery move from `branding/registry/` to top-level `gallery/` with registry image paths, README generation, gallery validation, and Foundry publishing and reconciliation workflows.
 
-For v2 adoption, review existing identities against their family theme and shared SUN cues. Record any follow-up for brand guides, registry or gallery references, and approved assets. Apply changes through the normal repository PR and artwork approval processes.
+## 8. Imagery installation and revision history
 
-**Initial review targets:** [Workbench](https://github.com/sunstriker2009/sun-workbench), [Outpost](https://github.com/sunstriker2009/sun-outpost), [Foundry](https://github.com/sunstriker2009/sun-foundry), then remaining SUN products as appropriate. No existing repository is automatically changed by adoption of this document.
+Only `branding/assets/` represents the installable imagery package. Imagery installation must write only within that directory and preserve supporting files. When the incoming package contains `preview.png`, install it as `branding/assets/concept-artwork.png`. Maintain `branding/manifest.json` and other files under the branding root separately. Create numbered ZIP snapshots and maintain revision bookkeeping separately from imagery installation. Rollback should restore assets within `branding/assets/` from the chosen snapshot.
 
-## 8. Package installation and numbered revisions
-
-For repositories explicitly adopting the [Foundry installer](https://github.com/sunstriker2009/sun-foundry/blob/main/docs/BRANDING-ZIP-INSTALLER.md), its canonical installation destinations are `branding/assets/readme-banner.png`, `symbol.png` and `icons/icon-{size}.png`. These stable package paths are an approved alternative to the versioned active filenames described above; history is recorded in immutable complete snapshots under `branding/revisions/v1.zip`, `v2.zip`, etc. Do not rename stable installer destinations on each revision.
-
-On first installation, v1 backs up existing assets and v2 records the installed result. Subsequent installs and rollbacks append the next integer version, independent of the uploaded filename. A successful installation removes the unnumbered upload and saves a complete snapshot, rather than merely renaming the original ZIP bytes. The feature-branch hook appends a follow-up commit on the upload branch; review artwork and required checks before its squash merge. Invalid packages do not consume a version. See the installer guide for no-op, rollback and failure behavior.
-
-Workbench's first installation merged in [#39](https://github.com/sunstriker2009/sun-workbench/pull/39). Live rollback and broader adoption remain pending. Existing `branding/archive/` material stays intact until a separate reviewed migration preserves original artwork, concepts and provenance; asset snapshots alone do not preserve every historical document. The installer does not update product names, README text, app copies or generator configuration. Consult the [governance handoff](HANDOFF.md) before resuming rollout.
+Repositories adopting the revised installation contract must first update to a compatible Foundry installer. Existing pins follow the [current installer guide](https://github.com/sunstriker2009/sun-foundry/blob/main/docs/BRANDING-ZIP-INSTALLER.md), including its combined installation and revision workflow, until migrated. Review artwork and required checks before the squash merge.
