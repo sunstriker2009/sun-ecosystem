@@ -7,7 +7,7 @@ The owner chose to keep Ecosystem and Foundry separate. Ecosystem owns the share
 - The SUN parent brand has an optional full icon set. Temporarily fill missing size filenames with renamed copies of the closest available approved SUN icons. These parent-brand placeholders retain their original pixel dimensions.
 - Scope imagery installation to `branding/assets/`. Install incoming `preview.png` as `branding/assets/concept-artwork.png` when present and preserve supporting fonts and styles. Keep revision bookkeeping separate and review rollback from existing numbered snapshots.
 - Maintain `branding/manifest.json` separately from imagery installation. It holds current product metadata such as `family-id`, `product-name`, and `short-description`. Defer the separate `asset-manifest.json` proposal.
-- Use exactly 16, 24, 32, 48, 64, 128, 256, 512, and 1064 px for product package icons. Coordinate the switch from 1024 px with the generator, validator, and existing packages.
+- Use exactly 16, 24, 32, 48, 64, 128, 256, 512, and 1024 px for product package icons.
 - Agree whether to retire Workbench’s unused-looking extra icon sizes and social exports after checking distribution outside Git.
 
 ## Suggested rollout for review
