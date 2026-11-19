@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-18 — SUN branding policy v2.0
+
+- Publish product-family visual themes for governance and orchestration, productivity tools, and application products.
+- Define shared SUN identity cues and document how to adapt the arc for small icons.
+- Add a product-family review to the existing adoption workflow.
+- Specify all-caps product names on panoramic README banners.
+
 ## 2026-11-14 — Governance and infrastructure IDs
 - Adopt separate SUN-GNNN numbering for governance and shared repository infrastructure.
 - Assign SUN-G001 to SUN Ecosystem, SUN-G002 to STRATA and SUN-G003 to FOUNDRY; next ID SUN-G004.

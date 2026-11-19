@@ -33,6 +33,12 @@ For the exact workflow inputs, consult the linked workflow's **Run workflow** di
 3. Inspect and squash-merge the product-neutral seed PR. The Factory's post-Verify hook proposes a **pending** ecosystem registration PR.
 4. Review the registration and explicitly assign/confirm its SUN identity through normal governance PRs. Never auto-approve new identities.
 
+### Repository Factory dispatch identity
+
+The GitHub App installed on `sun-foundry` for delegated Repository Factory dispatch has bot user ID `358136762`. Use this numeric ID for the `github.actor_id` allowlist in the [Factory workflow](https://github.com/sunstriker2009/sun-foundry/blob/main/.github/workflows/repository-factory-v1.yml).
+
+The Factory workflow currently accepts owner dispatch on `main`. Enabling the app as a caller requires a separate Foundry workflow PR. Keep owner approval on the `repository-administration` environment before provisioning runs.
+
 ### Approve new or revised artwork
 
 1. Publish or update `branding/assets/symbol.png` through the product repository's branding PR, recording provenance and visual approval.

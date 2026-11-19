@@ -1,9 +1,9 @@
-# SUN Visual Identity — v1.0 Direction
+# SUN Visual Identity
 
 **Status:** Shared visual direction accepted; specific logos, fonts, and colors are provisional.
 
 ## Design principles
-Minimal, geometric, contemporary. Deep dark surfaces with restrained luminous accents; subtle celestial or optical symbolism. Consistent typography, spacing, and icon proportions. Avoid detailed illustrations or making every product look like a planet.
+Favor contemporary forms, restrained detail and consistent typography, spacing and icon proportions. Use the [product-family visual themes](BRAND-GUIDELINES.md#product-families-and-visual-themes) to guide materials, imagery and palette. Use the recognizable SUN arc as the shared visual cue.
 
 ## Proposed palette (not final specifications)
 | Role | Color | Hex |

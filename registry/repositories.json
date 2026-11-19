@@ -7,7 +7,7 @@
       "classification": "product",
       "name": "OUTPOST",
       "summary": "Identity, authentication, authorization and security",
-      "icon": "branding/registry/sun-oryva.png",
+      "icon": "branding/registry/sun-outpost.png",
       "iconSha256": "e82544750a39ce4bbddce360225a8a5e93b572b48ec91c8151d617185bbe3187"
     },
     {
@@ -36,6 +36,15 @@
       "summary": "Repository factory and governance verification",
       "icon": "branding/registry/sun-foundry.png",
       "iconSha256": "7d8361a2d64e89ad80e0605d3feb28980ebc8cc2a5d48728755321febdef88b1"
+    },
+    {
+      "repository": "sunstriker2009/sun-foundry-pilot",
+      "registryId": "SUN-G004",
+      "classification": "infrastructure",
+      "name": "Foundry Pilot",
+      "summary": "Isolated repository for validating Foundry provisioning and inherited branding",
+      "icon": null,
+      "iconSha256": null
     }
   ]
 }
