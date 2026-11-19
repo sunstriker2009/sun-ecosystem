@@ -52,6 +52,10 @@ Create short-lived, descriptive branches using these prefixes:
 
 Prefer small, focused PRs with a clear problem statement, implementation summary, tests/validation, risk notes and linked issue/ADR when appropriate. Keep the branch updated and resolve review conversations before merging. If CI fails, fix it; do not disable or bypass the check to force a merge.
 
+### Cross-product references
+
+Keep repository documentation, commit subjects and bodies, pull request titles and descriptions, and review comments focused on the repository’s own work. Refer to another product only when the reference is needed to explain an integration, dependency, or coordinated change. Link to the authoritative source when a reference is needed. Ecosystem and Foundry are exempt because their responsibilities span repositories.
+
 ## 4. Conventional Commits
 
 Use Conventional Commits for PR titles and squash commit subjects:
