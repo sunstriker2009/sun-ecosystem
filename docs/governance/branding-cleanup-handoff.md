@@ -5,14 +5,15 @@ The owner chose to keep Ecosystem and Foundry separate. Ecosystem owns the share
 ## Review decisions
 
 - Confirm whether the SUN parent brand needs the full icon set.
-- An incoming installer package may contain `preview.png`. Install it as `branding/assets/concept-artwork.png` when present. Review font and style preservation and rollback from existing numbered snapshots.
-- Defer `asset-manifest.json` until its purpose and consumers are clear.
+- Scope imagery installation to `branding/assets/`. Install incoming `preview.png` as `branding/assets/concept-artwork.png` when present and preserve supporting fonts and styles. Keep revision bookkeeping separate and review rollback from existing numbered snapshots.
+- Maintain `branding/manifest.json` separately from imagery installation. It holds current product metadata such as `family-id`, `product-name`, and `short-description`. Defer the separate `asset-manifest.json` proposal.
+- Use exactly 16, 24, 32, 48, 64, 128, 256, 512, and 1064 px for icons. Coordinate the switch from 1024 px with the generator, validator, and existing packages.
 - Agree whether to retire Workbench’s unused-looking extra icon sizes and social exports after checking distribution outside Git.
 
 ## Suggested rollout for review
 
 1. Agree on the package contract in Ecosystem and review the Foundry compatibility changes. Coordinate Foundry’s template seed checks with the planned Strata tree.
-2. Stage any shared-action pin changes needed for the new format. Coordinate Ecosystem’s move from `branding/registry/` to top-level `gallery/` with the registry image paths, README generation, gallery validation, and Foundry workflows. Check installer, rollback, template provisioning, and gallery validation before removing dependent paths.
+2. Stage any shared-action pin changes needed for the new format. Coordinate Ecosystem’s move from `branding/registry/` to top-level `gallery/` with the registry image paths, README generation, gallery validation, and Foundry workflows. Check installer write boundaries, rollback, template provisioning, and gallery validation before removing dependent paths.
 3. Propose focused cleanup PRs in the affected repositories. Keep product PRs and docs local in scope. Ecosystem and Foundry can reference multiple repositories when coordinating the rollout.
 4. Use the approved layout for CodeFolio when its repository and branding are taken up.
 
