@@ -9,7 +9,7 @@ Adopt purpose-led visual themes for governance and orchestration, productivity t
 
 ## CodeFolio
 
-CodeFolio by Sun is the working example for the productivity theme alongside WORKBENCH. The selected artwork uses an open folio with code brackets in the pages and a tapered golden sunrise arc above the spine. The smallest icon exports give the arc more weight for legibility. The palette is aubergine, warm ivory and apricot. The artwork uses “Find it. Make it yours.”
+CodeFolio by Sun is the working example for the productivity theme alongside Workbench. The selected artwork uses an open folio with code brackets in the pages and a tapered golden sunrise arc above the spine. The smallest icon exports give the arc more weight for legibility. The palette is aubergine, warm ivory and apricot. The artwork uses “Find it. Make it yours.”
 
 ## Adoption
 

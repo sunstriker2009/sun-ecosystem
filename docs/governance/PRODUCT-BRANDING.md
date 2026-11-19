@@ -4,7 +4,7 @@
 **Effective:** 2026-11-18  
 **Status:** Approved direction — product-specific assets require owner approval  
 **Scope:** All SUN product repositories, new and existing  
-**Reference implementations:** [FOUNDRY](https://github.com/sunstriker2009/sun-foundry/blob/main/branding/ADOPTION-CHECKLIST.md) (canonical layout and migration checklist), [WORKBENCH](https://github.com/sunstriker2009/sun-workbench) and [OUTPOST](https://github.com/sunstriker2009/sun-outpost) (product-specific adaptations)
+**Reference implementations:** [Foundry](https://github.com/sunstriker2009/sun-foundry/blob/main/branding/ADOPTION-CHECKLIST.md) (canonical layout and migration checklist), [Workbench](https://github.com/sunstriker2009/sun-workbench) and [Outpost](https://github.com/sunstriker2009/sun-outpost) (product-specific adaptations)
 
 This standard complements the [SUN Brand Guidelines](../../branding/BRAND-GUIDELINES.md), [SUN Visual Identity](../../branding/VISUAL-IDENTITY.md) and [Git Workflow & Merge Policy](GIT-WORKFLOW.md). A product's own brand guide records approved choices; the ecosystem guide governs consistency.
 
@@ -26,7 +26,7 @@ Record the selected product family, approval, rejected alternatives where useful
 
 Place an **approved, high-resolution panoramic image** at the top of each product README. It must contain:
 
-- Product symbol and public product name set in **ALL CAPS** (for example, **CODEFOLIO**).
+- Product symbol and product name. Set the name in **ALL CAPS** in the banner artwork (for example, **CODEFOLIO**). Use the [approved display casing](../../branding/NAMING-GUIDELINES.md#display-names-and-artwork) in README headings, prose, and image alt text.
 - **“by Sun”** endorsement.
 - Approved product tagline.
 
@@ -121,7 +121,7 @@ branding/
 
 ## 7. Existing-repository adoption
 
-Treat existing products as an **adoption checklist**, not an assumption of compliance. Review each product independently; record missing assets and follow-up PRs in that product repository. WORKBENCH and OUTPOST are **reference examples**, not evidence that every item below has been completed.
+Treat existing products as an **adoption checklist**, not an assumption of compliance. Review each product independently; record missing assets and follow-up PRs in that product repository. Workbench and Outpost are **reference examples**, not evidence that every item below has been completed.
 
 - [ ] Owner-approved concept and documented SUN arc / purpose / optional initial-letter rationale.
 - [ ] Documented product-family theme, distinct approved palette and consistent family typography and spacing.
@@ -136,12 +136,12 @@ Treat existing products as an **adoption checklist**, not an assumption of compl
 
 For v2 adoption, review existing identities against their family theme and shared SUN cues. Record any follow-up for brand guides, registry or gallery references, and approved assets. Apply changes through the normal repository PR and artwork approval processes.
 
-**Initial review targets:** [WORKBENCH](https://github.com/sunstriker2009/sun-workbench), [OUTPOST](https://github.com/sunstriker2009/sun-outpost), [FOUNDRY](https://github.com/sunstriker2009/sun-foundry), then remaining SUN products as appropriate. No existing repository is automatically changed by adoption of this document.
+**Initial review targets:** [Workbench](https://github.com/sunstriker2009/sun-workbench), [Outpost](https://github.com/sunstriker2009/sun-outpost), [Foundry](https://github.com/sunstriker2009/sun-foundry), then remaining SUN products as appropriate. No existing repository is automatically changed by adoption of this document.
 
 ## 8. Package installation and numbered revisions
 
-For repositories explicitly adopting the [FOUNDRY installer](https://github.com/sunstriker2009/sun-foundry/blob/main/docs/BRANDING-ZIP-INSTALLER.md), its canonical installation destinations are `branding/assets/readme-banner.png`, `symbol.png` and `icons/icon-{size}.png`. These stable package paths are an approved alternative to the versioned active filenames described above; history is recorded in immutable complete snapshots under `branding/revisions/v1.zip`, `v2.zip`, etc. Do not rename stable installer destinations on each revision.
+For repositories explicitly adopting the [Foundry installer](https://github.com/sunstriker2009/sun-foundry/blob/main/docs/BRANDING-ZIP-INSTALLER.md), its canonical installation destinations are `branding/assets/readme-banner.png`, `symbol.png` and `icons/icon-{size}.png`. These stable package paths are an approved alternative to the versioned active filenames described above; history is recorded in immutable complete snapshots under `branding/revisions/v1.zip`, `v2.zip`, etc. Do not rename stable installer destinations on each revision.
 
 On first installation, v1 backs up existing assets and v2 records the installed result. Subsequent installs and rollbacks append the next integer version, independent of the uploaded filename. A successful installation removes the unnumbered upload and saves a complete snapshot, rather than merely renaming the original ZIP bytes. The feature-branch hook appends a follow-up commit on the upload branch; review artwork and required checks before its squash merge. Invalid packages do not consume a version. See the installer guide for no-op, rollback and failure behavior.
 
-WORKBENCH's first installation merged in [#39](https://github.com/sunstriker2009/sun-workbench/pull/39). Live rollback and broader adoption remain pending. Existing `branding/archive/` material stays intact until a separate reviewed migration preserves original artwork, concepts and provenance; asset snapshots alone do not preserve every historical document. The installer does not update product names, README text, app copies or generator configuration. Consult the [governance handoff](HANDOFF.md) before resuming rollout.
+Workbench's first installation merged in [#39](https://github.com/sunstriker2009/sun-workbench/pull/39). Live rollback and broader adoption remain pending. Existing `branding/archive/` material stays intact until a separate reviewed migration preserves original artwork, concepts and provenance; asset snapshots alone do not preserve every historical document. The installer does not update product names, README text, app copies or generator configuration. Consult the [governance handoff](HANDOFF.md) before resuming rollout.

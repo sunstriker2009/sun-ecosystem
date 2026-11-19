@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-18 — SUN display naming and brand character
+
+- Standardize PascalCase display names in prose, registries, and the generated gallery. Retain all-caps product names in panoramic README banner artwork.
+- Anchor naming and visual character in product purpose and link the [display naming decision](decisions/sun-display-naming.md).
+
 ## 2026-11-18 — SUN branding policy v2.0
 
 - Publish product-family visual themes for governance and orchestration, productivity tools, and application products.

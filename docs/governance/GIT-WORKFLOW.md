@@ -3,7 +3,7 @@
 **Version:** 1.0  
 **Status:** Approved  
 **Effective:** 2026-10-30  
-**Scope:** SUN ecosystem, OUTPOST by Sun, MarketPilot AI, and future SUN product repositories  
+**Scope:** SUN ecosystem, Outpost by Sun, MarketPilot AI, and future SUN product repositories  
 **Authority:** SUN ecosystem governance; owner: `sunstriker2009`
 
 This document is the **authoritative** cross-repository Git workflow policy. Product repositories should link here rather than maintain divergent copies. Repository-specific CI check names and reviewer rules may vary, but must satisfy the minimum controls below. This policy is normative; documenting a requirement does **not** configure GitHub settings automatically.
@@ -87,19 +87,19 @@ Maintain a changelog and create **annotated release tags** on the protected defa
 
 ## 7. Scope, ownership and exceptions
 
-This policy applies to `sun-ecosystem`, `sun-oryva`, `marketpilot-ai` and future SUN product repositories. The authoritative version lives in `sun-ecosystem/docs/governance/GIT-WORKFLOW.md`; product repositories may link to it. Their implementation details and configuration changes must be handled in their respective repositories.
+This policy applies to `sun-ecosystem`, `sun-outpost`, `sun-marketpilot-ai` and future SUN product repositories. The authoritative version lives in `sun-ecosystem/docs/governance/GIT-WORKFLOW.md`; product repositories may link to it. Their implementation details and configuration changes must be handled in their respective repositories.
 
 Exceptions require **explicit owner approval** before use, documented with: affected repository, exact deviation, business/technical rationale, risks, compensating controls, approver, approval date and expiration/review date. Emergency exceptions must be time-bounded and reviewed retrospectively. No exception is implicit from having admin privileges.
 
 ## 8. Automated provisioning and verification
 
-The [Repository Factory](https://github.com/sunstriker2009/sun-foundry) is the standard implementation for new SUN repositories, using [sun-repo-template](https://github.com/sunstriker2009/sun-repo-template). Its [Repository Factory workflow](https://github.com/sunstriker2009/sun-foundry/actions/workflows/repository-factory-v1.yml) creates or resumes setup, seeds required CI checks, applies governance and runs strict verification. The [Repository Maintenance workflow](https://github.com/sunstriker2009/sun-foundry/actions/workflows/repository-factory-resume.yml) provides targeted diagnosis, planning, application and verification for existing repositories.
+The [Repository Factory](https://github.com/sunstriker2009/sun-foundry) is the standard implementation for new SUN repositories, using [sun-strata](https://github.com/sunstriker2009/sun-strata). Its [Repository Factory workflow](https://github.com/sunstriker2009/sun-foundry/actions/workflows/repository-factory-v1.yml) creates or resumes setup, seeds required CI checks, applies governance and runs strict verification. The [Repository Maintenance workflow](https://github.com/sunstriker2009/sun-foundry/actions/workflows/repository-factory-resume.yml) provides targeted diagnosis, planning, application and verification for existing repositories.
 
 Factory verification does not replace this policy or security-sensitive human review. GitHub Free personal private repositories may lack ruleset enforcement; the provisioner must report that limitation and fail closed for strict Apply/Verify rather than claim compliance. Track actual enforcement per repository.
 
 ## 9. Product branding and repository assets
 
-All SUN product repositories should follow the [Product Repository Branding Standard](PRODUCT-BRANDING.md). Approve the concept first; commit a versioned panoramic README banner, compact SVG variants and product-specific brand guide through the normal feature-branch and squash-PR workflow. For existing repositories, track brand adoption as a checklist rather than assuming compliance. WORKBENCH and OUTPOST serve as reference examples. Branding assets do not bypass CI or review requirements.
+All SUN product repositories should follow the [Product Repository Branding Standard](PRODUCT-BRANDING.md). Approve the concept first; commit a panoramic README banner, compact PNG assets, and a product-specific brand guide through the normal feature-branch and squash-PR workflow. For existing repositories, track brand adoption as a checklist rather than assuming compliance. Workbench and Outpost serve as reference examples. Branding assets do not bypass CI or review requirements.
 
 ## 10. Repository adoption and verification checklist
 
