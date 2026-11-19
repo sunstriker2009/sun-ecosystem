@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-18 — SUN registry IDs by family
+
+- Use separate SUN-G, SUN-P, and SUN-C sequences for governance, productivity, and application components. Migrate Outpost to SUN-C001 and Workbench to SUN-P001. See the [family ID decision](decisions/sun-family-ids.md).
+
+## 2026-11-18 — SUN display naming and brand character
+
+- Standardize PascalCase display names in prose, registries, and the generated gallery. Retain all-caps product names in panoramic README banner artwork.
+- Anchor naming and visual character in product purpose. A sunrise arc, sunlight, or another visual cue that fits the design can connect the artwork to SUN. See the [display naming decision](decisions/sun-display-naming.md).
+
 ## 2026-11-18 — SUN branding policy v2.0
 
 - Publish product-family visual themes for governance and orchestration, productivity tools, and application products.

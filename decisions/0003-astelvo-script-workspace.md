@@ -25,3 +25,5 @@ The product owner changed the SUN registry policy to assign IDs **sequentially u
 ## Superseded product name
 
 The owner subsequently approved **WORKBENCH by Sun**, retaining SUN-002 and Sun.Workspace. See [decision 0004](0004-workbench-rename.md). The original naming discussion above is historical; use `sun-workbench` for the current repository.
+
+Workbench’s current ID is `SUN-P001`. See the [family ID migration](sun-family-ids.md).

@@ -3,18 +3,18 @@
   "repositories": [
     {
       "repository": "sunstriker2009/sun-outpost",
-      "registryId": "SUN-001",
+      "registryId": "SUN-C001",
       "classification": "product",
-      "name": "OUTPOST",
+      "name": "Outpost",
       "summary": "Identity, authentication, authorization and security",
       "icon": "branding/registry/sun-outpost.png",
       "iconSha256": "e82544750a39ce4bbddce360225a8a5e93b572b48ec91c8151d617185bbe3187"
     },
     {
       "repository": "sunstriker2009/sun-workbench",
-      "registryId": "SUN-002",
+      "registryId": "SUN-P001",
       "classification": "product",
-      "name": "WORKBENCH",
+      "name": "Workbench",
       "summary": "Local code organizer and interactive scripting workspace",
       "icon": "branding/registry/sun-workbench.png",
       "iconSha256": "74510e6401e69cf3096d8869cc08ffc2d018a1afca000ebd67965511a83577d7"
@@ -23,7 +23,7 @@
       "repository": "sunstriker2009/sun-strata",
       "registryId": "SUN-G002",
       "classification": "infrastructure",
-      "name": "STRATA",
+      "name": "Strata",
       "summary": "Reusable repository template",
       "icon": "branding/registry/sun-strata.png",
       "iconSha256": "36592bdf3a8b1ff7e9b0e5b0ce5df09c91755110766dcfd135c15da5c8fb9cee"
@@ -32,7 +32,7 @@
       "repository": "sunstriker2009/sun-foundry",
       "registryId": "SUN-G003",
       "classification": "infrastructure",
-      "name": "FOUNDRY",
+      "name": "Foundry",
       "summary": "Repository factory and governance verification",
       "icon": "branding/registry/sun-foundry.png",
       "iconSha256": "7d8361a2d64e89ad80e0605d3feb28980ebc8cc2a5d48728755321febdef88b1"

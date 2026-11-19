@@ -7,3 +7,5 @@ This supersedes the name in [decision 0003](0003-astelvo-script-workspace.md). P
 Use `sunstriker2009/sun-workbench` for current repository references. Previously approved Workbench W2 PNG artwork is retained. Historical approval data, archive files and old workspace-format/IPC identifiers remain historical or compatibility records.
 
 The owner’s naming approval does not establish trademark/domain/package clearance. Commercial clearance remains PENDING. Product implementation and recurring development remain paused until explicitly resumed; this decision changes no automation state.
+
+Workbench’s current ID is `SUN-P001`. See the [family ID migration](sun-family-ids.md).

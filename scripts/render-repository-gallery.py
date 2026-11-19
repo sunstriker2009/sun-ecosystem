@@ -9,7 +9,8 @@ from pathlib import Path
 START = "<!-- SUN-REPOSITORY-GALLERY:START -->"
 END = "<!-- SUN-REPOSITORY-GALLERY:END -->"
 REPO_RE = re.compile(r"^sunstriker2009/[a-z0-9][a-z0-9._-]*$")
-ID_RE = re.compile(r"^SUN-(?:G)?[0-9]{3}$")
+ID_RE = re.compile(r"SUN-([GPC])[0-9]{3}")
+PRODUCT_FAMILIES = {"P": "productivity", "C": "application_component"}
 SHA_RE = re.compile(r"^[0-9a-f]{64}$")
 
 
@@ -35,14 +36,18 @@ def render(root: Path) -> str:
             if ident is not None:
                 raise ValueError("Pending repository cannot claim a confirmed ID")
         else:
-            if not isinstance(ident, str) or not ID_RE.fullmatch(ident) or ident in seen_ids:
+            match = ID_RE.fullmatch(ident) if isinstance(ident, str) else None
+            if match is None or ident in seen_ids:
                 raise ValueError(f"Invalid or duplicate registry ID: {ident}")
             seen_ids.add(ident)
             expected = known.get(ident)
             if expected is None or f"sunstriker2009/{expected['repository']}" != repo:
                 raise ValueError(f"Unapproved registry identity: {ident} / {repo}")
-            if (ident.startswith("SUN-G")) != (category == "infrastructure"):
+            series = match.group(1)
+            if (series == "G") != (category == "infrastructure"):
                 raise ValueError(f"Classification does not match registry ID: {ident}")
+            if category == "product" and expected.get("family") != PRODUCT_FAMILIES[series]:
+                raise ValueError(f"Product family does not match registry ID: {ident}")
             if item["name"] != expected["name"]:
                 raise ValueError(f"Name mismatch for approved identity: {ident}")
         name, summary = item["name"], item["summary"]

@@ -4,7 +4,7 @@
 **Effective:** 2026-11-18  
 **Status:** Approved direction — product-specific assets require owner approval  
 **Scope:** All SUN product repositories, new and existing  
-**Reference implementations:** [FOUNDRY](https://github.com/sunstriker2009/sun-foundry/blob/main/branding/ADOPTION-CHECKLIST.md) (canonical layout and migration checklist), [WORKBENCH](https://github.com/sunstriker2009/sun-workbench) and [OUTPOST](https://github.com/sunstriker2009/sun-outpost) (product-specific adaptations)
+**Reference implementations:** [Foundry](https://github.com/sunstriker2009/sun-foundry/blob/main/branding/ADOPTION-CHECKLIST.md) (canonical layout and migration checklist), [Workbench](https://github.com/sunstriker2009/sun-workbench) and [Outpost](https://github.com/sunstriker2009/sun-outpost) (product-specific adaptations)
 
 This standard complements the [SUN Brand Guidelines](../../branding/BRAND-GUIDELINES.md), [SUN Visual Identity](../../branding/VISUAL-IDENTITY.md) and [Git Workflow & Merge Policy](GIT-WORKFLOW.md). A product's own brand guide records approved choices; the ecosystem guide governs consistency.
 
@@ -12,7 +12,7 @@ This standard complements the [SUN Brand Guidelines](../../branding/BRAND-GUIDEL
 
 Before finalizing assets, produce concept artwork for explicit owner review. Each concept should:
 
-- Incorporate the recognizable **SUN arc** as the family connection.
+- Integrate a recognizable visual connection to the Sun into the design. Choose a cue that fits the product’s form or imagery, such as a sunrise arc, sunlight, or another recognizable expression of the Sun.
 - Communicate the product's **core purpose** through its central symbol.
 - Where natural, subtly suggest the **first character** of the public product name.
 - Use its [product-family visual theme](../../branding/BRAND-GUIDELINES.md#product-families-and-visual-themes) and a **distinct product palette and silhouette** to differentiate it within the portfolio.
@@ -26,7 +26,7 @@ Record the selected product family, approval, rejected alternatives where useful
 
 Place an **approved, high-resolution panoramic image** at the top of each product README. It must contain:
 
-- Product symbol and public product name set in **ALL CAPS** (for example, **CODEFOLIO**).
+- Product symbol and product name. Set the name in **ALL CAPS** in the banner artwork (for example, **CODEFOLIO**). Use the [approved display casing](../../branding/NAMING-GUIDELINES.md#display-names-and-artwork) in README headings, prose, and image alt text.
 - **“by Sun”** endorsement.
 - Approved product tagline.
 
@@ -36,13 +36,13 @@ When replacing a production image, use a **new versioned filename** (for example
 
 ## 3. Canonical artwork and derivative assets
 
-The **owner-approved original artwork is the canonical visual source of truth**. Preserve the original unmodified, preferably with source/layer files or a transparent export of the symbol. Where feasible, extract the actual symbol and SUN arc from that source for high-resolution, transparent raster assets rather than independently redrawing them.
+The **owner-approved original artwork is the canonical visual source of truth**. Preserve the original unmodified, preferably with source/layer files or a transparent export of the symbol. Where feasible, extract the actual symbol and its SUN cue from that source for high-resolution, transparent raster assets rather than independently redrawing them.
 
 - Derive high-resolution standalone marks, app illustrations and raster icons from the approved symbol source, preserving the intended material, gradient, lighting and proportions.
 - Prefer a transparent original or layered source for clean extraction. Cropping a flattened banner can include glow, background and compositing artifacts; do not claim an exact transparent extraction without checking it.
 - Treat vector SVGs as **purpose-built adaptations** where resolution independence, monochrome, accessibility or tiny UI sizes require simplified geometry. Label adaptations as such, and review them against the canonical artwork.
 - Never substitute a visually similar regenerated image or third-party image for the approved original.
-- Maintain source provenance, export scripts, dimensions and usage rules in the product brand guide. Review icons at their actual output sizes. Where needed, adjust the SUN arc’s weight or contrast so it remains recognizable at small sizes, and record the adaptation in the product brand guide.
+- Maintain source provenance, export scripts, dimensions and usage rules in the product brand guide. Review icons at their actual output sizes. Adapt the chosen SUN cue for small sizes as needed and record the adaptation in the product brand guide. For example, increase a sunrise arc’s weight or improve the contrast of a sunlit detail.
 
 ## 4. Compact and production assets
 
@@ -53,7 +53,7 @@ Use approved **PNG** compact assets that stay consistent with the banner and can
 - Simplified small-size variants, including a legible icon at practical UI sizes.
 - Appropriate app-icon exports (for example PNG sizes or platform-specific exports).
 
-Compact assets must retain the same recognizable symbol, SUN arc, palette logic and typography as the panoramic banner, simplified appropriately for small placements. Avoid embedding raster artwork inside an SVG as a substitute for a vector icon.
+Compact assets should carry forward the banner’s recognizable symbol, chosen SUN cue, palette logic, and typography in a form suited to their display size. Avoid embedding raster artwork inside an SVG as a substitute for a vector icon.
 
 ## 5. Standard asset naming and lifecycle
 
@@ -121,14 +121,14 @@ branding/
 
 ## 7. Existing-repository adoption
 
-Treat existing products as an **adoption checklist**, not an assumption of compliance. Review each product independently; record missing assets and follow-up PRs in that product repository. WORKBENCH and OUTPOST are **reference examples**, not evidence that every item below has been completed.
+Treat existing products as an **adoption checklist**, not an assumption of compliance. Review each product independently; record missing assets and follow-up PRs in that product repository. Workbench and Outpost are **reference examples**, not evidence that every item below has been completed.
 
-- [ ] Owner-approved concept and documented SUN arc / purpose / optional initial-letter rationale.
+- [ ] Owner-approved concept with a documented rationale for the product symbol, its visual connection to SUN, and any initial-letter treatment.
 - [ ] Documented product-family theme, distinct approved palette and consistent family typography and spacing.
 - [ ] High-resolution panoramic README banner with symbol, product name in all caps, “by Sun” and tagline.
 - [ ] Banner committed locally with a versioned filename and readable at GitHub widths.
 - [ ] Approved PNG symbol and compact exports; optional SVG lockup/symbol adaptations where required by actual usage.
-- [ ] Legible app-icon exports with a recognizable SUN arc at their intended sizes, plus any theme or monochrome variants required by actual usage.
+- [ ] Legible app-icon exports that carry the chosen SUN cue at their intended sizes, plus any theme or monochrome variants required by actual usage.
 - [ ] Canonical approved source preserved; high-resolution derivatives trace to that source.
 - [ ] Concept originals separated from production assets.
 - [ ] Product brand guide documents approval, palette, typography, locations and usage rules.
@@ -136,12 +136,12 @@ Treat existing products as an **adoption checklist**, not an assumption of compl
 
 For v2 adoption, review existing identities against their family theme and shared SUN cues. Record any follow-up for brand guides, registry or gallery references, and approved assets. Apply changes through the normal repository PR and artwork approval processes.
 
-**Initial review targets:** [WORKBENCH](https://github.com/sunstriker2009/sun-workbench), [OUTPOST](https://github.com/sunstriker2009/sun-outpost), [FOUNDRY](https://github.com/sunstriker2009/sun-foundry), then remaining SUN products as appropriate. No existing repository is automatically changed by adoption of this document.
+**Initial review targets:** [Workbench](https://github.com/sunstriker2009/sun-workbench), [Outpost](https://github.com/sunstriker2009/sun-outpost), [Foundry](https://github.com/sunstriker2009/sun-foundry), then remaining SUN products as appropriate. No existing repository is automatically changed by adoption of this document.
 
 ## 8. Package installation and numbered revisions
 
-For repositories explicitly adopting the [FOUNDRY installer](https://github.com/sunstriker2009/sun-foundry/blob/main/docs/BRANDING-ZIP-INSTALLER.md), its canonical installation destinations are `branding/assets/readme-banner.png`, `symbol.png` and `icons/icon-{size}.png`. These stable package paths are an approved alternative to the versioned active filenames described above; history is recorded in immutable complete snapshots under `branding/revisions/v1.zip`, `v2.zip`, etc. Do not rename stable installer destinations on each revision.
+For repositories explicitly adopting the [Foundry installer](https://github.com/sunstriker2009/sun-foundry/blob/main/docs/BRANDING-ZIP-INSTALLER.md), its canonical installation destinations are `branding/assets/readme-banner.png`, `symbol.png` and `icons/icon-{size}.png`. These stable package paths are an approved alternative to the versioned active filenames described above; history is recorded in immutable complete snapshots under `branding/revisions/v1.zip`, `v2.zip`, etc. Do not rename stable installer destinations on each revision.
 
 On first installation, v1 backs up existing assets and v2 records the installed result. Subsequent installs and rollbacks append the next integer version, independent of the uploaded filename. A successful installation removes the unnumbered upload and saves a complete snapshot, rather than merely renaming the original ZIP bytes. The feature-branch hook appends a follow-up commit on the upload branch; review artwork and required checks before its squash merge. Invalid packages do not consume a version. See the installer guide for no-op, rollback and failure behavior.
 
-WORKBENCH's first installation merged in [#39](https://github.com/sunstriker2009/sun-workbench/pull/39). Live rollback and broader adoption remain pending. Existing `branding/archive/` material stays intact until a separate reviewed migration preserves original artwork, concepts and provenance; asset snapshots alone do not preserve every historical document. The installer does not update product names, README text, app copies or generator configuration. Consult the [governance handoff](HANDOFF.md) before resuming rollout.
+Workbench's first installation merged in [#39](https://github.com/sunstriker2009/sun-workbench/pull/39). Live rollback and broader adoption remain pending. Existing `branding/archive/` material stays intact until a separate reviewed migration preserves original artwork, concepts and provenance; asset snapshots alone do not preserve every historical document. The installer does not update product names, README text, app copies or generator configuration. Consult the [governance handoff](HANDOFF.md) before resuming rollout.
