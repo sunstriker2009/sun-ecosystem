@@ -17,12 +17,18 @@
       manifest.json
 
 - Only `branding/assets/` represents the installable imagery package. Imagery installation writes only within that directory and preserves supporting files there. Files and directories elsewhere under `branding/`, including `manifest.json` and `revisions/`, are outside the installer’s write scope.
-- Required imagery consists of the README banner, canonical symbol, and square PNG icons at exactly **16, 24, 32, 48, 64, 128, 256, 512, and 1064 px**. Update the generator and validator from the audited 1024 px requirement to 1064 px.
+- Product packages require the README banner, canonical symbol, and square PNG icons at exactly **16, 24, 32, 48, 64, 128, 256, 512, and 1064 px**. Update the generator and validator from the audited 1024 px requirement to 1064 px.
 - Optional `branding/assets/concept-artwork.png` is the agreed artwork reference used to build the asset package. An incoming installer package may contain `preview.png`. During installation, rename it to `concept-artwork.png` at the installed path.
 - Keep supporting fonts, font licenses, styles, and design tokens used by the repository.
-- Drop repository-specific branding guides and README files inside branding, along with archive folders, reference folders, and historical review material. Keep root README banners and links to active assets. Ecosystem-wide brand and naming policy still has a purpose.
+- Retire repository-specific branding guides and README files inside branding, along with archive folders, reference folders, and historical review material. Keep root README banners and links to active assets. Ecosystem-wide brand and naming policy still has a purpose.
 - `branding/manifest.json` holds metadata for the current product, including `family-id`, `product-name`, and `short-description`. Provision or maintain it separately from imagery installation. Defer the separate `asset-manifest.json` proposal.
 - Keep existing numbered ZIP snapshots in `revisions/`. Handle snapshot creation and revision bookkeeping separately from imagery installation. Confirm how rollback will read older snapshots and restore assets within `branding/assets/`.
+
+## Temporary recycling
+
+- Start each affected repository’s cleanup by creating `branding/recycling/`. Move items approved for removal there once their live references are updated. Preserve their original repository-relative paths within `branding/recycling/` so each item can be restored.
+- Keep `branding/recycling/` outside the imagery package and exclude it from installer inputs, asset discovery, gallery generation, and active branding validation.
+- Keep the recycling folders through the cross-repository migration. Delete them in a separate cleanup pass after validation succeeds across all affected repositories.
 
 ## Ecosystem
 
@@ -31,10 +37,10 @@ Add a top-level `gallery/` directory alongside `branding/` to replace `branding/
 Findings: The parent brand guide, concept page, reference SVGs and exploratory artwork overlap the retained branding policy or record historical work. The archived banner and symbol are byte-identical to their active copies. The old sun-oryva gallery image is an unreferenced, byte-identical copy of the current Outpost gallery image. Four current gallery images are live outputs consumed by the generated README and validator. The parent brand has an active banner and symbol and lacks the standard icon set.
 
 - [ ] Revise the Product Repository Branding Standard for stable paths and the streamlined package. Remove requirements for per-repository guides, archive copies, and reference folders. Keep shared visual and naming policy.
-- [ ] Fold any still-current guidance from the parent brand guide or visual identity notes into shared policy. Remove obsolete artwork documentation and fix links.
-- [ ] Move the four active gallery images from `branding/registry/` to `gallery/` and remove the unused old gallery image. Update the icon paths in `registry/repositories.json`, the README gallery generator and validator, and Foundry workflows and scripts that publish or reconcile gallery images. Coordinate the path switch before retiring `branding/registry/`.
-- [ ] Remove `branding/archive` and `branding/assets/refs` after checking live references.
-- [ ] Confirm whether the SUN parent brand itself must ship the full icon set. If it does, add the icons from the approved SUN source.
+- [ ] Fold any still-current guidance from the parent brand guide or visual identity notes into shared policy. Move obsolete artwork documentation into `branding/recycling/` and fix links.
+- [ ] Move the four active gallery images from `branding/registry/` to `gallery/` and move the unused old gallery image into `branding/recycling/`. Update the icon paths in `registry/repositories.json`, the README gallery generator and validator, and Foundry workflows and scripts that publish or reconcile gallery images. Coordinate the path switch before retiring `branding/registry/`.
+- [ ] Move `branding/archive` and `branding/assets/refs` into `branding/recycling/` after checking live references.
+- [ ] Keep the full icon set optional for the SUN parent brand. For visual consistency, temporarily fill missing filenames by copying the closest available approved SUN icon size and naming the copy for the missing size. Keep the original pixel dimensions and treat the renamed copies as placeholders for the SUN parent only. Require exact pixel dimensions for product packages.
 - [ ] Run gallery validation and check the active README, policy, and registry links.
 - [ ] Apply the product metadata manifest separately from imagery installation in the repositories covered by the approved package contract.
 
@@ -46,9 +52,9 @@ Findings: Foundry has the core imagery. The guide, adoption checklist, reviews, 
 
 - [ ] Align the generator, installer, validators, and package documentation with the new layout and exact icon sizes. Install an incoming `preview.png` as optional `branding/assets/concept-artwork.png`. Limit installer writes to `branding/assets/` and preserve supporting fonts and styles there. Account for legacy packages and snapshots that contain a 1024 px icon during rollout and rollback.
 - [ ] Keep `branding/manifest.json` and revision bookkeeping outside imagery installation. Define how product metadata is maintained during provisioning and verify that installing imagery leaves the manifest and revision files untouched.
-- [ ] Repoint the active generator config and CI from the archived banner to the approved source. Validate output before deleting the old copy.
+- [ ] Repoint the active generator config and CI from the archived banner to the approved source. Validate output before moving the old copy into `branding/recycling/`.
 - [ ] Update the factory seed fingerprint, generated README and checklist, and resume/verification paths that expect a brand guide. Test provisioning against the planned Strata tree and recovery of any supported older seed state.
-- [ ] Remove obsolete branding guides, archive, references, and review artifacts after their active dependencies are resolved. Keep operational instructions and live generator configuration.
+- [ ] Move obsolete branding guides, archive, references, and review artifacts into `branding/recycling/` after their active dependencies are resolved. Keep operational instructions and live generator configuration.
 - [ ] Run installer, rollback, asset generation, and factory seed/recovery checks. Identify workflows that pin the shared action and stage compatible pin updates before they receive the new package format.
 
 [Branding tree](https://github.com/sunstriker2009/sun-foundry/tree/main/branding) · [Installer](https://github.com/sunstriker2009/sun-foundry/blob/main/scripts/install-branding.py) · [Seed script](https://github.com/sunstriker2009/sun-foundry/blob/main/scripts/prepare-product-branding.sh)
@@ -58,7 +64,7 @@ Findings: Foundry has the core imagery. The guide, adoption checklist, reviews, 
 Findings: Strata has the required imagery. Its archived banner duplicates the active banner byte-for-byte. The brand guide, archive, and four reference SVGs are redundant. Foundry’s seed fingerprint has a specific dependency on Strata’s current assets and guides.
 
 - [ ] Coordinate the template tree change with Foundry’s seed support before merging.
-- [ ] Remove the brand guide, archive, and references. Fix template, setup, and asset preparation instructions that expect those paths.
+- [ ] Move the brand guide, archive, and references into `branding/recycling/`. Fix template, setup, and asset preparation instructions that expect those paths.
 - [ ] Retain the active banner, symbol, and revision directory scaffold. Update the icon set to the proposed sizes and coordinate product metadata provisioning with Foundry.
 - [ ] Verify template CI and the coordinated seed path can remove template branding safely and produce a neutral repository without a brand guide.
 
@@ -68,7 +74,7 @@ Findings: Strata has the required imagery. Its archived banner duplicates the ac
 
 Findings: The generated brand guide is the only current file under branding. The root README and setup checklist refer to it. No artwork package is installed.
 
-- [ ] Remove the scaffold guide and fix references in the README and setup checklist.
+- [ ] Move the scaffold guide into `branding/recycling/` and fix references in the README and setup checklist.
 - [ ] Verify the repository remains a usable pilot with no fabricated artwork or package files. Use an approved package only if an installer validation run is separately authorized.
 
 [Branding tree](https://github.com/sunstriker2009/sun-foundry-pilot/tree/main/branding) · [Setup checklist](https://github.com/sunstriker2009/sun-foundry-pilot/blob/main/docs/REPOSITORY-SETUP.md)
@@ -77,8 +83,8 @@ Findings: The generated brand guide is the only current file under branding. The
 
 Findings: Workbench has the required imagery. Its guide, compatibility pointer, archive, references, and retired vector build artifacts are extra. The existing manifest predates the active W2 assets and names removed files and old source paths. The 96, 180, and 192 px icons and two social PNGs had no checked-in consumer in the audit. The build reads icon-512.png. The branding directory also has CSS/JSON design tokens and a font license.
 
-- [ ] Remove obsolete guides and pointers, archive and references, and update README and developer links. Review the old build wrapper before deleting its referenced archive.
-- [ ] Replace the 1024 px icon with a 1064 px icon from the approved artwork. Check external distribution consumers before removing other icon sizes or social PNGs. Keep the required 512 px build source.
+- [ ] Move obsolete guides and pointers, archive, and references into `branding/recycling/` and update README and developer links. Review the old build wrapper before moving its referenced archive.
+- [ ] Install a 1064 px icon from the approved artwork and move the 1024 px icon into `branding/recycling/`. Check external distribution consumers before moving other icon sizes or social PNGs there. Keep the required 512 px build source.
 - [ ] Preserve tokens.css, tokens.json, the font license, and revision snapshots. Verify the app build and any packaging-time native icon generation.
 
 [Branding tree](https://github.com/sunstriker2009/sun-workbench/tree/main/branding) · [Build script](https://github.com/sunstriker2009/sun-workbench/blob/main/tools/build.mjs)
@@ -86,7 +92,7 @@ Findings: Workbench has the required imagery. Its guide, compatibility pointer, 
 ## Outpost
 
 Findings: Outpost has the required imagery. Its guides, compatibility pointer, v2 handoff, archive, and refs are extra. The canonical symbol, 1024 px icon, and versioned reference PNG are byte-identical. Preserve the canonical symbol at its active path. Update the icon set to use 1064 px in place of 1024 px. The archived v2 banner differs from the active banner even though the guide calls it an exact copy.
-- [ ] Remove the redundant reference PNG, guides, handoff, and archive. Remove or replace old README links.
+- [ ] Move the redundant reference PNG, guides, handoff, archive, and superseded 1024 px icon into `branding/recycling/`. Remove or replace old README links.
 - [ ] Keep approved active artwork and any package documentation that explains a live workflow. Verify the active symbol path still works for the gallery.
 
 [Branding tree](https://github.com/sunstriker2009/sun-outpost/tree/main/branding) · [Branding ZIP workflow guide](https://github.com/sunstriker2009/sun-outpost/blob/main/docs/BRANDING-ZIP-INSTALLER.md)
