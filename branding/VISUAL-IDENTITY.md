@@ -3,7 +3,7 @@
 **Status:** Shared visual direction accepted; specific logos, fonts, and colors are provisional.
 
 ## Design principles
-Favor contemporary forms, restrained detail and consistent typography, spacing and icon proportions. Use the [product-family visual themes](BRAND-GUIDELINES.md#product-families-and-visual-themes) to guide materials, imagery and palette. Use the recognizable SUN arc as the shared visual cue.
+Favor contemporary forms, restrained detail and consistent typography, spacing and icon proportions. Use the [product-family visual themes](BRAND-GUIDELINES.md#product-families-and-visual-themes) to guide materials, imagery and palette. Choose a recognizable visual connection to the Sun that fits the product’s composition. An arc and sunlight are both examples.
 
 ## Proposed palette (not final specifications)
 | Role | Color | Hex |
@@ -18,7 +18,7 @@ Proposed product accents: Outpost gold (#F6C453), ORBIT electric blue (#4F8CFF),
 
 ## Approved cross-repository branding practice
 
-All SUN product repositories follow the [Product Repository Branding Standard](../docs/governance/PRODUCT-BRANDING.md): owner-reviewed concepts using SUN's arc, purpose-led symbols (optionally suggesting the product initial), differentiated palettes, a locally committed high-resolution panoramic README banner, and coordinated compact PNG assets with optional SVG adaptations. Preserve concept originals separately from production assets. Workbench and Outpost are reference examples; existing repositories adopt through a tracked checklist, not presumed compliance.
+All SUN product repositories follow the [Product Repository Branding Standard](../docs/governance/PRODUCT-BRANDING.md): owner-reviewed concepts with a visual connection to SUN, purpose-led symbols (optionally suggesting the product initial), differentiated palettes, a locally committed high-resolution panoramic README banner, and coordinated compact PNG assets with optional SVG adaptations. Preserve concept originals separately from production assets. Workbench and Outpost are reference examples; existing repositories adopt through a tracked checklist, not presumed compliance.
 
 ## Logo principles
 - Work at 24×24 pixels.

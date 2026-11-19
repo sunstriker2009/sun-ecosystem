@@ -18,11 +18,11 @@ SUN is the parent brand for a family of independently usable software products, 
 - External applications may say **Powered by ProductName** after integration, subject to product branding guidance.
 
 ## Brand character
-SUN is modern, dependable, and understated. Use clear typography, restrained geometric forms, and approachable language. Draw names and visual ideas from what a product does, the work it supports, or a metaphor that helps explain its purpose. The SUN arc and “by Sun” endorsement connect the family across distinct visual themes.
+SUN is modern, dependable, and understated. Use clear typography, restrained geometric forms, and approachable language. Draw names and visual ideas from what a product does, the work it supports, or a metaphor that helps explain its purpose. A visual reference to the Sun and the “by Sun” endorsement connect the family across distinct visual themes.
 
 ## Product families and visual themes
 
-Use the recognizable SUN arc, the **“by Sun”** endorsement in endorsed lockups, and consistent typography, spacing and optical proportions as shared family cues. Build each central symbol around the product’s purpose. Distinguish families through their visual themes and individual products through their silhouettes, palettes and imagery.
+Build each central symbol around the product’s purpose and give its identity a recognizable visual connection to the Sun that fits the composition. CodeFolio uses a sunrise arc above the folio, and Workbench uses sunlight as part of its artwork. A sunrise, a sunlit edge, or another recognizable expression of the Sun can serve the same role. Use the **“by Sun”** endorsement in endorsed lockups and keep typography, spacing, and optical proportions consistent across the family. Distinguish individual products through their silhouettes, palettes, and imagery.
 
 | Family | Examples | Visual direction |
 | --- | --- | --- |

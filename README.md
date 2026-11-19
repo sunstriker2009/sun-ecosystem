@@ -98,7 +98,7 @@ Registry: **SUN-002 — CONFIRMED**. Technical identity: `Sun.Workspace`. Reposi
 
 ## Product repository branding
 
-SUN product repositories follow the [Product Repository Branding Standard](docs/governance/PRODUCT-BRANDING.md): product-family visual themes, purpose-led symbols incorporating SUN's arc, distinct palettes, approved panoramic README banners and coordinated PNG compact assets, with optional SVG adaptations. [Workbench](https://github.com/sunstriker2009/sun-workbench) and [Outpost](https://github.com/sunstriker2009/sun-outpost) are reference examples; existing repositories should track adoption independently.
+SUN product repositories follow the [Product Repository Branding Standard](docs/governance/PRODUCT-BRANDING.md): product-family visual themes, purpose-led symbols with a visual connection to SUN, distinct palettes, approved panoramic README banners and coordinated PNG compact assets, with optional SVG adaptations. [Workbench](https://github.com/sunstriker2009/sun-workbench) and [Outpost](https://github.com/sunstriker2009/sun-outpost) are reference examples; existing repositories should track adoption independently.
 
 ## Repository provisioning
 
