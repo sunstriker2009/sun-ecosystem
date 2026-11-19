@@ -46,6 +46,15 @@
       "summary": "Isolated repository for validating Foundry provisioning and inherited branding",
       "icon": null,
       "iconSha256": null
+    },
+    {
+      "repository": "sunstriker2009/sun-codefolio",
+      "registryId": null,
+      "classification": "pending",
+      "name": "sun-codefolio",
+      "summary": "Repository registration pending owner review",
+      "icon": null,
+      "iconSha256": null
     }
   ]
 }

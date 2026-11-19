@@ -33,6 +33,14 @@ Generated from [the repository catalog](registry/repositories.json). Approved id
 <td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-strata"><img src="gallery/sun-strata.png" alt="Strata icon" width="72" height="72"></a><p><strong>Strata</strong></p><small>SUN-G002 · Reusable repository template</small></td>
 </tr>
 </table>
+
+### Pending registration
+
+<table>
+<tr>
+<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-codefolio"><strong>sun-codefolio</strong></a><p><strong>sun-codefolio</strong></p><small>Pending · Repository registration pending owner review</small></td>
+</tr>
+</table>
 <!-- SUN-REPOSITORY-GALLERY:END -->
 
 ## Ecosystem at a glance
