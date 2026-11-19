@@ -8,9 +8,7 @@ This repository is the canonical reference for SUN product naming, brand archite
 
 ## SUN parent identity
 
-The approved parent-brand banner and [symbol](branding/assets/symbol.png) represent the SUN product family. Compact SVGs are simplified adaptations of the approved symbol. See the [SUN Parent Brand Guide](branding/BRAND-GUIDE.md).
-
-Earlier exploratory artwork remains documented in [Visual Identity Concept 01](branding/VISUAL-CONCEPT-01.md); the concept records early proposals and historical branding explorations.
+The approved parent-brand banner and [symbol](branding/assets/symbol.png) represent the SUN product family. See the [SUN Brand Guidelines](branding/BRAND-GUIDELINES.md#parent-brand-artwork).
 
 <!-- SUN-REPOSITORY-GALLERY:START -->
 ## SUN Repository Gallery
@@ -21,8 +19,8 @@ Generated from [the repository catalog](registry/repositories.json). Approved id
 
 <table>
 <tr>
-<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-outpost"><img src="branding/registry/sun-outpost.png" alt="Outpost icon" width="72" height="72"></a><p><strong>Outpost</strong></p><small>SUN-C001 · Identity, authentication, authorization and security</small></td>
-<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-workbench"><img src="branding/registry/sun-workbench.png" alt="Workbench icon" width="72" height="72"></a><p><strong>Workbench</strong></p><small>SUN-P001 · Local code organizer and interactive scripting workspace</small></td>
+<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-outpost"><img src="gallery/sun-outpost.png" alt="Outpost icon" width="72" height="72"></a><p><strong>Outpost</strong></p><small>SUN-C001 · Identity, authentication, authorization and security</small></td>
+<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-workbench"><img src="gallery/sun-workbench.png" alt="Workbench icon" width="72" height="72"></a><p><strong>Workbench</strong></p><small>SUN-P001 · Local code organizer and interactive scripting workspace</small></td>
 </tr>
 </table>
 
@@ -30,9 +28,9 @@ Generated from [the repository catalog](registry/repositories.json). Approved id
 
 <table>
 <tr>
-<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-foundry"><img src="branding/registry/sun-foundry.png" alt="Foundry icon" width="72" height="72"></a><p><strong>Foundry</strong></p><small>SUN-G003 · Repository factory and governance verification</small></td>
+<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-foundry"><img src="gallery/sun-foundry.png" alt="Foundry icon" width="72" height="72"></a><p><strong>Foundry</strong></p><small>SUN-G003 · Repository factory and governance verification</small></td>
 <td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-foundry-pilot"><strong>Foundry Pilot</strong></a><p><strong>Foundry Pilot</strong></p><small>SUN-G004 · Isolated repository for validating Foundry provisioning and inherited branding</small></td>
-<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-strata"><img src="branding/registry/sun-strata.png" alt="Strata icon" width="72" height="72"></a><p><strong>Strata</strong></p><small>SUN-G002 · Reusable repository template</small></td>
+<td align="center" width="180"><a href="https://github.com/sunstriker2009/sun-strata"><img src="gallery/sun-strata.png" alt="Strata icon" width="72" height="72"></a><p><strong>Strata</strong></p><small>SUN-G002 · Reusable repository template</small></td>
 </tr>
 </table>
 <!-- SUN-REPOSITORY-GALLERY:END -->
@@ -76,9 +74,7 @@ Registry: **SUN-P001 — CONFIRMED**. Technical identity: `Sun.Workspace`. Repos
 | [Git Workflow & Merge Policy v1.0](docs/governance/GIT-WORKFLOW.md) | Authoritative cross-repository PR, squash merge, CI, review and release governance |
 | [Naming Guidelines v1.0](branding/NAMING-GUIDELINES.md) | Naming rules, scoring, workflow and clearance |
 | [Product Repository Branding Standard v2.0](docs/governance/PRODUCT-BRANDING.md) | Approved concept workflow, README banners, PNG assets, optional SVG adaptations and existing-repository adoption checklist |
-| [Visual Identity](branding/VISUAL-IDENTITY.md) | Provisional palette, typography and logo direction |
 | [Outpost product documentation](https://github.com/sunstriker2009/sun-outpost) | Architecture, design system, engineering roadmap and implementation (maintained outside SUN ecosystem) |
-| [Visual Identity Concept 01](branding/VISUAL-CONCEPT-01.md) | Artwork and design exploration |
 | [Product Registry](registry/PRODUCTS.md) | Confirmed and proposed product names |
 | [Governance & Infrastructure Registry](registry/INFRASTRUCTURE.md) | SUN-G001 through SUN-G004, separate from product IDs |
 | [Ecosystem Map](docs/architecture/ECOSYSTEM-MAP.md) | Mermaid diagram of current organizational relationships |

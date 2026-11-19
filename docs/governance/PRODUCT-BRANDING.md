@@ -6,7 +6,7 @@
 **Scope:** SUN repository branding packages, new and existing. The SUN parent-brand exception is in section 5.  
 **Implementation:** [Foundry branding installer](https://github.com/sunstriker2009/sun-foundry/blob/main/docs/BRANDING-ZIP-INSTALLER.md)
 
-This standard complements the [SUN Brand Guidelines](../../branding/BRAND-GUIDELINES.md), [SUN Visual Identity](../../branding/VISUAL-IDENTITY.md) and [Git Workflow & Merge Policy](GIT-WORKFLOW.md).
+This standard complements the [SUN Brand Guidelines](../../branding/BRAND-GUIDELINES.md) and [Git Workflow & Merge Policy](GIT-WORKFLOW.md).
 
 ## 1. Concept and approval
 
@@ -102,7 +102,7 @@ Migrate existing layouts through reviewed repository PRs. Coordinate live README
 - [ ] Check the product metadata against the repository identity.
 - [ ] Move approved removals into temporary `branding/recycling/`, preserving original repository-relative paths for recovery. Exclude recycled files from installation, asset discovery, and active branding validation.
 - [ ] Verify the migration across affected repositories before deleting recycling folders in a separate review.
-- [ ] Coordinate the Ecosystem gallery move from `branding/registry/` to top-level `gallery/` with registry image paths, README generation, gallery validation, and Foundry publishing and reconciliation workflows.
+- [ ] Store Ecosystem gallery PNGs under top-level `gallery/`. Keep registry image paths, generated README tiles, validation, and Foundry publishing and reconciliation aligned.
 
 ## 8. Imagery installation and revision history
 
