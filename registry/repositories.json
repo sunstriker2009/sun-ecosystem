@@ -46,15 +46,6 @@
       "summary": "Isolated repository for validating Foundry provisioning and inherited branding",
       "icon": null,
       "iconSha256": null
-    },
-    {
-      "repository": "sunstriker2009/sun-codefolio",
-      "registryId": "SUN-P002",
-      "classification": "product",
-      "name": "CodeFolio",
-      "summary": "Searchable code snippet reference and interactive snippet builder",
-      "icon": null,
-      "iconSha256": null
     }
   ]
 }
