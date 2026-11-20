@@ -56,6 +56,17 @@
       "commercialClearance": "PENDING",
       "confirmedOn": "2026-11-19",
       "family": "productivity"
+    },
+    {
+      "id": "SUN-P003",
+      "name": "Registration Smoke Test",
+      "status": "CONFIRMED",
+      "purpose": "Productivity product by Sun",
+      "publicName": "Registration Smoke Test by Sun",
+      "repository": "sun-registration-smoke-test",
+      "commercialClearance": "PENDING",
+      "confirmedOn": "2026-11-19",
+      "family": "productivity"
     }
   ],
   "infrastructure": [
@@ -142,7 +153,7 @@
     "productivitySeries": {
       "format": "SUN-PNNN",
       "assignment": "sequential_on_confirmation",
-      "nextId": "SUN-P003",
+      "nextId": "SUN-P004",
       "proposalsReserveIds": false
     },
     "applicationComponentSeries": {
