@@ -7,9 +7,8 @@
 | SUN-C001 | **Outpost** | Application components | Identity, authentication, authorization, security | **CONFIRMED** | Sun.Security |
 | SUN-P001 | **Workbench** | Productivity | Interactive scripting workspace and saved connections | **CONFIRMED** | Sun.Workspace |
 | SUN-P002 | **CodeFolio** | Productivity | code management | **CONFIRMED** | TBD |
-| SUN-P003 | **Registration Smoke Test** | Productivity | Productivity product by Sun | **CONFIRMED** | TBD |
 
-The next IDs are **SUN-P004** and **SUN-C002**. The [ID migration decision](../decisions/sun-family-ids.md) records the previous IDs.
+The next IDs are **SUN-P003** and **SUN-C002**. The [ID migration decision](../decisions/sun-family-ids.md) records the previous IDs.
 
 ## Unnumbered product proposals
 
@@ -54,9 +53,4 @@ The proposed names ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON and FORGE have pote
 ## SUN-P002 — CodeFolio
 - **Public identity:** CodeFolio by Sun.
 - **Repository:** [sun-codefolio](https://github.com/sunstriker2009/sun-codefolio) (established).
-- **Commercial clearance:** PENDING.
-
-## SUN-P003 — Registration Smoke Test
-- **Public identity:** Registration Smoke Test by Sun.
-- **Repository:** [sun-registration-smoke-test](https://github.com/sunstriker2009/sun-registration-smoke-test) (established).
 - **Commercial clearance:** PENDING.
