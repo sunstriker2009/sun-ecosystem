@@ -6,8 +6,9 @@
 |---|---|---|---|---|---|
 | SUN-C001 | **Outpost** | Application components | Identity, authentication, authorization, security | **CONFIRMED** | Sun.Security |
 | SUN-P001 | **Workbench** | Productivity | Interactive scripting workspace and saved connections | **CONFIRMED** | Sun.Workspace |
+| SUN-P002 | **CodeFolio** | Productivity | code management | **CONFIRMED** | TBD |
 
-The next IDs are **SUN-P002** and **SUN-C002**. The [ID migration decision](../decisions/sun-family-ids.md) records the previous IDs.
+The next IDs are **SUN-P003** and **SUN-C002**. The [ID migration decision](../decisions/sun-family-ids.md) records the previous IDs.
 
 ## Unnumbered product proposals
 
@@ -48,3 +49,8 @@ The proposed names ORBIT, NOVA, PRISM, PULSAR, LUMEN, BEACON and FORGE have pote
 - **Initial scope:** Local code and scripting workspace with folders, tags, smart collections and planned language-aware JavaScript, Python and C# execution adapters. Database connections and Kubernetes support are future extensions; see the product roadmap.
 - **Extension direction:** Additional execution providers and transports; implementation planning belongs in the product repository.
 - **Commercial clearance:** PENDING. Preliminary exact-name web screening only; trademarks, domains and package availability have not been cleared.
+
+## SUN-P002 — CodeFolio
+- **Public identity:** CodeFolio by Sun.
+- **Repository:** [sun-codefolio](https://github.com/sunstriker2009/sun-codefolio) (established).
+- **Commercial clearance:** PENDING.
