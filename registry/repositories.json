@@ -55,15 +55,6 @@
       "summary": "code management",
       "icon": null,
       "iconSha256": null
-    },
-    {
-      "repository": "sunstriker2009/sun-registration-smoke-test",
-      "registryId": "SUN-P003",
-      "classification": "product",
-      "name": "Registration Smoke Test",
-      "summary": "Productivity product by Sun",
-      "icon": null,
-      "iconSha256": null
     }
   ]
 }
