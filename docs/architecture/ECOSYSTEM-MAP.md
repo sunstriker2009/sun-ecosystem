@@ -32,7 +32,7 @@ flowchart TD
 
 ## Authoritative sources
 
-- [Product registry](../../registry/PRODUCTS.md) and [machine-readable registry](../../registry/products.json)
+- [Product registry](https://github.com/sunstriker2009/sun-foundry/blob/main/registry/PRODUCTS.md) and [machine-readable registry](https://github.com/sunstriker2009/sun-foundry/blob/main/registry/products.json)
 - [Brand architecture](../../branding/BRAND-GUIDELINES.md)
 - [Repository governance](../governance/GIT-WORKFLOW.md)
 - [Foundry](https://github.com/sunstriker2009/sun-foundry) and [Strata](https://github.com/sunstriker2009/sun-strata)
