@@ -21,7 +21,6 @@ Explore the [repository gallery](https://github.com/sunstriker2009/sun-foundry/b
 | [Brand Guidelines v2.0](branding/BRAND-GUIDELINES.md) | SUN positioning, brand architecture and product-family visual themes |
 | [Reusable Prompts](docs/prompts/README.md) | Copyable collaboration prompts, including thread continuation handoffs |
 | [SUN Workflow Handbook](docs/workflows/README.md) | SUN workflow entry points and ownership |
-| [Repository Factory](https://github.com/sunstriker2009/sun-foundry) | Automated repository creation, CI initialization, governance application, verification and recovery |
 | [Strata — Repository Foundation](https://github.com/sunstriker2009/sun-strata) | Standard starting structure and CI workflows for new SUN repositories |
 | [Git Workflow & Merge Policy v1.0](docs/governance/GIT-WORKFLOW.md) | Authoritative cross-repository PR, squash merge, CI, review and release governance |
 | [Naming Guidelines v1.0](branding/NAMING-GUIDELINES.md) | Naming rules, scoring, workflow and clearance |
@@ -32,20 +31,13 @@ Explore the [repository gallery](https://github.com/sunstriker2009/sun-foundry/b
 | [Ecosystem Map](docs/architecture/ECOSYSTEM-MAP.md) | Mermaid diagram of current organizational relationships |
 | [Machine-readable Registry](https://github.com/sunstriker2009/sun-foundry/blob/main/registry/products.json) | Structured product metadata |
 | [Brand Architecture Decision](decisions/0001-sun-brand-architecture.md) | Endorsed brand model |
-| [Outpost naming decision](decisions/product-renames/sun-001-outpost.md) | ORYVA → Outpost and SUN-C001 continuity |
 | [Product Ideas](docs/product-ideas.md) | Early concepts and product direction |
 | [Product Proposal Template](templates/PRODUCT-PROPOSAL.md) | Starting new proposals |
-| [Naming Review Template](templates/NAMING-REVIEW.md) | Candidate evaluation and clearance |
-| [Workbench naming decision](decisions/0004-workbench-rename.md) | SUN-P001 approval and naming rationale |
 | [Changelog](CHANGELOG.md) | Version history |
 
 ## Product repository branding
 
 SUN product repositories follow the [Product Repository Branding Standard](docs/governance/PRODUCT-BRANDING.md): product-family visual themes, purpose-led symbols with a visual connection to SUN, distinct palettes, approved panoramic README banners and coordinated PNG compact assets, with optional SVG adaptations. [Workbench](https://github.com/sunstriker2009/sun-workbench) and [Outpost](https://github.com/sunstriker2009/sun-outpost) are reference examples; existing repositories should track adoption independently.
-
-## Repository provisioning
-
-Use [Foundry — Repository Factory](https://github.com/sunstriker2009/sun-foundry) to create and initialize new SUN repositories from the [Strata template](https://github.com/sunstriker2009/sun-strata). The Factory provisions CI and governance, verifies supported enforcement, and supports resuming interrupted setup. [Repository Maintenance](https://github.com/sunstriker2009/sun-foundry/actions/workflows/repository-factory-resume.yml) handles existing-repository diagnosis and governance changes. For operation and limitations, see the [Factory workflow guide](https://github.com/sunstriker2009/sun-foundry/blob/main/docs/WORKFLOWS.md). Private repositories on unsupported GitHub plans cannot be treated as strictly verified; the Factory fails closed in that case.
 
 ## Governance
 
