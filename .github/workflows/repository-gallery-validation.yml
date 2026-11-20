@@ -11,8 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Verify catalog, approved IDs, icon integrity and generated README
-        run: python scripts/render-repository-gallery.py --check
+      - name: Verify links to the Foundry registry and gallery
+        shell: bash
+        run: |
+          set -euo pipefail
+          foundry=https://github.com/sunstriker2009/sun-foundry/blob/main/registry
+          for file in GALLERY.md PRODUCTS.md INFRASTRUCTURE.md products.json; do
+            grep -Fq "$foundry/$file)" README.md
+          done
+          for file in products.json repositories.json symbol-approvals.json; do
+            test ! -e "registry/$file"
+          done
