@@ -1,6 +1,6 @@
 # SUN Product Repository Branding Standard
 
-**Version:** 2.1  
+**Version:** 2.2  
 **Effective:** Upon merge  
 **Status:** Approved direction — product-specific assets require owner approval  
 **Scope:** SUN repository branding packages, new and existing. The SUN parent-brand exception is in section 5.  
@@ -64,7 +64,7 @@ branding/
   assets/
     readme-banner.png
     symbol.png
-    concept-artwork.png     # Optional
+    concept-artwork.png
     icons/
       icon-16.png
       icon-24.png
@@ -79,8 +79,8 @@ branding/
   manifest.json
 ```
 
-- The banner, canonical PNG symbol, and nine square PNG icons are required. Each icon’s actual dimensions must match its filename. Keep app-specific exports, fonts, font licenses, styles, and design tokens that have active consumers.
-- Use optional `branding/assets/concept-artwork.png` for the verified artwork reference used to build the package. Use the existing banner as the reference when it is the approved artwork itself.
+- For newly generated product packages, include the README banner, canonical PNG symbol, approved concept artwork, and nine square PNG icons. Each icon’s actual dimensions must match its filename. Keep app-specific exports, fonts, font licenses, styles, and design tokens that have active consumers.
+- Export the verified artwork reference used to build the package as `branding/assets/concept-artwork.png`. If the banner itself is the approved artwork reference, include a copy under the concept artwork filename.
 - Maintain current product metadata in `branding/manifest.json`, including `family-id`, `product-name` and `short-description`. Maintain these values with repository identity and setup. The imagery package does not include a separate asset manifest.
 - The SUN parent brand may ship a partial icon set. For temporary consistency, missing filenames may use renamed copies of the closest available approved SUN icon. The copies retain their original pixel dimensions. Exact-dimension validation applies to product packages.
 - Keep numbered ZIP snapshots under `branding/revisions/`. Dedicated per-repository branding guides, branding README files, archives, reference folders, and historical review material are outside the standard layout.
@@ -88,7 +88,7 @@ branding/
 ## 6. Repository workflow
 
 1. Develop and review concepts. Obtain explicit owner approval before declaring the identity final.
-2. Produce the panoramic banner, symbol, and icons from the approved direction.
+2. Produce the panoramic banner, symbol, and icons from the approved direction and export its approved concept artwork.
 3. Commit the approved assets on a feature branch and update the README to reference the canonical banner path when adopting it.
 4. Validate asset paths, icon dimensions, image readability, active references, and required CI. Squash merge under SUN governance.
 5. Use the same canonical paths for future artwork revisions.
@@ -106,6 +106,6 @@ Migrate existing layouts through reviewed repository PRs. Coordinate live README
 
 ## 8. Imagery installation and revision history
 
-Only `branding/assets/` represents the installable imagery package. Imagery installation must write only within that directory and preserve supporting files. When the incoming package contains `preview.png`, install it as `branding/assets/concept-artwork.png`. Maintain `branding/manifest.json` and other files under the branding root separately. Create numbered ZIP snapshots and maintain revision bookkeeping separately from imagery installation. Rollback should restore assets within `branding/assets/` from the chosen snapshot.
+Only `branding/assets/` represents the installable imagery package. Imagery installation must write only within that directory and preserve supporting files. For new exports, put `branding/assets/` directly at the ZIP root and follow the [Foundry package specification](https://github.com/sunstriker2009/sun-foundry/blob/main/docs/WORKFLOWS.md#packages-and-revisions). Use the canonical `concept-artwork.png` filename. The installer maps `preview.png` to that filename for older packages. Maintain `branding/manifest.json` and other files under the branding root separately. Create numbered ZIP snapshots and maintain revision bookkeeping separately from imagery installation. Rollback should restore assets within `branding/assets/` from the chosen snapshot.
 
 Repositories adopting the revised installation contract must first update to a compatible Foundry installer. Existing pins follow the [current installer guide](https://github.com/sunstriker2009/sun-foundry/blob/main/docs/BRANDING-ZIP-INSTALLER.md), including its combined installation and revision workflow, until migrated. Review artwork and required checks before the squash merge.
