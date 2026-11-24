@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-23 — CodeFolio Phase 1 complete
+
+- Celebrate the close of SUN-P002’s first phase. CodeFolio now offers five runnable reference topics, and the original snippet builder continues in Playground by Sun. [CodeFolio closeout](https://github.com/sunstriker2009/sun-codefolio/blob/main/docs/ROADMAP.md)
+
 ## 2026-11-18 — SUN registry IDs by family
 
 - Use separate SUN-G, SUN-P, and SUN-C sequences for governance, productivity, and application components. Migrate Outpost to SUN-C001 and Workbench to SUN-P001. See the [family ID decision](decisions/sun-family-ids.md).
