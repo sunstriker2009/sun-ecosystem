@@ -4,7 +4,7 @@
 
 **One source. Many independent products.**
 
-This repository is the canonical reference for SUN product naming, brand architecture, visual identity direction, and recorded branding decisions. Foundry maintains SUN product and repository records. It does **not** contain application implementation or development milestones.
+This repository is the canonical reference for SUN product naming, brand architecture, visual identity direction, and recorded branding decisions. Foundry maintains SUN product and repository records. Each product repository owns its implementation and roadmap.
 
 ## SUN parent identity
 
@@ -13,6 +13,10 @@ The approved parent-brand banner and [symbol](branding/assets/symbol.png) repres
 ## SUN product portfolio
 
 Explore the [repository gallery](https://github.com/sunstriker2009/sun-foundry/blob/main/registry/GALLERY.md), [product registry](https://github.com/sunstriker2009/sun-foundry/blob/main/registry/PRODUCTS.md), and [governance and infrastructure registry](https://github.com/sunstriker2009/sun-foundry/blob/main/registry/INFRASTRUCTURE.md) in Foundry. The [ecosystem relationship diagram](docs/architecture/ECOSYSTEM-MAP.md) shows how the products and shared infrastructure fit together.
+
+### ☀️ CodeFolio by Sun completes Phase 1
+
+CodeFolio grew from a snippet builder into a runnable reference for Regex, Date & Time, Encoding & Escaping, XPath, and CSV. The original builder lives on in Playground by Sun. Celebrate SUN-P002’s first phase by trying a pattern or running a CSV example. [Open CodeFolio](https://sunstriker2009.github.io/sun-codefolio/) · [Phase 1 closeout and Phase 2 proposal](https://github.com/sunstriker2009/sun-codefolio/blob/main/docs/ROADMAP.md)
 
 ## Documentation
 

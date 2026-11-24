@@ -4,11 +4,11 @@ This page records early product ideas for the SUN ecosystem.
 
 ## CodeFolio by Sun
 
-**Status:** First release in planning. CodeFolio belongs to the productivity line and is pending registration through Foundry.
+**Phase 1 complete.** SUN-P002 is a live cross-language reference for Regex, Date & Time, Encoding & Escaping, XPath, and CSV. CodeFolio and Workbench are part of SUN’s productivity family. [Open CodeFolio](https://sunstriker2009.github.io/sun-codefolio/) · [CodeFolio roadmap](https://github.com/sunstriker2009/sun-codefolio/blob/main/docs/ROADMAP.md) · [Workbench](https://github.com/sunstriker2009/sun-workbench)
 
-CodeFolio brings the SnippetBook Visual Studio extension concept to an interactive website. It is a searchable reference for practical snippets, starting with Git, JavaScript, C#, and XPath. Developers can find a snippet by describing their task, learn from worked examples and tailor the code to their own use.
+### Original snippet-builder concept
 
-CodeFolio and [Workbench](https://github.com/sunstriker2009/sun-workbench) sit alongside each other in SUN’s productivity family. CodeFolio helps developers find and adapt snippets. Workbench is the workspace for organizing, editing, and running scripts.
+The early concept adapted SnippetBook’s searchable snippets and editable builders to the web. That workspace now lives in [Playground by Sun](https://sunstriker2009.github.io/sun-playground/). The notes below record the original design.
 
 ### Search and reference
 
