@@ -58,7 +58,7 @@ Keep repository documentation, commit subjects and bodies, pull request titles a
 
 ## 4. Conventional Commits
 
-Use Conventional Commits for PR titles and squash commit subjects:
+Prefer Conventional Commits for PR titles and squash commit subjects:
 
 `<type>(<optional-scope>): <imperative summary>`
 
@@ -70,6 +70,8 @@ Examples:
 - `test(security): add authorization integration tests`
 - `docs(architecture): document Keycloak integration`
 - `chore(ci): improve build pipeline`
+
+This is authoring guidance. A dedicated PR-title workflow or required `conventional-title` check is not part of the minimum SUN build standard. Preserve meaningful product build, test and security checks; migrate existing rulesets before retiring the title workflow. See the [Foundry simplification plan](https://github.com/sunstriker2009/sun-foundry/blob/main/docs/WORKFLOW-SIMPLIFICATION.md).
 
 Common types: `feat`, `fix`, `refactor`, `test`, `docs`, `chore`, `build`, `ci`, `perf`, `revert`. For breaking changes use `!` before the colon (for example, `feat(api)!: remove legacy endpoint`) or a `BREAKING CHANGE:` footer explaining impact and migration. The squash merge commit title should match the PR title; the body can include the rationale and breaking-change footer.
 
@@ -116,7 +118,7 @@ Track implementation **per repository**, not merely policy publication:
 - [ ] Failing-CI PR verified to block merge and auto-merge.
 - [ ] Conversation resolution required.
 - [ ] Explicit review controls enforced for sensitive changes.
-- [ ] Conventional Commit PR titles and squash subjects followed.
+- [ ] Clear PR titles and squash subjects; Conventional Commit formatting is recommended.
 - [ ] SemVer/changelog/tag process adopted where releases exist.
 - [ ] Release automation gated until approved.
 - [ ] Product branding standard adoption assessed and tracked in the product repository.
